@@ -1,5 +1,8 @@
 /* Imports for global scope */
 
+Accounts = Package['accounts-base'].Accounts;
+Roles = Package['alanning:roles'].Roles;
+Showdown = Package.markdown.Showdown;
 Meteor = Package.meteor.Meteor;
 WebApp = Package.webapp.WebApp;
 Log = Package.logging.Log;
@@ -21,5 +24,7 @@ jQuery = Package.jquery.jQuery;
 Random = Package.random.Random;
 EJSON = Package.ejson.EJSON;
 LaunchScreen = Package['launch-screen'].LaunchScreen;
+SimpleSchema = Package['aldeed:simple-schema'].SimpleSchema;
+MongoObject = Package['aldeed:simple-schema'].MongoObject;
 HTML = Package.htmljs.HTML;
 
