@@ -4,8 +4,11 @@
 </head>
 
 <body>
-	<div ng-app="app">
-		<div class="headerScrollPos"></div>
-		<ui-view></ui-view>
+	<div ng-app="app" class="bodyContainer">
+		<toolbar></toolbar>
+		<div>
+			<div class="headerScrollPos"></div>
+			<ui-view></ui-view>
+		</div>
 	</div>
 </body>

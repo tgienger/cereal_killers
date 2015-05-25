@@ -1,0 +1,66 @@
+/* variables */
+$font-color: #dcdcdc;
+$font-dark: #2e2e2e;
+$font-medium2: #5d5d5d;
+$font-medium: #5d5d5d;
+$font-light: #dcdcdc;
+$font-lighter: #fafafa;
+$body-color: #dcdcdc;
+$header-color: #262626;
+$post-color: #151515;
+$post-back-color: rgb(250, 250, 250);
+$post-border-color: #454545;
+
+/* CSS declarations go here */
+html {
+  /* margin-top: 60px; */
+  height: 100%;
+}
+body {
+  background: rgba(33, 33, 33, 1);
+  height: 100%;
+}
+.bodyContainer {
+  /* margin-top: 60px; */
+  min-height: 100%;
+  /* padding-top: 60px; */
+  /* background: #070d1a url('http://images.mmorpg.com/images/crowfall_skin_mar23.jpg') no-repeat top center !important; */
+}
+.image-container {
+  margin-top: 60px;
+//  background: #070d1a url('http://images.mmorpg.com/images/crowfall_skin_mar23.jpg') no-repeat top center !important;
+  background: #070d1a url('http://i.imgur.com/EV132.jpg') no-repeat top center !important;
+}
+.container {
+  width: 100%;
+  max-width: 1040px;
+}
+.noList {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.pointer {
+  cursor:pointer;
+}
+.commentInput {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.smallUsername {
+
+}
+/* Login Buttons */
+#login-buttons {
+
+}
+
+.pull-left {
+  float:left;
+  clear: both;
+}
+.pull-right {
+  float:right;
+  clear: both;
+}
