@@ -671,9 +671,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/home/home.controller.ng.html.js?dd71832e0273ad94c6eacaf72b55777755011880",
-      "size": 532,
-      "hash": "dd71832e0273ad94c6eacaf72b55777755011880"
+      "url": "/client/home/home.controller.ng.html.js?d44cd0c108f46cd519743e1ea55fb34ba4d2fe64",
+      "size": 336,
+      "hash": "d44cd0c108f46cd519743e1ea55fb34ba4d2fe64"
     },
     {
       "path": "app/client/template.index.js",
@@ -739,15 +739,15 @@
       "hash": "fb9ebbf5772a4c499260aef93b8150fe764c8afb"
     },
     {
-      "path": "a5a709da896bccbd17d8cc8789abd10101750457.css",
+      "path": "a70d0ac0916dcf364f10d70eb6c20deb82a91e54.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/a5a709da896bccbd17d8cc8789abd10101750457.css",
-      "sourceMap": "a5a709da896bccbd17d8cc8789abd10101750457.css.map",
-      "sourceMapUrl": "/a5a709da896bccbd17d8cc8789abd10101750457.map",
-      "size": 19863,
-      "hash": "a5a709da896bccbd17d8cc8789abd10101750457"
+      "url": "/a70d0ac0916dcf364f10d70eb6c20deb82a91e54.css",
+      "sourceMap": "a70d0ac0916dcf364f10d70eb6c20deb82a91e54.css.map",
+      "sourceMapUrl": "/a70d0ac0916dcf364f10d70eb6c20deb82a91e54.map",
+      "size": 20049,
+      "hash": "a70d0ac0916dcf364f10d70eb6c20deb82a91e54"
     },
     {
       "path": "head.html",
