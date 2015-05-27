@@ -181,11 +181,6 @@
       "path": "packages/binary-heap.js"
     },
     {
-      "sourceMap": "packages/insecure.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/insecure.js"
-    },
-    {
       "node_modules": "/C/Users/Tj/AppData/Local/.meteor/packages/mongo/1.1.0/npm/node_modules",
       "sourceMap": "packages/mongo.js.map",
       "sourceMapRoot": "packages",

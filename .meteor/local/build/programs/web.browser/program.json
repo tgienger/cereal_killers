@@ -178,17 +178,6 @@
       "hash": "d1840d3ba04c65ffade261f362e26699b7509706"
     },
     {
-      "path": "packages/insecure.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/insecure.js?3dc9d4a2dad55999b5b15a447d57f3d5fb66b290",
-      "sourceMap": "packages/insecure.js.map",
-      "sourceMapUrl": "/packages/3dc9d4a2dad55999b5b15a447d57f3d5fb66b290.map",
-      "size": 1290,
-      "hash": "3dc9d4a2dad55999b5b15a447d57f3d5fb66b290"
-    },
-    {
       "path": "packages/mongo.js",
       "where": "client",
       "type": "js",
@@ -660,9 +649,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/home/home.controller.ng.html.js?d44cd0c108f46cd519743e1ea55fb34ba4d2fe64",
-      "size": 336,
-      "hash": "d44cd0c108f46cd519743e1ea55fb34ba4d2fe64"
+      "url": "/client/home/home.controller.ng.html.js?7396764e1eefaa0748a1bc2c37640558b4eb8b04",
+      "size": 362,
+      "hash": "7396764e1eefaa0748a1bc2c37640558b4eb8b04"
+    },
+    {
+      "path": "app/client/news/news.controller.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/news/news.controller.ng.html.js?683504df2f83591cdde36940c9a8bfd7bf76eb4d",
+      "size": 214,
+      "hash": "683504df2f83591cdde36940c9a8bfd7bf76eb4d"
     },
     {
       "path": "app/client/template.index.js",
@@ -710,6 +708,33 @@
       "hash": "62470a1eee9b386d9f2c3532f0aeb6c61b3f0ea9"
     },
     {
+      "path": "app/client/news/news.controller.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/news/news.controller.js?18397fce4f11567c56fbd389905c6c9c7dbb265f",
+      "size": 835,
+      "hash": "18397fce4f11567c56fbd389905c6c9c7dbb265f"
+    },
+    {
+      "path": "app/client/news/news.directive.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/news/news.directive.js?062879a3714f018117fba7756ccaf5da06d1e3da",
+      "size": 307,
+      "hash": "062879a3714f018117fba7756ccaf5da06d1e3da"
+    },
+    {
+      "path": "app/client/news/news.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/news/news.js?db5af936aeca1ed8f7039b287f779620a43aa4f2",
+      "size": 248,
+      "hash": "db5af936aeca1ed8f7039b287f779620a43aa4f2"
+    },
+    {
       "path": "app/client/routes.js",
       "where": "client",
       "type": "js",
@@ -728,15 +753,15 @@
       "hash": "fb9ebbf5772a4c499260aef93b8150fe764c8afb"
     },
     {
-      "path": "cd70ba47718e2c12e5588c6ae24fc7eeaefbb872.css",
+      "path": "3992393c7897fa472a8d27ecafe1a6e9e21e39c2.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/cd70ba47718e2c12e5588c6ae24fc7eeaefbb872.css",
-      "sourceMap": "cd70ba47718e2c12e5588c6ae24fc7eeaefbb872.css.map",
-      "sourceMapUrl": "/cd70ba47718e2c12e5588c6ae24fc7eeaefbb872.map",
-      "size": 20222,
-      "hash": "cd70ba47718e2c12e5588c6ae24fc7eeaefbb872"
+      "url": "/3992393c7897fa472a8d27ecafe1a6e9e21e39c2.css",
+      "sourceMap": "3992393c7897fa472a8d27ecafe1a6e9e21e39c2.css.map",
+      "sourceMapUrl": "/3992393c7897fa472a8d27ecafe1a6e9e21e39c2.map",
+      "size": 20573,
+      "hash": "3992393c7897fa472a8d27ecafe1a6e9e21e39c2"
     },
     {
       "path": "head.html",
