@@ -222,17 +222,6 @@
       "hash": "499a2f8522e25820b1153c69a92751ccaae507b3"
     },
     {
-      "path": "packages/autopublish.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/autopublish.js?c3059a78bb200b171099fc4fa1a9345101790ddb",
-      "sourceMap": "packages/autopublish.js.map",
-      "sourceMapUrl": "/packages/c3059a78bb200b171099fc4fa1a9345101790ddb.map",
-      "size": 1293,
-      "hash": "c3059a78bb200b171099fc4fa1a9345101790ddb"
-    },
-    {
       "path": "packages/localstorage.js",
       "where": "client",
       "type": "js",
@@ -739,15 +728,15 @@
       "hash": "fb9ebbf5772a4c499260aef93b8150fe764c8afb"
     },
     {
-      "path": "a70d0ac0916dcf364f10d70eb6c20deb82a91e54.css",
+      "path": "cd70ba47718e2c12e5588c6ae24fc7eeaefbb872.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/a70d0ac0916dcf364f10d70eb6c20deb82a91e54.css",
-      "sourceMap": "a70d0ac0916dcf364f10d70eb6c20deb82a91e54.css.map",
-      "sourceMapUrl": "/a70d0ac0916dcf364f10d70eb6c20deb82a91e54.map",
-      "size": 20049,
-      "hash": "a70d0ac0916dcf364f10d70eb6c20deb82a91e54"
+      "url": "/cd70ba47718e2c12e5588c6ae24fc7eeaefbb872.css",
+      "sourceMap": "cd70ba47718e2c12e5588c6ae24fc7eeaefbb872.css.map",
+      "sourceMapUrl": "/cd70ba47718e2c12e5588c6ae24fc7eeaefbb872.map",
+      "size": 20222,
+      "hash": "cd70ba47718e2c12e5588c6ae24fc7eeaefbb872"
     },
     {
       "path": "head.html",
