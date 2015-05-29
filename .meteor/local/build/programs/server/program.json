@@ -288,10 +288,19 @@
       "path": "packages/global-imports.js"
     },
     {
+      "path": "app/server/startup/loadSite.js"
+    },
+    {
       "path": "app/model/news.js"
     },
     {
       "path": "app/server/methods.js"
+    },
+    {
+      "path": "app/server/news.js"
+    },
+    {
+      "path": "app/server/schemas.js"
     },
     {
       "sourceMap": "packages/service-configuration.js.map",
