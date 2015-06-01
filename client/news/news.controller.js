@@ -17,26 +17,46 @@ angular.module('app').controller('NewsCtrl', [
 		
 //		 subscribe to the news posts.
 		$meteor.autorun($scope, function() {
-			$meteor.subscribe('news', {visible: true}, {
+			$scope.$meteorSubscribe('news', {visible: true}, {
 				limit: $scope.getReactively('perPage'),
 				skip: parseInt(($scope.getReactively('page') - 1) * $scope.getReactively('perPage')),
 				sort: $scope.getReactively('sort')
 			}).then(function(handle) {
 				newsSubHandle = handle;
 			});
-		});
-		
-//		insert the news posts into this array
-		$scope.posts = $meteor.collection(function() {
-			return News.find({}, {
-				sort: $scope.getReactively('sort')
+			
+//			insert the news posts into this array
+			$scope.posts = $meteor.collection(function() {
+				return News.find({}, {
+					sort: $scope.getReactively('sort')
+				});
 			});
 		});
 		
+		console.log($scope.posts);
 //		Save a new news post
 		$scope.save = function(news) {
+			if (!news.title || !news.body) {
+//				TODO: Let the users know what they're missing. Maybe flashing the input or textarea
+				console.log('not saved');
+				return;
+			}
+			
+			if (!news.private) {
+				news.private = false;
+			}
 			$scope.posts.save(news);
-			$scope.reset();
+			this.news = {};
+		};
+		
+//		delete post
+		$scope.deletePost = function(news) {
+			if (news.visible) {
+				news.visible = false;
+			} else {
+				news.visible = true;
+			}
+			$scope.posts.save(news);
 		};
 		
 //		reset
@@ -51,17 +71,28 @@ angular.module('app').controller('NewsCtrl', [
 		
 		$scope.openCreate = function() {
 			$scope.createPost = !$scope.createPost;
+			if ($scope.createPost) {
+				$scope.synergyComposer.open();
+			} else {
+				$scope.synergyComposer.close();
+			}
+			$scope.reset();
+			
 		};
 		
+//		check if user is admin
 		$scope.userIsAdmin = function() {
-			$meteor.call('isAdmin').then(
-				function(data) {
-					return data;
-				},
-				function(err) {
-					console.log('failed', err);
-				}
-			)
+			if (!$rootScope.currentUser) {
+				return false;
+			}
+			var userId = $rootScope.currentUser._id;
+			return Roles.userIsInRole(userId, ['admin']);
 		};
+		
+		
+		angular.element(document).ready(function() {
+	        $scope.pageReady = true;
+	    });
+		
 	}
 ]);

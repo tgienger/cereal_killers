@@ -7,11 +7,12 @@
 		resize: none;
 		overflow: auto;
 		width: 100%;
+		color:black;
 	}
-	.newsTitle {
+	.editTitle {
 		border: 1px solid red;
 //		background: black;
-//		color: white;
+		color: black;
 	}
 	.newsBlock {
 		color: white;
@@ -22,11 +23,16 @@
 	}
 	
 	.newsBody {
-		height: 100px;
+		min-height: 100px;
 		padding: 3px;
 //		background: black;
 		color: white;
 		font-size: 1.2em;
+	}
+	.editBody {
+		color:black;
+		min-height: 100px;
+		
 	}
 	
 	input .newsTitle{
@@ -48,6 +54,13 @@
 //		background: black;
 		background: url('http://www.kcfaa.org/wp-content/uploads/2011/07/red-repeat-background.png');
 	}
+	.postCreator {
+		margin-left: 15px;
+	}
+	
+	.privateCheckbox {
+		margin-right: 15px;
+	}
 	
 	.newsSubmit {
 //		margin-left: -10px;
@@ -61,6 +74,10 @@
 		overflow: hidden;
 	}
 	
+	.newsDate {
+		margin-left: 15px;
+	}
+	
 	.inputForm {
 		border: 1px solid white;
 		padding: 5px;
@@ -72,5 +89,9 @@
 	.closed {
 		height: 0px;
 		display: none;
+	}
+	
+	.createPost {
+		margin-bottom: 15px;
 	}
 }

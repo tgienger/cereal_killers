@@ -229,11 +229,6 @@
       "path": "packages/accounts-password.js"
     },
     {
-      "sourceMap": "packages/urigo_angular.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/urigo_angular.js"
-    },
-    {
       "sourceMap": "packages/accounts-ui.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/accounts-ui.js"
@@ -273,6 +268,16 @@
       "sourceMap": "packages/aldeed_collection2.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/aldeed_collection2.js"
+    },
+    {
+      "sourceMap": "packages/urigo_angular.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/urigo_angular.js"
+    },
+    {
+      "sourceMap": "packages/superchris_angular-ui-bootstrap.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/superchris_angular-ui-bootstrap.js"
     },
     {
       "sourceMap": "packages/session.js.map",

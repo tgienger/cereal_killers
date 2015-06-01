@@ -1,0 +1,296 @@
+/* variables */
+$font-color: #dcdcdc;
+$font-dark: #2e2e2e;
+$font-medium2: #5d5d5d;
+$font-medium: #5d5d5d;
+$font-light: #dcdcdc;
+$font-lighter: #fafafa;
+$body-color: #dcdcdc;
+$header-color: #262626;
+$post-color: #151515;
+$post-back-color: rgb(250, 250, 250);
+$post-border-color: #454545;
+
+
+/* Composer */
+.composer_container {
+    position: fixed;
+    bottom: -100%;
+    /* display:none; */
+    left: 0;
+    /* height: 0px; */
+    width: 100%;
+    transition: bottom .5s linear;
+}
+.composer_header {
+    height: 10px;
+    position: absolute;
+    top:3px;
+    right:3px;
+    color: black;
+    text-align: right;
+    width: 100%;
+}
+
+.composer {
+    width: 100%;
+    height: 350px;
+    @media screen and (max-width: 768px) {
+        height: 100vh;
+    }
+    padding: 3px;
+    padding-top: 0;
+    position:relative;
+    // background: #ffffff;
+    /* box-shadow: 0 -2px 15px -3px rgba(0,0,0,0.75); */
+    color:black;
+    background: white;
+}
+.composer_info {
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    left:0;
+    /* padding-left: 10px; */
+    input {
+        background: rgba(255, 255, 255, 1);;
+    }
+
+    input,
+    div {
+        float:left;
+        height: 35px;
+        color: $font-dark;
+        margin-left: 10px;
+        width: -moz-calc(50% - 15px);
+        width: -webkit-calc(50% - 15px);
+        /* width: -o-calc(50% - 15px); */
+        width: calc(50% - 15px);
+    }
+    i {
+        color: $font-medium;
+    }
+
+}
+#markdown_container {
+    position: absolute;
+    top:60px;
+    width: 100%;
+    height: -moz-calc(100% - 101px);
+    height: -webkit-calc(100% - 101px);
+    /* height: -o-calc(100% - 89px); */
+    height: calc(100% - 101px);
+    left: 0;
+}
+#dragbar {
+    height: 12px;
+    margin:auto;
+    cursor: ns-resize;
+    position:relative;
+
+    .drag-center {
+        width: 100%;
+        text-align:center;
+        display:inline-block;
+        transform:scale(2,.4); /* W3C */
+        -webkit-transform:scale(2,.4); /* Safari and Chrome */
+        -moz-transform:scale(2,.4); /* Firefox */
+        -ms-transform:scale(2,.4); /* IE 9 */
+        -o-transform:scale(2,.4);
+        padding-bottom: 3px;
+        color:gray;
+    }
+
+    .drag-center,
+    .drag-click-left {
+        vertical-align: top;
+        line-height: 12px;
+    }
+
+    .drag-click-right,
+    .drag-click-left {
+        position: absolute;
+        top: 2px;
+        font-size: .75em;
+        color: $font-dark;
+
+        span,
+        i {
+            color: $font-dark;
+        }
+    }
+
+    .drag-click-right {
+        right:0;
+    }
+}
+#textarea_container {
+    height: -moz-calc(100% - 25px);
+    height: -webkit-calc(100% - 25px);
+    /* height: -o-calc(100% - 25px); */
+    height: calc(100% - 25px);
+    height: 100%;
+    width: 50%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    float:left;
+    position:relative;
+
+    #text-toolbar {
+        height: 25px;
+        padding:2px;
+        padding-left: 4px;
+        line-height: 24px;
+        font-size: .9em;
+        width: 100%;
+        border: none;
+        border-radius:0;
+        margin-right: 5px;
+        margin-left: 10px;
+        width: -moz-calc(100% - 15px);
+        width: -webkit-calc(100% - 15px);
+        /* width: -o-calc(100% - 15px); */
+        width: calc(100% - 15px);
+    }
+
+    #synergy-composer {
+        position:absolute;
+        top:25px;
+        height: -moz-calc(100% - 25px);
+        height: -webkit-calc(100% - 25px);
+        /* height: -o-calc(100% - 25px); */
+        height: calc(100% - 25px);
+        /* height:100%; */
+        border:0;
+        border-radius: 0;
+        resize: none;
+        margin-right: 5px;
+        margin-left: 10px;
+        width: -moz-calc(100% - 15px);
+        width: -webkit-calc(100% - 15px);
+        /* width: -o-calc(100% - 15px); */
+        width: calc(100% - 15px);
+        color:$font-dark;
+    }
+}
+#preview_container {
+    height: 100%;
+    width: 50%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        display:none;
+    }
+    @media screen and (min-width: 768px) {
+        width: 50%;
+        display:block;
+    }
+    float:left;
+
+    #markdown-preview {
+        color: $font-dark;
+        background: white;
+        border:0;
+        border-radius: 0;
+        overflow-y: scroll;
+        border-left: 1px solid #d6d6d6;
+        height: 100%;
+        margin-left: 5px;
+        @media screen and (max-width: 768px) {
+            margin-left: 10px;
+            margin-right:10px;
+        }
+        width: -moz-calc(100% - 15px);
+        width: -webkit-calc(100% - 15px);
+        /* width: -o-calc(100% - 15px); */
+        width: calc(100% - 15px);
+    }
+}
+#markdown-preview a {
+    color: #008eee;
+}
+#markdown-preview a:hover{
+    text-decoration: underline;
+}
+#markdown_container * {
+    color: $font-dark;
+}
+#composer_footer {
+    position: absolute;
+    bottom: -13px;;
+    width: 100%;
+    // text-align: center;
+    left:0;
+}
+.post-button {
+    width: 150px;
+}
+.splitter {
+    width: 3px;
+    height: 100%;
+    float:left;
+    background:red;
+}
+#preview-button {
+    float:right;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Making the composer responsive without relying on twitter bootstrap */
+/* and not interfering with bootstraps own responsive layout. */
+/* extra small < 768px */
+.syn-xs-visible {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+.syn-xs-hidden {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+/* Small devices between 768 and 992 px */
+.syn-sm-visible {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    @media screen and (min-width: 992px) {
+        display: none;
+    }
+}
+.syn-sm-hidden {
+    @media screen and (min-width: 768px) and (max-width: 992) {
+        display: none;
+    }
+}
+/* Medium devices between 992 and 1200 px */
+.syn-med-hidden {
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        display: none;
+    }
+}
+.syn-med-visible {
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+}
+
+/* Large displays abover 1200px */
+.syn-lg-hidden {
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+.syn-lg-visible {
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}

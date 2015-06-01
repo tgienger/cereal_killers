@@ -11,15 +11,37 @@ Schemas.NewsPosts = new SimpleSchema({
 		type: String,
 		min: 5
 	},
+	username: {
+		type: String,
+		autoValue: function() {
+			var user = Meteor.user();
+			if (this.isInsert) {
+				return user.username;
+			}
+		}
+	},
 	visible: {
 		type: Boolean,
-		autoValue: function(val) {
-			console.log(val);
+		autoValue: function() {
+			var field = this.field('visible');
 			if (this.isInsert) {
 				return true;
 			}
 			if (this.isUpdate) {
-				return val;
+				if (Roles.userIsInRole(this.userId, ['admin'])) {
+					return field.value;
+				}
+			}
+		}
+	},
+	private: {
+		type: Boolean,
+		autoValue: function() {
+			var field = this.field('private');
+			if (this.isInsert) {
+				return field.value;
+			} else if (this.isUpdate) {
+				return field.value;
 			}
 		}
 	},
@@ -38,7 +60,7 @@ Schemas.NewsPosts = new SimpleSchema({
 		autoValue: function() {
 			if (this.isInsert) {
 				return new Date;
-			} else if (this.isUpdate && this.isFromTrustedCode) {
+			} else if (this.isUpdate) {
 				return new Date;
 			} else {
 				this.unset();
@@ -57,38 +79,38 @@ Schemas.NewsPosts = new SimpleSchema({
 	      }
 		}
 	},
-	editHistory: {
-		type: [Object],
-		optional: true,
-		autoValue: function() {
-			var content = this.field('body');
-			if (content.isSet) {
-				if (this.isInsert) {
-					return [{
-						date: new Date,
-						content: content.value
-					}];
-				} else {
-					return {
-						$push: {
-							date: new Date,
-							content: content.value
-						}
-					};
-				}
-			} else {
-				this.unset();
-			}
-		}
-	},
-	'editHistory.$.date': {
-		type: Date,
-		optional: true
-	},
-	'editHistory.$.content': {
-		type: String,
-		optional: true
-	}
+//	editHistory: {
+//		type: [Object],
+//		optional: true,
+//		autoValue: function() {
+//			var content = this.field('body');
+//			if (content.isSet) {
+//				if (this.isInsert) {
+//					return [{
+//						date: new Date,
+//						content: content.value
+//					}];
+//				} else {
+//					return {
+//						$push: {
+//							date: new Date,
+//							content: content.value
+//						}
+//					};
+//				}
+//			} else {
+//				this.unset();
+//			}
+//		}
+//	},
+//	'editHistory.$.date': {
+//		type: Date,
+//		optional: true
+//	},
+//	'editHistory.$.content': {
+//		type: String,
+//		optional: true
+//	}
 });
 
 News.attachSchema(Schemas.NewsPosts);

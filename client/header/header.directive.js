@@ -1,4 +1,4 @@
-angular.module('app').directive('toolbar', function($rootScope) {
+angular.module('app').directive('toolbar',['$rootScope', function($rootScope) {
 
   return {
     restrict     : 'E',
@@ -78,4 +78,4 @@ angular.module('app').directive('toolbar', function($rootScope) {
 
     },
   };
-});
+}]);

@@ -354,50 +354,6 @@
       "hash": "3845cc71ad2dc1378b7d8cc4164a78359506dd40"
     },
     {
-      "path": "packages/angular_angular.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/angular_angular.js?9db7e8edebe9ba02ab378f03d9a52d49148583ee",
-      "sourceMap": "packages/angular_angular.js.map",
-      "sourceMapUrl": "/packages/9db7e8edebe9ba02ab378f03d9a52d49148583ee.map",
-      "size": 3360122,
-      "hash": "9db7e8edebe9ba02ab378f03d9a52d49148583ee"
-    },
-    {
-      "path": "packages/lai_collection-extensions.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/lai_collection-extensions.js?05f46dd1b13004b8570eac5e9f57da75db0a2e46",
-      "sourceMap": "packages/lai_collection-extensions.js.map",
-      "sourceMapUrl": "/packages/05f46dd1b13004b8570eac5e9f57da75db0a2e46.map",
-      "size": 12618,
-      "hash": "05f46dd1b13004b8570eac5e9f57da75db0a2e46"
-    },
-    {
-      "path": "packages/dburles_mongo-collection-instances.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/dburles_mongo-collection-instances.js?d5ad01381e3d2dc4928658b836a4e039b045e36f",
-      "sourceMap": "packages/dburles_mongo-collection-instances.js.map",
-      "sourceMapUrl": "/packages/d5ad01381e3d2dc4928658b836a4e039b045e36f.map",
-      "size": 5444,
-      "hash": "d5ad01381e3d2dc4928658b836a4e039b045e36f"
-    },
-    {
-      "path": "packages/urigo_angular.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/urigo_angular.js?b2e6ad3b285f9f5b317ee02fca5e72084f502ac9",
-      "sourceMap": "packages/urigo_angular.js.map",
-      "sourceMapUrl": "/packages/b2e6ad3b285f9f5b317ee02fca5e72084f502ac9.map",
-      "size": 239266,
-      "hash": "b2e6ad3b285f9f5b317ee02fca5e72084f502ac9"
-    },
-    {
       "path": "packages/service-configuration.js",
       "where": "client",
       "type": "js",
@@ -508,6 +464,17 @@
       "hash": "9da5b987033dec491ec1c5921006c3ca18f310c4"
     },
     {
+      "path": "packages/angular_angular.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/angular_angular.js?9db7e8edebe9ba02ab378f03d9a52d49148583ee",
+      "sourceMap": "packages/angular_angular.js.map",
+      "sourceMapUrl": "/packages/9db7e8edebe9ba02ab378f03d9a52d49148583ee.map",
+      "size": 3360122,
+      "hash": "9db7e8edebe9ba02ab378f03d9a52d49148583ee"
+    },
+    {
       "path": "packages/angularui_angular-ui-router.js",
       "where": "client",
       "type": "js",
@@ -561,6 +528,61 @@
       "sourceMapUrl": "/packages/fdc7f0975dd1b3446ea4afd5f820cb1242a521af.map",
       "size": 71624,
       "hash": "fdc7f0975dd1b3446ea4afd5f820cb1242a521af"
+    },
+    {
+      "path": "packages/lai_collection-extensions.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/lai_collection-extensions.js?05f46dd1b13004b8570eac5e9f57da75db0a2e46",
+      "sourceMap": "packages/lai_collection-extensions.js.map",
+      "sourceMapUrl": "/packages/05f46dd1b13004b8570eac5e9f57da75db0a2e46.map",
+      "size": 12618,
+      "hash": "05f46dd1b13004b8570eac5e9f57da75db0a2e46"
+    },
+    {
+      "path": "packages/dburles_mongo-collection-instances.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/dburles_mongo-collection-instances.js?d5ad01381e3d2dc4928658b836a4e039b045e36f",
+      "sourceMap": "packages/dburles_mongo-collection-instances.js.map",
+      "sourceMapUrl": "/packages/d5ad01381e3d2dc4928658b836a4e039b045e36f.map",
+      "size": 5444,
+      "hash": "d5ad01381e3d2dc4928658b836a4e039b045e36f"
+    },
+    {
+      "path": "packages/urigo_angular.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/urigo_angular.js?b2e6ad3b285f9f5b317ee02fca5e72084f502ac9",
+      "sourceMap": "packages/urigo_angular.js.map",
+      "sourceMapUrl": "/packages/b2e6ad3b285f9f5b317ee02fca5e72084f502ac9.map",
+      "size": 239266,
+      "hash": "b2e6ad3b285f9f5b317ee02fca5e72084f502ac9"
+    },
+    {
+      "path": "packages/superchris_angular.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/superchris_angular.js?9f298394931c605b333bd231de3942e041687764",
+      "sourceMap": "packages/superchris_angular.js.map",
+      "sourceMapUrl": "/packages/9f298394931c605b333bd231de3942e041687764.map",
+      "size": 3272571,
+      "hash": "9f298394931c605b333bd231de3942e041687764"
+    },
+    {
+      "path": "packages/superchris_angular-ui-bootstrap.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/superchris_angular-ui-bootstrap.js?62cd439b25cfcdc8fa558e227cc381343251ecf3",
+      "sourceMap": "packages/superchris_angular-ui-bootstrap.js.map",
+      "sourceMapUrl": "/packages/62cd439b25cfcdc8fa558e227cc381343251ecf3.map",
+      "size": 531128,
+      "hash": "62cd439b25cfcdc8fa558e227cc381343251ecf3"
     },
     {
       "path": "packages/webapp.js",
@@ -667,9 +689,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.ng.html.js?acf307e646354850e48f80beef6d9e5adb414f20",
-      "size": 1053,
-      "hash": "acf307e646354850e48f80beef6d9e5adb414f20"
+      "url": "/client/news/news.controller.ng.html.js?06b9895332e01383a24360b6d489d201dd1efd6d",
+      "size": 2173,
+      "hash": "06b9895332e01383a24360b6d489d201dd1efd6d"
+    },
+    {
+      "path": "app/client/synergyComposer/synergyComposer.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/synergyComposer/synergyComposer.ng.html.js?a0abcb19984696963fb8631bbe53e0f7701f2774",
+      "size": 3160,
+      "hash": "a0abcb19984696963fb8631bbe53e0f7701f2774"
     },
     {
       "path": "app/client/template.index.js",
@@ -685,27 +716,36 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/lib/app.js?da42e8968b7744ac0a0a5e5236ee06486f269351",
-      "size": 80,
-      "hash": "da42e8968b7744ac0a0a5e5236ee06486f269351"
+      "url": "/client/lib/app.js?fdcfb1e19234428de52e6331244b8b781c15b98c",
+      "size": 172,
+      "hash": "fdcfb1e19234428de52e6331244b8b781c15b98c"
+    },
+    {
+      "path": "app/client/bbcode/bbcode.filter.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/bbcode/bbcode.filter.js?5bdc359768a3d9464f5e4e3ef69f08a2c52eec25",
+      "size": 37011,
+      "hash": "5bdc359768a3d9464f5e4e3ef69f08a2c52eec25"
     },
     {
       "path": "app/client/header/header.directive.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/header/header.directive.js?07ece93ea76df9b8fc7ec1bcf64466c77a33753a",
-      "size": 2417,
-      "hash": "07ece93ea76df9b8fc7ec1bcf64466c77a33753a"
+      "url": "/client/header/header.directive.js?5f619c4f1a6697d5fdc6d1d8e43a9528b22363da",
+      "size": 2432,
+      "hash": "5f619c4f1a6697d5fdc6d1d8e43a9528b22363da"
     },
     {
       "path": "app/client/home/home.controller.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/home/home.controller.js?d22a8989d066dc636044d8bab218e6560ba40bf7",
-      "size": 265,
-      "hash": "d22a8989d066dc636044d8bab218e6560ba40bf7"
+      "url": "/client/home/home.controller.js?db24dd3d51cad0f40c673ab3307fb3ab08b910ed",
+      "size": 367,
+      "hash": "db24dd3d51cad0f40c673ab3307fb3ab08b910ed"
     },
     {
       "path": "app/client/home/home.js",
@@ -717,13 +757,22 @@
       "hash": "62470a1eee9b386d9f2c3532f0aeb6c61b3f0ea9"
     },
     {
+      "path": "app/client/markdown/markdown.directive.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/markdown/markdown.directive.js?a19d998e5d4de803b321250dbda759eca9a521dd",
+      "size": 616,
+      "hash": "a19d998e5d4de803b321250dbda759eca9a521dd"
+    },
+    {
       "path": "app/client/news/news.controller.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.js?ec0949f2e330ca45c4a19bd06ba859b5f3639fc1",
-      "size": 1474,
-      "hash": "ec0949f2e330ca45c4a19bd06ba859b5f3639fc1"
+      "url": "/client/news/news.controller.js?3429f68fc93b729701a405ab11a17d99214525de",
+      "size": 2202,
+      "hash": "3429f68fc93b729701a405ab11a17d99214525de"
     },
     {
       "path": "app/client/news/news.directive.js",
@@ -744,6 +793,15 @@
       "hash": "db5af936aeca1ed8f7039b287f779620a43aa4f2"
     },
     {
+      "path": "app/client/synergyComposer/synergyComposer.directive.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/synergyComposer/synergyComposer.directive.js?6613148a2ea4380a6fa9d8deb290f14a23799d18",
+      "size": 34412,
+      "hash": "6613148a2ea4380a6fa9d8deb290f14a23799d18"
+    },
+    {
       "path": "app/client/routes.js",
       "where": "client",
       "type": "js",
@@ -757,20 +815,20 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/model/news.js?fb9ebbf5772a4c499260aef93b8150fe764c8afb",
-      "size": 392,
-      "hash": "fb9ebbf5772a4c499260aef93b8150fe764c8afb"
+      "url": "/model/news.js?556e7422af996c7bc18aa714c7e593b54005eda1",
+      "size": 434,
+      "hash": "556e7422af996c7bc18aa714c7e593b54005eda1"
     },
     {
-      "path": "2c2a8f5773f6742888f6e5cd58e5320ac3f1302a.css",
+      "path": "392223f78a2dda4e453790c5b7702bd52bde367c.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/2c2a8f5773f6742888f6e5cd58e5320ac3f1302a.css",
-      "sourceMap": "2c2a8f5773f6742888f6e5cd58e5320ac3f1302a.css.map",
-      "sourceMapUrl": "/2c2a8f5773f6742888f6e5cd58e5320ac3f1302a.map",
-      "size": 25220,
-      "hash": "2c2a8f5773f6742888f6e5cd58e5320ac3f1302a"
+      "url": "/392223f78a2dda4e453790c5b7702bd52bde367c.css",
+      "sourceMap": "392223f78a2dda4e453790c5b7702bd52bde367c.css.map",
+      "sourceMapUrl": "/392223f78a2dda4e453790c5b7702bd52bde367c.map",
+      "size": 57723,
+      "hash": "392223f78a2dda4e453790c5b7702bd52bde367c"
     },
     {
       "path": "head.html",

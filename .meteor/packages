@@ -7,7 +7,6 @@
 meteor-platform
 accounts-base
 accounts-password
-urigo:angular
 accounts-ui
 alanning:roles
 angularjs:angular-animate
@@ -15,3 +14,5 @@ angularui:angular-ui-router
 markdown
 fourseven:scss
 aldeed:collection2
+urigo:angular@=0.8.10
+superchris:angular-ui-bootstrap
