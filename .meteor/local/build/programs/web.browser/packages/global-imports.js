@@ -3,6 +3,7 @@
 Accounts = Package['accounts-base'].Accounts;
 Roles = Package['alanning:roles'].Roles;
 Showdown = Package.markdown.Showdown;
+Materialize = Package['materialize:materialize'].Materialize;
 Meteor = Package.meteor.Meteor;
 WebApp = Package.webapp.WebApp;
 Log = Package.logging.Log;

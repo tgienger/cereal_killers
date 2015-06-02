@@ -49,8 +49,10 @@ Schemas.NewsPosts = new SimpleSchema({
 		type: Date,
 		autoValue: function() {
 			if (this.isInsert) {
+				console.log('NEW INSERT');
 				return new Date;
 			} else {
+				console.log('UNSET');
 				this.unset();
 			}
 		}

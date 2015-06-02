@@ -15,16 +15,25 @@
 
         <!-- Top bar: Subject box and topic select box -->
         <div class="composer_info">
-            <input id="composer_subject" type="text" ng-model="synergyController.newPost.subject" placeholder="subject: ">
-            <div id="title">Creating in:
-
-              <!-- <input type="text" ng-model="synergyController.topic"> -->
-              <select style="width: 80%;float:right"
-                      class="browser-default"
-                      ng-model="synergyController.newPost.topic"
-                      ng-options="topic.name for topic in synergyController.topics"
-                      id="topicSelect">
-              </select>
+            <div class="input-field">
+                <input type="text" id="composer_subject" ng-model="synergyController.newPost.subject">
+                <label for="composer_subject">Subject</label>
+            </div>
+<!--            <input id="composer_subject" type="text" ng-model="synergyController.newPost.subject" placeholder="subject: ">-->
+            <div id="title">
+                
+                <div ng-if="synergyController.topics.length > 0">
+                    Creating in:
+                    
+                    <!-- <input type="text" ng-model="synergyController.topic"> -->
+                    <select style="width: 80%;float:right"
+                        class="browser-default"
+                        ng-model="synergyController.newPost.topic"
+                        ng-options="topic.name for topic in synergyController.topics"
+                        id="topicSelect">
+                    </select>
+                    
+                </div>
 
 
               <i ng-click="synergyController.close()" class="mdi-navigation-arrow-drop-down pull-right pointer"></i></div>
@@ -35,23 +44,23 @@
 
 
         <!-- Container for the markdown you are writing and previewing -->
-        <div id="markdown_container" class="white">
+        <div id="markdown_container" class="">
             <!-- Input text area for post creation -->
             <div class="card" ng-hide="synergyController.previewToggle" id="textarea_container">
                 <div id="text-toolbar" class="well well-sm">
-                    <i id="toolbar-bold" class="pointer fa mdi-editor-format-bold"></i>
+                    <i id="toolbar-bold" class="pointer fa fa-bold"></i>
                     &nbsp; &nbsp;
-                    <i id="toolbar-italic" class="pointer fa mdi-editor-format-italic"></i>
+                    <i id="toolbar-italic" class="pointer fa fa-italic"></i>
                     &nbsp; &nbsp;
-                    <span class="pointer" id="toolbar-code"><i id="toolbar-code" class="fa mdi-hardware-keyboard-arrow-left"></i>/<i id="toolbar-code" class="mdi-hardware-keyboard-arrow-right"></i></span>
+                    <span class="pointer" id="toolbar-code"><i id="toolbar-code" class="fa fa-code"></i><i id="toolbar-code" class="mdi-hardware-keyboard-arrow-right"></i></span>
                     &nbsp; &nbsp;
-                    <i id="toolbar-link" class="pointer fa mdi-editor-insert-link"></i>
+                    <i id="toolbar-link" class="pointer fa fa-external-link"></i>
                     &nbsp; &nbsp;
-                    <i id="toolbar-quote" class="pointer fa mdi-editor-format-quote"></i>
+                    <i id="toolbar-quote" class="pointer fa fa-quote-left"></i>
                     &nbsp; &nbsp;
-                    <i id="toolbar-ul" class="pointer fa mdi-navigation-menu"></i>
+                    <i id="toolbar-ul" class="pointer fa fa-list-ul"></i>
                     &nbsp; &nbsp;
-                    <i id="toolbar-ol" class="pointer fa mdi-editor-format-list-numbered"></i>
+                    <i id="toolbar-ol" class="pointer fa fa-list-ol"></i>
                 </div>
                 <textarea class="well" name="" id="synergy-composer" ng-model="synergyController.newPost.markdown"></textarea>
             </div>

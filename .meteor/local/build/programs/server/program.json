@@ -280,6 +280,21 @@
       "path": "packages/superchris_angular-ui-bootstrap.js"
     },
     {
+      "sourceMap": "packages/fortawesome_fontawesome.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/fortawesome_fontawesome.js"
+    },
+    {
+      "sourceMap": "packages/kevohagan_sweetalert.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/kevohagan_sweetalert.js"
+    },
+    {
+      "sourceMap": "packages/materialize_materialize.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/materialize_materialize.js"
+    },
+    {
       "sourceMap": "packages/session.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/session.js"

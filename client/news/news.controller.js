@@ -33,19 +33,25 @@ angular.module('app').controller('NewsCtrl', [
 			});
 		});
 		
-		console.log($scope.posts);
 //		Save a new news post
 		$scope.save = function(news) {
-			if (!news.title || !news.body) {
+			var newNews = {
+				title: news.subject,
+				body: news.markdown,
+				private: true
+			};
+			if (!newNews.title || !newNews.body) {
 //				TODO: Let the users know what they're missing. Maybe flashing the input or textarea
-				console.log('not saved');
+				sweetAlert("Oops..", "You've forgotten something", "error");
 				return;
 			}
 			
 			if (!news.private) {
 				news.private = false;
 			}
-			$scope.posts.save(news);
+			
+//			TODO: reset composer text and close it when saved.
+			$scope.posts.save(newNews);
 			this.news = {};
 		};
 		
@@ -70,14 +76,8 @@ angular.module('app').controller('NewsCtrl', [
 		};
 		
 		$scope.openCreate = function() {
-			$scope.createPost = !$scope.createPost;
-			if ($scope.createPost) {
-				$scope.synergyComposer.open();
-			} else {
-				$scope.synergyComposer.close();
-			}
+			$scope.synergyComposer.open();
 			$scope.reset();
-			
 		};
 		
 //		check if user is admin

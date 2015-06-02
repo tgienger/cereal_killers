@@ -117,6 +117,14 @@ angular.module('synergy.composer', [])
                 }
                 return setSelected(startPos, endPos, selectedText);
             };
+            
+            
+            if (typeof String.prototype.startsWith != 'function') {
+                // see below for better implementation!
+                String.prototype.startsWith = function (str){
+                    return this.indexOf(str) === 0;
+                };
+            }
 
 
 
@@ -151,26 +159,33 @@ angular.module('synergy.composer', [])
                     reg = new RegExp(selected.text, 'g');
 
                 if (url) {
-                    alertify.prompt('Enter URL', function(e,s){
-                        if (e) {
-                            if (s.startsWith('http://') || s.startsWith('https://')) {
-                                http = s;
-                            } else {
-                                http = 'http://' + s;
-                            }
-                            mod = mod.replace(reg, function(match) {
-                                position++;
-                                return (position === 2) ? http : match;
-                            });
-                            setText(el.value.slice(0, selected.start) + mod + el.value.slice(selected.end));
-                            selectIt();
-                            (cb2 || angular.noop)();
-                            (cb || angular.noop)();
-                        } else {
-
+                    sweetAlert({
+                        title: '',
+                        text: 'Enter Your Link URL',
+                        type: 'input',
+                        showCancelButton: true,
+                        animation: 'slide-from-top'
+                    }, function(inputValue){
+                        if (inputValue === '') {
+                            swal.showInputError('No URL Entered');
+                            return false;
                         }
-                        url = false;
-                    }, 'http://');
+                        if (inputValue === false) {
+                            return false;
+                        }
+                        
+                        if (inputValue.startsWith('http://') || inputValue.startsWith('https://')) {
+                            http = inputValue;
+                        } else {
+                            http = 'http://' + inputValue;
+                        }
+                        mod = mod.replace(reg, function(match) {
+                            position++;
+                            return (position ===2) ? http: match;
+                        });
+                        setText(el.value.slice(0, selected.start) + mod + el.value.slice(selected.end));
+                        selectIt();
+                    });
                 } else {
                     mod = mod.replace(reg, selected.text);
                     setText(el.value.slice(0, selected.start) + mod + el.value.slice(selected.end));
