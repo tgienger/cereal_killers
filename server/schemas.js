@@ -125,7 +125,6 @@ Schemas.chatPosts = new SimpleSchema({
 	 username: {
 		type: String,
 		autoValue: function() {
-			console.log(this);
 			var user = Meteor.user();
 			if (this.isInsert) {
 				return user.username;

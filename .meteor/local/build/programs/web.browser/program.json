@@ -713,9 +713,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/home/home.controller.ng.html.js?c71545f3eda287c93bd27d500dbf14500c70e7a2",
-      "size": 480,
-      "hash": "c71545f3eda287c93bd27d500dbf14500c70e7a2"
+      "url": "/client/home/home.controller.ng.html.js?5769dff564a42d4108bcc0cfdb19bd736f348522",
+      "size": 470,
+      "hash": "5769dff564a42d4108bcc0cfdb19bd736f348522"
     },
     {
       "path": "app/client/news/template.editorTemplate.js",
