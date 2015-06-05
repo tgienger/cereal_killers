@@ -470,7 +470,7 @@ angular.module('synergy.composer', [])
         };
 
     }])
-    .directive('synergyComposer', function ($timeout) {
+    .directive('synergyComposer', ['$timeout', function ($timeout) {
         return {
             // Public
             templateUrl: 'client/synergyComposer/synergyComposer.ng.html',
@@ -919,4 +919,4 @@ angular.module('synergy.composer', [])
 
             },
         };
-    });
+    }]);
