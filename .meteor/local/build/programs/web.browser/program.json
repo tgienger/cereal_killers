@@ -686,9 +686,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/chat/chat.controller.ng.html.js?96f1de45bf1751dd665623f8f709605d4daa3d15",
+      "url": "/client/chat/chat.controller.ng.html.js?2bc08b52635ff98ca701b131f3c22a34b76ee2dc",
       "size": 1135,
-      "hash": "96f1de45bf1751dd665623f8f709605d4daa3d15"
+      "hash": "2bc08b52635ff98ca701b131f3c22a34b76ee2dc"
     },
     {
       "path": "app/client/header/template.adminLink.js",
@@ -731,27 +731,27 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.ng.html.js?5d5a6ad6217795c341efd9b429bb63388e290c93",
-      "size": 2589,
-      "hash": "5d5a6ad6217795c341efd9b429bb63388e290c93"
+      "url": "/client/news/news.controller.ng.html.js?563b3807d64ee5b8af51a1a77b7007683633b71b",
+      "size": 2605,
+      "hash": "563b3807d64ee5b8af51a1a77b7007683633b71b"
     },
     {
       "path": "app/client/synergyComposer/synergyComposer.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/synergyComposer/synergyComposer.ng.html.js?7d9cd4d43d5f455dea525fe97940121f4947ed76",
-      "size": 3227,
-      "hash": "7d9cd4d43d5f455dea525fe97940121f4947ed76"
+      "url": "/client/synergyComposer/synergyComposer.ng.html.js?a255ff13a1419976670c742f48f935dc1ca957c4",
+      "size": 3223,
+      "hash": "a255ff13a1419976670c742f48f935dc1ca957c4"
     },
     {
       "path": "app/client/template.index.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/template.index.js?e4608373b8bbc9bda43a60daf79d75f56b7806dc",
-      "size": 406,
-      "hash": "e4608373b8bbc9bda43a60daf79d75f56b7806dc"
+      "url": "/client/template.index.js?d87adb1f8f509e175d42407614f5e9699567052d",
+      "size": 470,
+      "hash": "d87adb1f8f509e175d42407614f5e9699567052d"
     },
     {
       "path": "app/client/lib/app.js",
@@ -875,9 +875,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/synergyComposer/synergyComposer.directive.js?ae835502699a4e6dfc8a118f40873385fe6a87d9",
-      "size": 35023,
-      "hash": "ae835502699a4e6dfc8a118f40873385fe6a87d9"
+      "url": "/client/synergyComposer/synergyComposer.directive.js?56409d4f53c03e55fb6705c6ee338e280f2ef5ec",
+      "size": 35061,
+      "hash": "56409d4f53c03e55fb6705c6ee338e280f2ef5ec"
     },
     {
       "path": "app/client/routes.js",
@@ -902,20 +902,20 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/model/news.js?33df3b5d6c96c0686aa0691dfdf22570b881cb3c",
-      "size": 495,
-      "hash": "33df3b5d6c96c0686aa0691dfdf22570b881cb3c"
+      "url": "/model/news.js?b9f174e67daa600badf3f4cc69a40a48ffc04287",
+      "size": 539,
+      "hash": "b9f174e67daa600badf3f4cc69a40a48ffc04287"
     },
     {
-      "path": "79f6d63c6b6254ddb72e59d7fc6bd2a6a23310a3.css",
+      "path": "db9a8544aa98707e44e73c4ac304a939381eaa3c.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/79f6d63c6b6254ddb72e59d7fc6bd2a6a23310a3.css",
-      "sourceMap": "79f6d63c6b6254ddb72e59d7fc6bd2a6a23310a3.css.map",
-      "sourceMapUrl": "/79f6d63c6b6254ddb72e59d7fc6bd2a6a23310a3.map",
-      "size": 287489,
-      "hash": "79f6d63c6b6254ddb72e59d7fc6bd2a6a23310a3"
+      "url": "/db9a8544aa98707e44e73c4ac304a939381eaa3c.css",
+      "sourceMap": "db9a8544aa98707e44e73c4ac304a939381eaa3c.css.map",
+      "sourceMapUrl": "/db9a8544aa98707e44e73c4ac304a939381eaa3c.map",
+      "size": 288383,
+      "hash": "db9a8544aa98707e44e73c4ac304a939381eaa3c"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",
@@ -1157,8 +1157,8 @@
       "type": "asset",
       "cacheable": false,
       "url": "/images/cereal_killers_background.fw.png",
-      "size": 79251,
-      "hash": "9b29879fd9b29609f1b959d3a512f5490d8f21f0"
+      "size": 77208,
+      "hash": "9e0d72ccdb4af91264ce7f6132ea89208b7aaede"
     },
     {
       "path": "head.html",

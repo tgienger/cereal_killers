@@ -871,14 +871,15 @@ angular.module('synergy.composer', [])
                         bottom: '0px',
                       });
 
+                       
                       if (scope.composerController.newPost.subject === '') {
                         $timeout(function() {
                           angular.element(subject).focus();
-                        }, 400);
+                        }, 800);
                       } else {
                         $timeout(function() {
                           angular.element(el).focus();
-                        }, 400);
+                        }, 800);
                       }
 
                     } else {

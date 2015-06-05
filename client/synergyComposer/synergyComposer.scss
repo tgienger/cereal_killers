@@ -221,13 +221,15 @@ $post-border-color: #454545;
 }
 #composer_footer {
     position: absolute;
-    bottom: -13px;;
+    bottom: 3px;;
     width: 100%;
     // text-align: center;
     left:0;
 }
 .post-button {
     width: 150px;
+    height: 25px;
+    line-height: 25px;
 }
 .splitter {
     width: 3px;
