@@ -14,6 +14,8 @@ News.allow({
 		return true;
 	},
 	remove: function(userId, news) {
-		return userId && news.owner === userId;
+		if (userId !== news.owner || !Roles.userIsInRole(userId, ['admin']))
+			return false;
+		return true;
 	}
 });

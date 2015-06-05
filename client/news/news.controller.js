@@ -11,7 +11,7 @@ angular.module('app').controller('NewsCtrl', [
 		
 		// scope variables
 		$scope.page = 1;
-		$scope.perPage = 25;
+		$scope.perPage = $scope.limit || 20;
 		$scope.sort = { latestDate: -1 };
 		$scope.createPost = false;
 		
@@ -52,7 +52,8 @@ angular.module('app').controller('NewsCtrl', [
 			
 //			TODO: reset composer text and close it when saved.
 			$scope.posts.save(newNews);
-			this.news = {};
+			$scope.synergyComposer.reset().close();
+//			this.news = {};
 		};
 		
 //		delete post
@@ -65,19 +66,15 @@ angular.module('app').controller('NewsCtrl', [
 			$scope.posts.save(news);
 		};
 		
-//		reset
-		$scope.reset = function() {
-			this.news = {};
-		};
+		
 		
 //		close inputbox
 		$scope.closeInput = function() {
-			angular.element('.inputForm').addClass('closed');
+			$scope.synergyComposer.reset().close();
 		};
 		
 		$scope.openCreate = function() {
 			$scope.synergyComposer.open();
-			$scope.reset();
 		};
 		
 //		check if user is admin

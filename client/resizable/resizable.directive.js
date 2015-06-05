@@ -13,7 +13,7 @@
             link: function (scope, element, attrs) {
 
                 var currentElement = angular.element(element[0].parentElement),
-                    maxHeight = viewport - currentElement.height(),
+                    maxHeight = viewport - currentElement.height() - 60,
                     startHeight = currentElement.height();
 
 

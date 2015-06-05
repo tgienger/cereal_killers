@@ -1,11 +1,11 @@
-<ul id="mainStream" class="noList">
-	<h5 class="newsBlock">CK News</h5>
+<ul id="newsStream" class="noList">
+	<h5 class="newsBlock white-text chatTitle">CK News</h5>
 		
 <!--	create new news-->
 	<div class="createPost">
-		<button ng-click="openCreate()" ng-show="userIsAdmin()"><span>Create New</span></button>
+		<button ng-click="openCreate()" ng-show="userIsAdmin()" class="waves-effect btn grey"><span>Create New</span></button>
 	</div>
-	<div class="inputForm" ng-show="createPost">
+<!--	<div class="inputForm" ng-show="createPost">
 		<form novalidate>
 			<input type="text" class="editTitle" placeholder="Title" ng-model="news.title">
 				<input type="checkbox" name="privateCheck1" id="privateCheck1" ng-model="news.private">
@@ -13,7 +13,7 @@
 			<textarea class="editBody" name="postNews" id="postNews" placeholder="body ..." ng-model="news.body"></textarea>
 			<input type="submit" class="newsSubmit" ng-click="save(news)">
 		</form>
-	</div>
+	</div>-->
 		
 	<li ng-repeat="post in posts | orderBy : 'date' : 'reversed'">
 		<div class="newsPost">
@@ -27,11 +27,19 @@
 						<label class="" for="privateCheck_{{post._id}}" ng-model="post.private">private</label>
 					</div>
 					
-<!--					delete news post-->
+<!--					hide/show news post-->
 					<div class="pull-right deletePost" ng-show="userIsAdmin()">
-						<button name="deletePost" id="deletePost_{{post._id}}" ng-click="deletePost(post)">
+						<div class="switch">
+							<label>
+								Hidden
+								<input type="checkbox" ng-model="post.visible">
+								<span class="lever"></span>
+								Visible
+							</label>
+						</div>
+<!--						<button name="deletePost" id="deletePost_{{post._id}}" ng-click="deletePost(post)">
 							<span ng-show="post.visible">Hide</span><span ng-show="!post.visible">Show</span></button>
-						<label for="deletePost_{{post._id}}" ng-show="!post.visible" style="color: red;">HIDDEN</label>
+						<label for="deletePost_{{post._id}}" ng-show="!post.visible" style="color: red;">HIDDEN</label>-->
 					</div>
 			</div>
 			<div class="newsBody" markdown="post.body | bbcode"></div>
@@ -39,4 +47,4 @@
 	</li>
 </ul>
 
-<synergy-composer ng-show="pageReady" id="synergyComposer" synergy-controller="synergyComposer" synergy-submit="save" topics="topics" exit-composer="closeComposer()"></synergy-composer>
+<synergy-composer ng-show="pageReady" id="synergyComposer" synergy-controller="synergyComposer" synergy-submit="save" topics="topics" exit-composer="closeInput()"></synergy-composer>

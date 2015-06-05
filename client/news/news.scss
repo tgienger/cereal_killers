@@ -1,4 +1,4 @@
-#mainStream {
+#newsStream {
 	margin: auto;
 	
 	textarea {
@@ -6,7 +6,7 @@
 		border: 1px solid red;
 		resize: none;
 		overflow: auto;
-		width: 100%;
+//		width: 100%;
 		color:black;
 	}
 	.editTitle {
@@ -15,11 +15,6 @@
 		color: black;
 	}
 	.newsBlock {
-		color: white;
-		margin: auto;
-		margin-bottom: 10px;
-	//	text-align: center;
-		margin-top: 0px;
 	}
 	
 	.newsBody {
@@ -51,8 +46,8 @@
 		padding: 3px;
 		border-top-left-radius: 3px;
 		border-top-right-radius: 3px;
-//		background: black;
-		background: url('http://www.kcfaa.org/wp-content/uploads/2011/07/red-repeat-background.png');
+		background: rgba(33, 33, 33, 1);
+//		background: url('http://www.kcfaa.org/wp-content/uploads/2011/07/red-repeat-background.png');
 	}
 	.postCreator {
 		margin-left: 15px;
@@ -72,6 +67,7 @@
 		border-radius: 3px;
 		margin-bottom: 10px;
 		overflow: hidden;
+		background: rgba($color: black, $alpha: 0.0);
 	}
 	
 	.newsDate {

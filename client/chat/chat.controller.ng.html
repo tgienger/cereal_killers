@@ -1,0 +1,34 @@
+<h5 class="chatTitle white-text chat_bottom center-align">Chat</h5>
+<div id="chat_box" class="chatbox">
+	
+	
+	<ul id="chat_stream" class="noList chatStream">
+			
+			
+		<div class="chatList">
+			<li ng-repeat="post in chatMessages | orderBy : 'date'">
+				<p id="chat_message_{{post._id}}" class="white-text chatSentence">
+					<span class="msg-title">{{post.username}} - 
+						<small>{{post.date | date:'short' }}</small> 
+						<i class="mdi-content-reply pull-right pointer" ng-click="replyTo(post)"></i>
+					</span>
+					<br> {{post.message}}</p>
+			</li>
+		</div>
+		
+	</ul>
+	
+	
+</div>
+
+<div class="row chat-input-container">
+
+	<div class="input-field col s12 chat-input">
+		<form ng-submit="sendChat(chat)">
+			<input type="text" id="chatInput" class="validate white-text" ng-model="chat.message">
+				<span class="badge" ng-class="chat.message.length > 150 ? 'chat-error': 'chat-error'">{{chat.message.length}}/150</span>
+			<label for="chatInput">write a comment...</label>
+		</form>
+	</div>
+
+</div>	

@@ -25,7 +25,11 @@ Schemas.NewsPosts = new SimpleSchema({
 		autoValue: function() {
 			var field = this.field('visible');
 			if (this.isInsert) {
-				return true;
+				if (field.isSet) {
+					return field.value;
+				} else {
+					return true;
+				}
 			}
 			if (this.isUpdate) {
 				if (Roles.userIsInRole(this.userId, ['admin'])) {
@@ -49,10 +53,8 @@ Schemas.NewsPosts = new SimpleSchema({
 		type: Date,
 		autoValue: function() {
 			if (this.isInsert) {
-				console.log('NEW INSERT');
 				return new Date;
 			} else {
-				console.log('UNSET');
 				this.unset();
 			}
 		}
@@ -81,38 +83,71 @@ Schemas.NewsPosts = new SimpleSchema({
 	      }
 		}
 	},
-//	editHistory: {
-//		type: [Object],
-//		optional: true,
-//		autoValue: function() {
-//			var content = this.field('body');
-//			if (content.isSet) {
-//				if (this.isInsert) {
-//					return [{
-//						date: new Date,
-//						content: content.value
-//					}];
-//				} else {
-//					return {
-//						$push: {
-//							date: new Date,
-//							content: content.value
-//						}
-//					};
-//				}
-//			} else {
-//				this.unset();
-//			}
-//		}
-//	},
-//	'editHistory.$.date': {
-//		type: Date,
-//		optional: true
-//	},
-//	'editHistory.$.content': {
-//		type: String,
-//		optional: true
-//	}
+	editHistory: {
+		type: [Object],
+		optional: true,
+		autoValue: function() {
+			var content = this.field('body');
+			if (content.isSet) {
+				if (this.isInsert) {
+					return [{
+						date: new Date,
+						content: content.value
+					}];
+				} else {
+					return {
+						$push: {
+							date: new Date,
+							content: content.value
+						}
+					};
+				}
+			} else {
+				this.unset();
+			}
+		}
+	},
+	'editHistory.$.date': {
+		type: Date,
+		optional: true
+	},
+	'editHistory.$.content': {
+		type: String,
+		optional: true
+	}
 });
 
 News.attachSchema(Schemas.NewsPosts);
+
+
+//Chat
+Schemas.chatPosts = new SimpleSchema({
+	 username: {
+		type: String,
+		autoValue: function() {
+			console.log(this);
+			var user = Meteor.user();
+			if (this.isInsert) {
+				return user.username;
+			}
+		}
+	},
+	date: {
+		type: Date,
+		autoValue: function() {
+			if (this.isInsert) {
+				return new Date;
+			}
+			else {
+				this.unset();
+			}
+		}
+	},
+	message: {
+		type: String,
+		max: 150
+	}
+	
+});
+
+Chat.attachSchema(Schemas.chatPosts);

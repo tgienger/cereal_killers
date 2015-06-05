@@ -682,6 +682,15 @@
       "hash": "7540a475a234b935b8fd7e332839d687ac9ff931"
     },
     {
+      "path": "app/client/chat/chat.controller.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/chat/chat.controller.ng.html.js?96f1de45bf1751dd665623f8f709605d4daa3d15",
+      "size": 1135,
+      "hash": "96f1de45bf1751dd665623f8f709605d4daa3d15"
+    },
+    {
       "path": "app/client/header/template.adminLink.js",
       "where": "client",
       "type": "js",
@@ -704,9 +713,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/home/home.controller.ng.html.js?004d386f406db51657b427eed4c66074c2dc73d3",
-      "size": 358,
-      "hash": "004d386f406db51657b427eed4c66074c2dc73d3"
+      "url": "/client/home/home.controller.ng.html.js?c71545f3eda287c93bd27d500dbf14500c70e7a2",
+      "size": 480,
+      "hash": "c71545f3eda287c93bd27d500dbf14500c70e7a2"
     },
     {
       "path": "app/client/news/template.editorTemplate.js",
@@ -722,27 +731,27 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.ng.html.js?8e0479b78006eedb32d4ad56dbed3baf16396567",
-      "size": 2260,
-      "hash": "8e0479b78006eedb32d4ad56dbed3baf16396567"
+      "url": "/client/news/news.controller.ng.html.js?5d5a6ad6217795c341efd9b429bb63388e290c93",
+      "size": 2589,
+      "hash": "5d5a6ad6217795c341efd9b429bb63388e290c93"
     },
     {
       "path": "app/client/synergyComposer/synergyComposer.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/synergyComposer/synergyComposer.ng.html.js?d5a44a88c85619bbef18f1e588d9d1cb7038de79",
-      "size": 3308,
-      "hash": "d5a44a88c85619bbef18f1e588d9d1cb7038de79"
+      "url": "/client/synergyComposer/synergyComposer.ng.html.js?7d9cd4d43d5f455dea525fe97940121f4947ed76",
+      "size": 3227,
+      "hash": "7d9cd4d43d5f455dea525fe97940121f4947ed76"
     },
     {
       "path": "app/client/template.index.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/template.index.js?c7a0eeca7e0754b448b3f52bd33ee2651a8efe84",
-      "size": 367,
-      "hash": "c7a0eeca7e0754b448b3f52bd33ee2651a8efe84"
+      "url": "/client/template.index.js?e4608373b8bbc9bda43a60daf79d75f56b7806dc",
+      "size": 406,
+      "hash": "e4608373b8bbc9bda43a60daf79d75f56b7806dc"
     },
     {
       "path": "app/client/lib/app.js",
@@ -761,6 +770,33 @@
       "url": "/client/bbcode/bbcode.filter.js?5bdc359768a3d9464f5e4e3ef69f08a2c52eec25",
       "size": 37011,
       "hash": "5bdc359768a3d9464f5e4e3ef69f08a2c52eec25"
+    },
+    {
+      "path": "app/client/chat/chat.controller.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/chat/chat.controller.js?471422e1120cc3a1fc9a78d52ecf6ea03dca7a43",
+      "size": 1341,
+      "hash": "471422e1120cc3a1fc9a78d52ecf6ea03dca7a43"
+    },
+    {
+      "path": "app/client/chat/chat.directive.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/chat/chat.directive.js?1eab14f8a87b0796ca27495b78b0b6b998de096d",
+      "size": 257,
+      "hash": "1eab14f8a87b0796ca27495b78b0b6b998de096d"
+    },
+    {
+      "path": "app/client/chat/chat.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/chat/chat.js?2a3453bba5b8f7e5a39caf4f0fb6016f1b588104",
+      "size": 19,
+      "hash": "2a3453bba5b8f7e5a39caf4f0fb6016f1b588104"
     },
     {
       "path": "app/client/header/header.directive.js",
@@ -803,9 +839,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.js?3d96cdb12329d955264404802d8858c3cf850da0",
-      "size": 2241,
-      "hash": "3d96cdb12329d955264404802d8858c3cf850da0"
+      "url": "/client/news/news.controller.js?c26151ca81dfba319677eced3ae4224b5ab0817f",
+      "size": 2212,
+      "hash": "c26151ca81dfba319677eced3ae4224b5ab0817f"
     },
     {
       "path": "app/client/news/news.directive.js",
@@ -830,9 +866,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/resizable/resizable.directive.js?4a15d34f43de3aedf7afc9533aad753c3c399897",
-      "size": 2765,
-      "hash": "4a15d34f43de3aedf7afc9533aad753c3c399897"
+      "url": "/client/resizable/resizable.directive.js?0454c666f2bb346d515e3a7b93da059b892f4e63",
+      "size": 2770,
+      "hash": "0454c666f2bb346d515e3a7b93da059b892f4e63"
     },
     {
       "path": "app/client/synergyComposer/synergyComposer.directive.js",
@@ -853,24 +889,33 @@
       "hash": "9fad22e6bf4cfbba60ac81c596c4c6fb1ea461be"
     },
     {
+      "path": "app/model/chat.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/model/chat.js?199f05d3038fc0a65914c9cc4efa93a9a7283aa8",
+      "size": 394,
+      "hash": "199f05d3038fc0a65914c9cc4efa93a9a7283aa8"
+    },
+    {
       "path": "app/model/news.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/model/news.js?556e7422af996c7bc18aa714c7e593b54005eda1",
-      "size": 434,
-      "hash": "556e7422af996c7bc18aa714c7e593b54005eda1"
+      "url": "/model/news.js?33df3b5d6c96c0686aa0691dfdf22570b881cb3c",
+      "size": 495,
+      "hash": "33df3b5d6c96c0686aa0691dfdf22570b881cb3c"
     },
     {
-      "path": "0f25d014a659eb02a2f7518e1fff313d9b4ed200.css",
+      "path": "990b02728d40a61722ad71b16c71ac54baa0174e.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/0f25d014a659eb02a2f7518e1fff313d9b4ed200.css",
-      "sourceMap": "0f25d014a659eb02a2f7518e1fff313d9b4ed200.css.map",
-      "sourceMapUrl": "/0f25d014a659eb02a2f7518e1fff313d9b4ed200.map",
-      "size": 281799,
-      "hash": "0f25d014a659eb02a2f7518e1fff313d9b4ed200"
+      "url": "/990b02728d40a61722ad71b16c71ac54baa0174e.css",
+      "sourceMap": "990b02728d40a61722ad71b16c71ac54baa0174e.css.map",
+      "sourceMapUrl": "/990b02728d40a61722ad71b16c71ac54baa0174e.map",
+      "size": 287445,
+      "hash": "990b02728d40a61722ad71b16c71ac54baa0174e"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",
@@ -1105,6 +1150,15 @@
       "url": "/packages/materialize_materialize/font/roboto/Roboto-Thin.woff2",
       "size": 48524,
       "hash": "2449e3dac5ddb7c3da8bb07450493b62d052758c"
+    },
+    {
+      "path": "app/images/cereal_killers_background.fw.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/cereal_killers_background.fw.png",
+      "size": 79251,
+      "hash": "9b29879fd9b29609f1b959d3a512f5490d8f21f0"
     },
     {
       "path": "head.html",

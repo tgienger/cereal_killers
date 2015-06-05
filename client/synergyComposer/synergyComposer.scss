@@ -21,6 +21,7 @@ $post-border-color: #454545;
     /* height: 0px; */
     width: 100%;
     transition: bottom .5s linear;
+    z-index: 1000;
 }
 .composer_header {
     height: 10px;
