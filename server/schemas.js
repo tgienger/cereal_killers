@@ -150,3 +150,25 @@ Schemas.chatPosts = new SimpleSchema({
 });
 
 Chat.attachSchema(Schemas.chatPosts);
+
+
+Schemas.roles = new SimpleSchema({
+	name: {
+		type: String,
+		autoValue: function() {
+			
+			var field = this.field('name');
+			
+			if (this.isInsert) {
+				if (Roles.userIsInRole(Meteor.user()._id, ['admin', 'rolesAdmin'])) {
+					return field.value;
+				} else {
+					this.unset();
+				}
+			}
+		}
+	}
+});
+
+
+Meteor.roles.attachSchema(Schemas.roles);

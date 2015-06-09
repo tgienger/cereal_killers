@@ -21,7 +21,7 @@ angular.module('app').controller('RolesController', [
 				confirmButtonText: 'Yes, remove role',
 			}, function(confirmed) {
 				if (confirmed) {
-					$meteor.call('deleteRole', role);
+					Roles.deleteRole(role);
 					$scope.newRole = '';
 				}
 			});
@@ -42,7 +42,7 @@ angular.module('app').controller('RolesController', [
 				confirmButtonText: 'Yes, create role',
 			}, function(confirmed) {
 				if (confirmed) {
-					$meteor.call('createRole', role);
+					Roles.createRole(role);
 					$scope.newRole = '';
 				}
 			});

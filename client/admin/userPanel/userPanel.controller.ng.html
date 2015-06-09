@@ -39,7 +39,7 @@
 					</div>
 					<div class="row">
 						<div class="col s12">
-							<ul>
+							<ul class="role-list">
 								<li ng-repeat="role in user.roles"><span class="user-role" ng-dblclick="removeUsersFromRoles(user, $index)">{{role}}</span></li>
 								<span ng-if="user.roles.length < 1">no roles yet</span>
 							</ul>

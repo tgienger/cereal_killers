@@ -317,6 +317,9 @@
       "path": "app/model/news.js"
     },
     {
+      "path": "app/model/roles.js"
+    },
+    {
       "path": "app/server/chat.js"
     },
     {

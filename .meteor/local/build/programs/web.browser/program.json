@@ -704,9 +704,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/userPanel/userPanel.controller.ng.html.js?eb850f355cd41c495e879b39e7859c38beaa992a",
-      "size": 2237,
-      "hash": "eb850f355cd41c495e879b39e7859c38beaa992a"
+      "url": "/client/admin/userPanel/userPanel.controller.ng.html.js?550a6f2b9031ad7b58bc4f57cd2b969cbc228a55",
+      "size": 2257,
+      "hash": "550a6f2b9031ad7b58bc4f57cd2b969cbc228a55"
     },
     {
       "path": "app/client/chat/chat.controller.ng.html.js",
@@ -803,18 +803,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/roles/roles.controller.js?deb8a40f6a4292f24dba3470c48e768a50c2562b",
-      "size": 1084,
-      "hash": "deb8a40f6a4292f24dba3470c48e768a50c2562b"
+      "url": "/client/admin/roles/roles.controller.js?ad51441ac9c461e757dc063fa5bf52bab0411ef9",
+      "size": 1064,
+      "hash": "ad51441ac9c461e757dc063fa5bf52bab0411ef9"
     },
     {
       "path": "app/client/admin/roles/roles.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/roles/roles.js?f24d63da50dc0423daffc1e81c446759181c5a82",
-      "size": 784,
-      "hash": "f24d63da50dc0423daffc1e81c446759181c5a82"
+      "url": "/client/admin/roles/roles.js?d18154ad52bafc74cd4a55996a93302c6e2487b9",
+      "size": 1130,
+      "hash": "d18154ad52bafc74cd4a55996a93302c6e2487b9"
     },
     {
       "path": "app/client/admin/userPage/admin.user.controller.js",
@@ -1004,6 +1004,15 @@
       "url": "/model/news.js?b9f174e67daa600badf3f4cc69a40a48ffc04287",
       "size": 539,
       "hash": "b9f174e67daa600badf3f4cc69a40a48ffc04287"
+    },
+    {
+      "path": "app/model/roles.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/model/roles.js?1b6c1fee2dc337550b98b91c3e089189ef805f86",
+      "size": 468,
+      "hash": "1b6c1fee2dc337550b98b91c3e089189ef805f86"
     },
     {
       "path": "fc40480584584d48eb03a05ecbf0fae4f54d934e.css",
