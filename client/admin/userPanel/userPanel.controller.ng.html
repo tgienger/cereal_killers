@@ -1,0 +1,68 @@
+<h6 class="newsBlock white-text chatTitle">User Administration</h6>
+<ul id="newsStream" class="noList">
+		
+<!--	create new news-->
+	<div class="createPost" ng-hide="true">
+		<button ng-click="createUser()" ng-show="userIsAdmin()" class="waves-effect btn grey add-news-button"><span>Create New User</span></button>
+	</div>
+	
+	<li ng-repeat="user in users | orderBy : 'createdAt' : 'reversed'">
+		<div class="newsPost">
+			<div class="newsHeader">{{::user.username}}
+				<small class="newsDate pull-right"> created @ {{::user.createdAt | date:'MM/dd/yyyy @ h:mm a'}}</small>
+			</div>
+			<div class="user-info">
+				<div class="row info-header">
+					Name
+				</div>
+				<div class="user-profile row">
+					<div class="col s3">
+						{{::user.profile.firstName}}
+						{{::user.profile.lastName}}
+					</div>
+					</div>
+					<div class="row info-header">
+						<span class="col s3">Email Addresses:</span>
+						<span class="col s3">verified</span>
+					</div>
+					<ul class="email-list">
+						<li ng-repeat="email in user.emails">
+							<div class="row">
+								<span class="col s3">{{::$index + 1}}. {{::email.address}}</span>
+								<span class="col s3" ng-class="email.verified ? 'verfied' : ''">{{::email.verified}}</span>
+							</div>
+						</li>
+					</ul>
+					
+					<div class="row info-header">
+						<span class="col s12">Roles assigned to user: (double click to remove)</span>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<ul>
+								<li ng-repeat="role in user.roles"><span class="user-role" ng-dblclick="removeUsersFromRoles(user, $index)">{{role}}</span></li>
+								<span ng-if="user.roles.length < 1">no roles yet</span>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="row info-header">
+						<span class="col s12">Available Roles (double click to add)</span>
+					</div>
+					<div class="row">
+						<div class="col s12">
+						<ul class="role-list">
+							<li ng-repeat="role in roles" ng-hide="containsRole(user, role)"><span class="available-roles" ng-dblclick="addUsersToRoles(user, role)">{{role.name}}</span></li>
+						</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 user-bio">
+							Bio:
+							<p>{{::user.profile.bio}}</p>
+						</div>
+					</div>
+			</div>
+		</div>
+	</li>
+</ul>

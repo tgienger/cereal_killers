@@ -682,6 +682,33 @@
       "hash": "7540a475a234b935b8fd7e332839d687ac9ff931"
     },
     {
+      "path": "app/client/admin/roles/roles.controller.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/roles/roles.controller.ng.html.js?01ea7e056e05f1cf476f22a32d58f406b7487716",
+      "size": 1167,
+      "hash": "01ea7e056e05f1cf476f22a32d58f406b7487716"
+    },
+    {
+      "path": "app/client/admin/userPage/admin.user.controller.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/userPage/admin.user.controller.ng.html.js?f9936909fec4cd31b5d4ac37f6901757d8fb33d3",
+      "size": 372,
+      "hash": "f9936909fec4cd31b5d4ac37f6901757d8fb33d3"
+    },
+    {
+      "path": "app/client/admin/userPanel/userPanel.controller.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/userPanel/userPanel.controller.ng.html.js?eb850f355cd41c495e879b39e7859c38beaa992a",
+      "size": 2237,
+      "hash": "eb850f355cd41c495e879b39e7859c38beaa992a"
+    },
+    {
       "path": "app/client/chat/chat.controller.ng.html.js",
       "where": "client",
       "type": "js",
@@ -695,9 +722,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/header/template.adminLink.js?aed54f417a3a8a172628337ca59098c1c9904c9a",
-      "size": 359,
-      "hash": "aed54f417a3a8a172628337ca59098c1c9904c9a"
+      "url": "/client/header/template.adminLink.js?a3c034b4bbe0e06ae09e273cfae1d058073c0992",
+      "size": 363,
+      "hash": "a3c034b4bbe0e06ae09e273cfae1d058073c0992"
     },
     {
       "path": "app/client/header/header.directive.ng.html.js",
@@ -731,9 +758,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.ng.html.js?563b3807d64ee5b8af51a1a77b7007683633b71b",
-      "size": 2605,
-      "hash": "563b3807d64ee5b8af51a1a77b7007683633b71b"
+      "url": "/client/news/news.controller.ng.html.js?8c05531725f6da856dd483dfc21bf5e69b5d1a78",
+      "size": 2615,
+      "hash": "8c05531725f6da856dd483dfc21bf5e69b5d1a78"
+    },
+    {
+      "path": "app/client/news/newsfeed.controller.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/news/newsfeed.controller.ng.html.js?46593772139f3d6c3585f23f341d4969fe9c796a",
+      "size": 377,
+      "hash": "46593772139f3d6c3585f23f341d4969fe9c796a"
     },
     {
       "path": "app/client/synergyComposer/synergyComposer.ng.html.js",
@@ -761,6 +797,60 @@
       "url": "/client/lib/app.js?fdcfb1e19234428de52e6331244b8b781c15b98c",
       "size": 172,
       "hash": "fdcfb1e19234428de52e6331244b8b781c15b98c"
+    },
+    {
+      "path": "app/client/admin/roles/roles.controller.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/roles/roles.controller.js?deb8a40f6a4292f24dba3470c48e768a50c2562b",
+      "size": 1084,
+      "hash": "deb8a40f6a4292f24dba3470c48e768a50c2562b"
+    },
+    {
+      "path": "app/client/admin/roles/roles.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/roles/roles.js?f24d63da50dc0423daffc1e81c446759181c5a82",
+      "size": 784,
+      "hash": "f24d63da50dc0423daffc1e81c446759181c5a82"
+    },
+    {
+      "path": "app/client/admin/userPage/admin.user.controller.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/userPage/admin.user.controller.js?60e364a86dd759a110908e4e39cff3aa0a7d9cc2",
+      "size": 278,
+      "hash": "60e364a86dd759a110908e4e39cff3aa0a7d9cc2"
+    },
+    {
+      "path": "app/client/admin/userPage/admn.user.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/userPage/admn.user.js?431cff397528dfae31da0da2b3b56c138e7bfd61",
+      "size": 794,
+      "hash": "431cff397528dfae31da0da2b3b56c138e7bfd61"
+    },
+    {
+      "path": "app/client/admin/userPanel/userPanel.controller.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/userPanel/userPanel.controller.js?ca777a9d234c7f2b7ce823aee48096e0622d4f11",
+      "size": 2153,
+      "hash": "ca777a9d234c7f2b7ce823aee48096e0622d4f11"
+    },
+    {
+      "path": "app/client/admin/userPanel/userPanel.directive.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/userPanel/userPanel.directive.js?bdc7a831789e0518eb7a6356adda8e52506e8bda",
+      "size": 339,
+      "hash": "bdc7a831789e0518eb7a6356adda8e52506e8bda"
     },
     {
       "path": "app/client/bbcode/bbcode.filter.js",
@@ -797,6 +887,15 @@
       "url": "/client/chat/chat.js?2a3453bba5b8f7e5a39caf4f0fb6016f1b588104",
       "size": 19,
       "hash": "2a3453bba5b8f7e5a39caf4f0fb6016f1b588104"
+    },
+    {
+      "path": "app/client/draggable/draggable.directive.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/draggable/draggable.directive.js?74003a214374561edfda9c38b034fa8f772ec76b",
+      "size": 964,
+      "hash": "74003a214374561edfda9c38b034fa8f772ec76b"
     },
     {
       "path": "app/client/header/header.directive.js",
@@ -857,9 +956,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.js?db5af936aeca1ed8f7039b287f779620a43aa4f2",
-      "size": 248,
-      "hash": "db5af936aeca1ed8f7039b287f779620a43aa4f2"
+      "url": "/client/news/news.js?9e6e3ddc877c1b3740ab8214dcdcddb086663c80",
+      "size": 252,
+      "hash": "9e6e3ddc877c1b3740ab8214dcdcddb086663c80"
     },
     {
       "path": "app/client/resizable/resizable.directive.js",
@@ -907,15 +1006,15 @@
       "hash": "b9f174e67daa600badf3f4cc69a40a48ffc04287"
     },
     {
-      "path": "db9a8544aa98707e44e73c4ac304a939381eaa3c.css",
+      "path": "fc40480584584d48eb03a05ecbf0fae4f54d934e.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/db9a8544aa98707e44e73c4ac304a939381eaa3c.css",
-      "sourceMap": "db9a8544aa98707e44e73c4ac304a939381eaa3c.css.map",
-      "sourceMapUrl": "/db9a8544aa98707e44e73c4ac304a939381eaa3c.map",
-      "size": 288383,
-      "hash": "db9a8544aa98707e44e73c4ac304a939381eaa3c"
+      "url": "/fc40480584584d48eb03a05ecbf0fae4f54d934e.css",
+      "sourceMap": "fc40480584584d48eb03a05ecbf0fae4f54d934e.css.map",
+      "sourceMapUrl": "/fc40480584584d48eb03a05ecbf0fae4f54d934e.map",
+      "size": 291221,
+      "hash": "fc40480584584d48eb03a05ecbf0fae4f54d934e"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",
@@ -1157,8 +1256,8 @@
       "type": "asset",
       "cacheable": false,
       "url": "/images/cereal_killers_background.fw.png",
-      "size": 77208,
-      "hash": "9e0d72ccdb4af91264ce7f6132ea89208b7aaede"
+      "size": 160830,
+      "hash": "54c5c9581124a867900b0fbac3012bc58e7203c5"
     },
     {
       "path": "head.html",

@@ -326,7 +326,13 @@
       "path": "app/server/news.js"
     },
     {
+      "path": "app/server/roles.js"
+    },
+    {
       "path": "app/server/schemas.js"
+    },
+    {
+      "path": "app/server/users.js"
     },
     {
       "sourceMap": "packages/service-configuration.js.map",

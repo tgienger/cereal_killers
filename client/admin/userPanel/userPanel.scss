@@ -1,0 +1,37 @@
+.user-info {
+	color: white;
+	padding-top: 10px;
+}
+.email-list {
+	// border-bottom: 1px solid silver;
+}
+
+.info-header {
+	background: rgba($color: white, $alpha: 0.2);
+}
+
+.user-bio {
+	margin-top: 10px;
+	background: rgba($color: white, $alpha: 0.1);
+}
+
+.user-role {
+	background: greenyellow;
+	color: black;
+	padding: 3px;
+	margin-left: 5px;
+}
+.user-roles-container {
+	margin-bottom: 10px;
+}.available-roles {
+	background: dodgerblue;
+	color: black;
+	padding: 3px;
+	margin-left: 5px;
+}
+
+.role-list {
+	li {
+		display:inline;
+	}
+}

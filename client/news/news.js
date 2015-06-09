@@ -3,7 +3,7 @@ angular.module('app').config(['$stateProvider',
 		$stateProvider
 			.state('news', {
 				url: '/news',
-				templateUrl: 'client/news/news/controller.ng.html',
+				templateUrl: 'client/news/newsfeed.controller.ng.html',
 				controller: 'NewsCtrl'
 			});
 	}
