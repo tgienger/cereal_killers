@@ -25,11 +25,9 @@ Schemas.NewsPosts = new SimpleSchema({
 		autoValue: function() {
 			var field = this.field('visible');
 			if (this.isInsert) {
-				if (field.isSet) {
-					return field.value;
-				} else {
-					return true;
-				}
+				var setting = SiteSettings.find({}).fetch();
+				console.log(setting);
+				return setting[0].news.visible;
 			}
 			if (this.isUpdate) {
 				if (Roles.userIsInRole(this.userId, ['admin'])) {
@@ -43,7 +41,8 @@ Schemas.NewsPosts = new SimpleSchema({
 		autoValue: function() {
 			var field = this.field('private');
 			if (this.isInsert) {
-				return field.value;
+				var setting = SiteSettings.find({}).fetch();
+				return setting[0].news.private;
 			} else if (this.isUpdate) {
 				return field.value;
 			}

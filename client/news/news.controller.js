@@ -31,6 +31,7 @@ angular.module('app').controller('NewsCtrl', [
 					sort: $scope.getReactively('sort')
 				});
 			});
+			
 		});
 		
 //		Save a new news post
@@ -62,13 +63,31 @@ angular.module('app').controller('NewsCtrl', [
 		
 //		delete post
 		$scope.deletePost = function(news) {
-			if (news.visible) {
-				news.visible = false;
-			} else {
-				news.visible = true;
-			}
-			$scope.posts.save(news);
+			swal({
+				title: "Are you sure?",   
+				text: "You will not be able to recover this post!",   
+				type: "warning",   
+				showCancelButton: true,   
+				confirmButtonColor: "#DD6B55",   
+				confirmButtonText: "Yes, delete it!",
+			}, function(confirmed){   
+				if (confirmed) {
+					$scope.posts.remove(news);
+					Materialize.toast('Post deleted!', 4000)
+				} 
+			});
 		};
+		
+		
+		// hide post
+		// $scope.hidePost = function(news) {
+		// 	if (news.visible) {
+		// 		news.visible = false;
+		// 	} else {
+		// 		news.visible = true;
+		// 	}
+		// 	$scope.posts.save(news);
+		// };
 		
 		
 		

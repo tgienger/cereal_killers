@@ -17,4 +17,4 @@ Meteor.roles.allow({
 		}
 		return true;
 	}
-})
+});

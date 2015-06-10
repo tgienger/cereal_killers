@@ -12,7 +12,7 @@
 						<small>{{post.date | date:'short' }}</small> 
 						<i class="mdi-content-reply pull-right pointer" ng-click="replyTo(post)"></i>
 					</span>
-					<br> {{post.message}}</p>
+					<br> <span markdown="post.message | bbcode"></span></p>
 			</li>
 		</div>
 		

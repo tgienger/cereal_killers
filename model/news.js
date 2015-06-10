@@ -10,14 +10,13 @@ News.allow({
 	update: function(userId, news, fields, modifier) {
 		
 		if (userId === news.owner || Roles.userIsInRole(userId, ['admin'])) {
-			console.log('user not allowed');
 			return true;
 		}
 			
 		return false;
 	},
 	remove: function(userId, news) {
-		if (userId !== news.owner || !Roles.userIsInRole(userId, ['admin']))
+		if (!Roles.userIsInRole(userId, ['admin']))
 			return false;
 		return true;
 	}

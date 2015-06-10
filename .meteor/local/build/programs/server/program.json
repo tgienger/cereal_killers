@@ -320,6 +320,9 @@
       "path": "app/model/roles.js"
     },
     {
+      "path": "app/model/settings.js"
+    },
+    {
       "path": "app/server/chat.js"
     },
     {
@@ -333,6 +336,9 @@
     },
     {
       "path": "app/server/schemas.js"
+    },
+    {
+      "path": "app/server/settings.js"
     },
     {
       "path": "app/server/users.js"

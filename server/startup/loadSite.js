@@ -28,4 +28,12 @@ Meteor.startup(function() {
 		
 		Roles.addUsersToRoles(adminId, ['admin']);
 	}
+	
+	if (SiteSettings.find().count() === 0) {
+		SiteSettings.insert({'news': {
+			'visible': true,
+			'private': false
+		}});
+	}
+	
 });

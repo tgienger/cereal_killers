@@ -24,23 +24,17 @@
 <!--					private checkbox-->
 					<div class="pull-right privateCheckbox" ng-show="userIsAdmin()">
 						<input class="" type="checkbox" name="privateCheck" id="privateCheck_{{post._id}}" ng-change="privateChange(post)" ng-click="privateClicked(post)" ng-model="post.private">
-						<label class="" for="privateCheck_{{post._id}}" ng-model="post.private">private</label>
+						<label class="checkbox-label" for="privateCheck_{{post._id}}" ng-model="post.private">private</label>
+
+						<input type="checkbox" name="hiddenCheck" id="hiddenCheck_{{post._id}}" ng-model="post.visible">
+						<label class="checkbox-label" for="hiddenCheck_{{post._id}}">visible</label>
+						
+						<a class="pointer tooltipped" data-tooltip="delete post" data-position="top" name="deletePost" id="deletePost_{{post._id}}" ng-click="deletePost(post)">
+							<i class="fa fa-trash-o red-text"></i>
+						</a>
+						
 					</div>
 					
-<!--					hide/show news post-->
-					<div class="pull-right deletePost" ng-show="userIsAdmin()">
-						<div class="switch">
-							<label>
-								Hidden
-								<input type="checkbox" ng-model="post.visible">
-								<span class="lever"></span>
-								Visible
-							</label>
-						</div>
-<!--						<button name="deletePost" id="deletePost_{{post._id}}" ng-click="deletePost(post)">
-							<span ng-show="post.visible">Hide</span><span ng-show="!post.visible">Show</span></button>
-						<label for="deletePost_{{post._id}}" ng-show="!post.visible" style="color: red;">HIDDEN</label>-->
-					</div>
 			</div>
 			<div class="newsBody flow-text" markdown="post.body | bbcode"></div>
 		</div>

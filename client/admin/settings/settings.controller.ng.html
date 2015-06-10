@@ -1,0 +1,50 @@
+<div class="userAdminContainer">
+	<div class="mainBody row">
+		<div class="newsFeed col l12 s12">
+			<div class="panel">
+				<h6 class="newsBlock white-text chatTitle">Website Settings</h6>
+				<p class="white-text center-align">Default values for the website.</p>
+				<div class="row info-header" ng-repeat-start="setting in settings">
+					<span class="col s12">News Settings</span>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<div class="row">
+							<div class="col s12 settings-description">
+								<div class="privateCheckbox">
+									<input class="" type="checkbox" name="privateCheck" id="privateCheck_{{setting._id}}" ng-change="privateChange(post)" ng-click="privateClicked(post)" ng-model="setting.news.private">
+									<label class="checkbox-label" for="privateCheck_{{setting._id}}">private</label>
+								</div>
+								<p>
+									Setting the news item to private will only allow users of the 'member' group or higher
+									to view it. Leave unchecked to allow all visitors to view.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col s12">
+						<div class="row">
+							<div class="col s12 settings-description">
+								<div class="privateCheckbox">
+									<input type="checkbox" name="hiddenCheck" id="hiddenCheck_{{setting._id}}" ng-model="setting.news.visible">
+									<label class="checkbox-label" for="hiddenCheck_{{setting._id}}">visible</label>
+								</div>
+								<p>
+									Setting the news item to visible will allow it to be seen. Leaving unchecked will prevent anyone
+									besides the admin from viewing.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row info-header">
+					<span class="col s12">Forum Settings</span>
+				</div>
+				<div class="row" ng-repeat-end>
+					<div class="col s12">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
