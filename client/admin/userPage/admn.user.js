@@ -20,6 +20,12 @@ function($stateProvider) {
 			url: '/admin/user',
 			templateUrl: 'client/admin/userPage/admin.user.controller.ng.html',
 			controller: 'AdminUserController',
-			resolve: isAuthorized
+    		resolve: {
+                'currentUser': ['$meteor', function($meteor) {
+                    return $meteor.requireValidUser(function(user) {
+                        return Roles.userIsInRole(user._id, ['admin']);
+                    });
+                }]
+            }
 		});
 }]);

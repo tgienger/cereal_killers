@@ -704,9 +704,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/userPanel/userPanel.controller.ng.html.js?550a6f2b9031ad7b58bc4f57cd2b969cbc228a55",
-      "size": 2257,
-      "hash": "550a6f2b9031ad7b58bc4f57cd2b969cbc228a55"
+      "url": "/client/admin/userPanel/userPanel.controller.ng.html.js?fcb5873ff20f136b5fe3728fbfac44b4db1948d0",
+      "size": 2240,
+      "hash": "fcb5873ff20f136b5fe3728fbfac44b4db1948d0"
     },
     {
       "path": "app/client/chat/chat.controller.ng.html.js",
@@ -830,9 +830,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/userPage/admn.user.js?431cff397528dfae31da0da2b3b56c138e7bfd61",
-      "size": 794,
-      "hash": "431cff397528dfae31da0da2b3b56c138e7bfd61"
+      "url": "/client/admin/userPage/admn.user.js?b9d13ad8bc12759b533ff98763fd8a197bd34fcc",
+      "size": 1047,
+      "hash": "b9d13ad8bc12759b533ff98763fd8a197bd34fcc"
     },
     {
       "path": "app/client/admin/userPanel/userPanel.controller.js",
@@ -938,9 +938,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.js?c26151ca81dfba319677eced3ae4224b5ab0817f",
-      "size": 2212,
-      "hash": "c26151ca81dfba319677eced3ae4224b5ab0817f"
+      "url": "/client/news/news.controller.js?f436eefcc96d74cbacff3ccb56942cb89e4d01a1",
+      "size": 2237,
+      "hash": "f436eefcc96d74cbacff3ccb56942cb89e4d01a1"
     },
     {
       "path": "app/client/news/news.directive.js",

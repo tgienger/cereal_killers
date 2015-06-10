@@ -35,20 +35,24 @@ angular.module('app').controller('NewsCtrl', [
 		
 //		Save a new news post
 		$scope.save = function(news) {
-			var newNews = {
-				title: news.subject,
-				body: news.markdown,
-				private: true
-			};
-			if (!newNews.title || !newNews.body) {
+			
+			
+			if (!news.subject || !news.markdown) {
 //				TODO: Let the users know what they're missing. Maybe flashing the input or textarea
 				sweetAlert("Oops..", "You've forgotten something", "error");
 				return;
 			}
 			
-			if (!news.private) {
-				news.private = false;
-			}
+			
+			var newNews = {
+				title: news.subject,
+				body: news.markdown,
+				private: true
+			};
+			
+			// if (!news.private) {
+			// 	news.private = false;
+			// }
 			
 //			TODO: reset composer text and close it when saved.
 			$scope.posts.save(newNews);
