@@ -323,6 +323,9 @@
       "path": "app/model/settings.js"
     },
     {
+      "path": "app/model/site_rules.js"
+    },
+    {
       "path": "app/server/chat.js"
     },
     {
@@ -339,6 +342,9 @@
     },
     {
       "path": "app/server/settings.js"
+    },
+    {
+      "path": "app/server/site_rules.js"
     },
     {
       "path": "app/server/users.js"

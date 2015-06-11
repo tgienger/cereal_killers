@@ -686,9 +686,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/roles/roles.controller.ng.html.js?01ea7e056e05f1cf476f22a32d58f406b7487716",
-      "size": 1167,
-      "hash": "01ea7e056e05f1cf476f22a32d58f406b7487716"
+      "url": "/client/admin/roles/roles.controller.ng.html.js?3e018ed53a1dcd806f3feeec9a356be6ea8d5d8b",
+      "size": 1179,
+      "hash": "3e018ed53a1dcd806f3feeec9a356be6ea8d5d8b"
     },
     {
       "path": "app/client/admin/settings/settings.controller.ng.html.js",
@@ -698,6 +698,15 @@
       "url": "/client/admin/settings/settings.controller.ng.html.js?5cf0c9cada45f200d7d13993c76b4d9f157b17e6",
       "size": 1853,
       "hash": "5cf0c9cada45f200d7d13993c76b4d9f157b17e6"
+    },
+    {
+      "path": "app/client/admin/site_rules/rules.controller.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/site_rules/rules.controller.ng.html.js?27e4a1e8130a45b18f55f82f3bd0ef603222487d",
+      "size": 1012,
+      "hash": "27e4a1e8130a45b18f55f82f3bd0ef603222487d"
     },
     {
       "path": "app/client/admin/userPage/admin.user.controller.ng.html.js",
@@ -812,9 +821,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/lib/app.js?fdcfb1e19234428de52e6331244b8b781c15b98c",
-      "size": 172,
-      "hash": "fdcfb1e19234428de52e6331244b8b781c15b98c"
+      "url": "/client/lib/app.js?5b3671f3e5d0c162fc600674286209e45775b2c6",
+      "size": 192,
+      "hash": "5b3671f3e5d0c162fc600674286209e45775b2c6"
     },
     {
       "path": "app/client/admin/roles/roles.controller.js",
@@ -851,6 +860,24 @@
       "url": "/client/admin/settings/settings.js?85d231796764c92555f671a34fe4f58e00e3a050",
       "size": 565,
       "hash": "85d231796764c92555f671a34fe4f58e00e3a050"
+    },
+    {
+      "path": "app/client/admin/site_rules/rules.controller.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/site_rules/rules.controller.js?07ab963651d1429ea5396f69e4009a55957e9a4d",
+      "size": 399,
+      "hash": "07ab963651d1429ea5396f69e4009a55957e9a4d"
+    },
+    {
+      "path": "app/client/admin/site_rules/rules.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/site_rules/rules.js?3c77516531448968d92f125d7773143e1adfea5d",
+      "size": 1135,
+      "hash": "3c77516531448968d92f125d7773143e1adfea5d"
     },
     {
       "path": "app/client/admin/userPage/admin.user.controller.js",
@@ -914,6 +941,15 @@
       "url": "/client/bbcode/bbcode.filter.js?5bdc359768a3d9464f5e4e3ef69f08a2c52eec25",
       "size": 37011,
       "hash": "5bdc359768a3d9464f5e4e3ef69f08a2c52eec25"
+    },
+    {
+      "path": "app/client/camelCaseFilter/camelCase.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/camelCaseFilter/camelCase.js?edf3b8353f1551c21add1f3fc7a8cda6780c5ced",
+      "size": 584,
+      "hash": "edf3b8353f1551c21add1f3fc7a8cda6780c5ced"
     },
     {
       "path": "app/client/chat/chat.controller.js",
@@ -992,9 +1028,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.js?3b1880ea6b4ccf50a71f60b273dfd1fc4a15d7bb",
-      "size": 2706,
-      "hash": "3b1880ea6b4ccf50a71f60b273dfd1fc4a15d7bb"
+      "url": "/client/news/news.controller.js?3ceb82aa60226f041a23bf9e85fda285c03fc018",
+      "size": 2473,
+      "hash": "3ceb82aa60226f041a23bf9e85fda285c03fc018"
     },
     {
       "path": "app/client/news/news.directive.js",
@@ -1064,9 +1100,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/model/roles.js?a7768929da0c7b7dd1e21cc57067ec357569b681",
-      "size": 469,
-      "hash": "a7768929da0c7b7dd1e21cc57067ec357569b681"
+      "url": "/model/roles.js?e874583b60edda6c00865c4b98961bc91b3cb7b6",
+      "size": 589,
+      "hash": "e874583b60edda6c00865c4b98961bc91b3cb7b6"
     },
     {
       "path": "app/model/settings.js",
@@ -1076,6 +1112,15 @@
       "url": "/model/settings.js?d0afedbbde94766efe5f51a7febb04cc9159b642",
       "size": 519,
       "hash": "d0afedbbde94766efe5f51a7febb04cc9159b642"
+    },
+    {
+      "path": "app/model/site_rules.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/model/site_rules.js?21a902291eac9f2147d43b622c15fe6ade8281e7",
+      "size": 470,
+      "hash": "21a902291eac9f2147d43b622c15fe6ade8281e7"
     },
     {
       "path": "eee3ca2f38929b9e8e2214c90e255760681e84e2.css",

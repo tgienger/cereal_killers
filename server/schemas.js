@@ -23,6 +23,9 @@ Schemas.NewsPosts = new SimpleSchema({
 	visible: {
 		type: Boolean,
 		autoValue: function() {
+			
+			var all = Rules.findOne({name: 'news'}).rules.all;
+			
 			var field = this.field('visible');
 			if (this.isInsert) {
 				var setting = SiteSettings.find({}).fetch();
@@ -30,7 +33,7 @@ Schemas.NewsPosts = new SimpleSchema({
 				return setting[0].news.visible;
 			}
 			if (this.isUpdate) {
-				if (Roles.userIsInRole(this.userId, ['admin'])) {
+				if (Roles.userIsInRole(this.userId, all)) {
 					return field.value;
 				}
 			}
@@ -156,10 +159,12 @@ Schemas.roles = new SimpleSchema({
 		type: String,
 		autoValue: function() {
 			
+			var all = Rules.findOne({name: 'roles'}).rules.all;
+			
 			var field = this.field('name');
 			
 			if (this.isInsert) {
-				if (Roles.userIsInRole(Meteor.user()._id, ['admin', 'rolesAdmin'])) {
+				if (Roles.userIsInRole(Meteor.user()._id, all)) {
 					return field.value;
 				} else {
 					this.unset();

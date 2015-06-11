@@ -1,5 +1,6 @@
 Meteor.publish('sitesettings', function() {
-	if (Roles.userIsInRole(this.userId, ['admin'])) {
+	var all = Rules.findOne({name: 'settings'}).rules.all;
+	if (Roles.userIsInRole(this.userId, all)) {
 	    return SiteSettings.find({});
 	}
 });

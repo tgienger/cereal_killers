@@ -13,22 +13,14 @@ Meteor.methods({
 		return true;
 	},
 	
-	
-	// user admin
-	isUserAdmin: function() {
-		var user = Meteor.user();
-		if (!user || !Roles.userIsInRole(user, ['admin', 'userAdmin'])) {
-			throw new Meteor.Error(401, "AUTH_REQUIRED");
-		}
-		
-		return true;
-	},
-	
 //	create new roles
 	createRole: function(role) {
+		
+		var all = Rules.findOne({name: 'roles'}).rules.all;
+		
 		var user = Meteor.user();
 		
-		if (!user || !Roles.userIsInRole(user, ['admin','rolesAdmin'])) {
+		if (!user || !Roles.userIsInRole(user, all)) {
 			throw new Meteor.Error(401, 'AUTH_REQUIRED');
 		}
 		
@@ -37,9 +29,12 @@ Meteor.methods({
 	
 	// delete role
 	deleteRole: function(role) {
+		
+		var all = Rules.findOne({name: 'roles'}).rules.all;
+		
 		var user = Meteor.user();
 		
-		if (!user || !Roles.userIsInRole(user, ['admin', 'rolesAdmin'])) {
+		if (!user || !Roles.userIsInRole(user, all)) {
 			throw new Meteor.Error(401, 'AUTH_REQUIRED');
 		}
 		
@@ -48,9 +43,12 @@ Meteor.methods({
 	
 //	add user to role
 	addUsersToRoles: function(targetUser, roles){
+		
+		var all = Rules.findOne({name: 'roles'}).rules.all;
+		
 		var user = Meteor.user();
 		
-		if (!user || !Roles.userIsInRole(user, ['admin', 'rolesAdmin'])) {
+		if (!user || !Roles.userIsInRole(user, all)) {
 			throw new Meteor.Error(401, 'AUTH_REQUIRED');
 		}
 		
@@ -59,10 +57,13 @@ Meteor.methods({
 	
 //	remove user from roles
 	removeUsersFromRoles: function(targetUserId, role) {
+		
+		var all = Rules.findOne({name: 'roles'}).rules.all;
+		
 		var user = Meteor.user();
 		
 		
-		if (!user || !Roles.userIsInRole(user, ['admin', 'rolesAdmin'])) {
+		if (!user || !Roles.userIsInRole(user, all)) {
 			throw new Meteor.Error(401, 'AUTH_REQUIRED');
 		}
 		

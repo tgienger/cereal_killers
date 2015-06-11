@@ -1,5 +1,8 @@
 Meteor.publish("users", function () {
-	if (Roles.userIsInRole(this.userId, ['admin', 'userAdmin'])) {
+  
+  var all = Rules.findOne({name: 'users'}).rules.all;
+  
+	if (Roles.userIsInRole(this.userId, all)) {
     return Meteor.users.find({
       username: {$nin: ['webmaster']}
     }, {fields: {services: 0}});

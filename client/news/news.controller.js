@@ -38,27 +38,25 @@ angular.module('app').controller('NewsCtrl', [
 		$scope.save = function(news) {
 			
 			
-			if (!news.subject || !news.markdown) {
+			if (!news.subject) {
 //				TODO: Let the users know what they're missing. Maybe flashing the input or textarea
-				sweetAlert("Oops..", "You've forgotten something", "error");
+				swal("Oops..", "You forgot the subject!", "error");
+				return;
+			}
+			if (!news.markdown) {
+				swal("really..", "You forgot the body of the post!", "error")
 				return;
 			}
 			
 			
 			var newNews = {
 				title: news.subject,
-				body: news.markdown,
-				private: true
+				body: news.markdown
 			};
-			
-			// if (!news.private) {
-			// 	news.private = false;
-			// }
 			
 //			TODO: reset composer text and close it when saved.
 			$scope.posts.save(newNews);
 			$scope.synergyComposer.reset().close();
-//			this.news = {};
 		};
 		
 //		delete post
@@ -77,17 +75,6 @@ angular.module('app').controller('NewsCtrl', [
 				} 
 			});
 		};
-		
-		
-		// hide post
-		// $scope.hidePost = function(news) {
-		// 	if (news.visible) {
-		// 		news.visible = false;
-		// 	} else {
-		// 		news.visible = true;
-		// 	}
-		// 	$scope.posts.save(news);
-		// };
 		
 		
 		

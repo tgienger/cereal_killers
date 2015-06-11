@@ -36,4 +36,43 @@ Meteor.startup(function() {
 		}});
 	}
 	
+	if (Rules.find().count() === 0) {
+		Rules.insert({
+			name: 'news',
+			rules: {
+				'all': ['admin', 'superModerator'],
+				'private': ['member', 'moderator'],
+				'none': []
+			}
+		});
+		Rules.insert({
+			name: 'roles',
+			rules: {
+				'all': ['admin']
+			}
+		});
+		Rules.insert({
+			name: 'chat',
+			rules: {
+				all: ['admin', 'superModerator'],
+				private: ['member', 'moderator'],
+				none: []
+			}
+		});
+		Rules.insert({
+			name: 'settings',
+			rules: {
+				all: ['admin', 'superModerator']
+			}
+		});
+		Rules.insert({
+			name: 'users',
+			rules: {
+				all: ['admin', 'superModerator'],
+				private: ['member', 'moderator'],
+				none: []
+			}
+		});
+	}
+	
 });
