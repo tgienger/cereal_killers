@@ -686,9 +686,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/roles/roles.controller.ng.html.js?3e018ed53a1dcd806f3feeec9a356be6ea8d5d8b",
-      "size": 1179,
-      "hash": "3e018ed53a1dcd806f3feeec9a356be6ea8d5d8b"
+      "url": "/client/admin/roles/roles.controller.ng.html.js?9a7765b995effa6c6c01bafd9c70b7f6758f4a59",
+      "size": 2746,
+      "hash": "9a7765b995effa6c6c01bafd9c70b7f6758f4a59"
     },
     {
       "path": "app/client/admin/settings/settings.controller.ng.html.js",
@@ -830,9 +830,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/roles/roles.controller.js?ad51441ac9c461e757dc063fa5bf52bab0411ef9",
-      "size": 1064,
-      "hash": "ad51441ac9c461e757dc063fa5bf52bab0411ef9"
+      "url": "/client/admin/roles/roles.controller.js?0791b324f26de5ef652fe7c1207e0026becd87a5",
+      "size": 1319,
+      "hash": "0791b324f26de5ef652fe7c1207e0026becd87a5"
     },
     {
       "path": "app/client/admin/roles/roles.js",
@@ -1082,9 +1082,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/model/chat.js?199f05d3038fc0a65914c9cc4efa93a9a7283aa8",
-      "size": 394,
-      "hash": "199f05d3038fc0a65914c9cc4efa93a9a7283aa8"
+      "url": "/model/chat.js?7d7280dfb2e4b874d71d4cf375b604f7c4b8ba14",
+      "size": 533,
+      "hash": "7d7280dfb2e4b874d71d4cf375b604f7c4b8ba14"
     },
     {
       "path": "app/model/news.js",
@@ -1100,9 +1100,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/model/roles.js?e874583b60edda6c00865c4b98961bc91b3cb7b6",
-      "size": 589,
-      "hash": "e874583b60edda6c00865c4b98961bc91b3cb7b6"
+      "url": "/model/roles.js?44eb57ef5bdd9ad60c467819bbbf9e9aa21c0c03",
+      "size": 583,
+      "hash": "44eb57ef5bdd9ad60c467819bbbf9e9aa21c0c03"
     },
     {
       "path": "app/model/settings.js",
@@ -1123,15 +1123,15 @@
       "hash": "21a902291eac9f2147d43b622c15fe6ade8281e7"
     },
     {
-      "path": "eee3ca2f38929b9e8e2214c90e255760681e84e2.css",
+      "path": "e0ace8604f6e6047afb6d50da480a3ebe2080e81.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/eee3ca2f38929b9e8e2214c90e255760681e84e2.css",
-      "sourceMap": "eee3ca2f38929b9e8e2214c90e255760681e84e2.css.map",
-      "sourceMapUrl": "/eee3ca2f38929b9e8e2214c90e255760681e84e2.map",
-      "size": 292109,
-      "hash": "eee3ca2f38929b9e8e2214c90e255760681e84e2"
+      "url": "/e0ace8604f6e6047afb6d50da480a3ebe2080e81.css",
+      "sourceMap": "e0ace8604f6e6047afb6d50da480a3ebe2080e81.css.map",
+      "sourceMapUrl": "/e0ace8604f6e6047afb6d50da480a3ebe2080e81.map",
+      "size": 292558,
+      "hash": "e0ace8604f6e6047afb6d50da480a3ebe2080e81"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",

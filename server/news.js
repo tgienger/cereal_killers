@@ -1,7 +1,8 @@
 Meteor.publish('news', function(options) {
 	
-	var all = Rules.findOne({name: 'news'}).rules.all;
-	var private = Rules.findOne({name: 'news'}).rules.private;
+	var newsRules = Rules.findOne({name: 'news'});
+	var all = newsRules.all;
+	var view = newsRules.view;
 	
 
 	if (Roles.userIsInRole(this.userId, all)) {
@@ -9,7 +10,7 @@ Meteor.publish('news', function(options) {
 	}
 	
 	
-	if (Roles.userIsInRole(this.userId, private)) {
+	if (Roles.userIsInRole(this.userId, view)) {
 		
 		return News.find({'visible': true});
 	}

@@ -1,6 +1,6 @@
 Meteor.publish("users", function () {
   
-  var all = Rules.findOne({name: 'users'}).rules.all;
+  var all = Rules.findOne({name: 'users'}).all;
   
 	if (Roles.userIsInRole(this.userId, all)) {
     return Meteor.users.find({

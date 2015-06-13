@@ -16,7 +16,7 @@ Meteor.methods({
 //	create new roles
 	createRole: function(role) {
 		
-		var all = Rules.findOne({name: 'roles'}).rules.all;
+		var all = Rules.findOne({name: 'roles'}).all;
 		
 		var user = Meteor.user();
 		
@@ -30,7 +30,7 @@ Meteor.methods({
 	// delete role
 	deleteRole: function(role) {
 		
-		var all = Rules.findOne({name: 'roles'}).rules.all;
+		var all = Rules.findOne({name: 'roles'}).all;
 		
 		var user = Meteor.user();
 		
@@ -44,7 +44,7 @@ Meteor.methods({
 //	add user to role
 	addUsersToRoles: function(targetUser, roles){
 		
-		var all = Rules.findOne({name: 'roles'}).rules.all;
+		var all = Rules.findOne({name: 'roles'}).all;
 		
 		var user = Meteor.user();
 		
@@ -58,7 +58,7 @@ Meteor.methods({
 //	remove user from roles
 	removeUsersFromRoles: function(targetUserId, role) {
 		
-		var all = Rules.findOne({name: 'roles'}).rules.all;
+		var all = Rules.findOne({name: 'roles'}).all;
 		
 		var user = Meteor.user();
 		

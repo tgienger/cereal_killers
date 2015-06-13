@@ -7,6 +7,16 @@ angular.module('app').controller('RolesController', [
 		$scope.roles = $meteor.collection(Meteor.roles);
 		
 		
+		// subscribe to rules
+		$meteor.autorun($scope, function() {
+			$scope.$meteorSubscribe('rules').then(function(handle) {
+				var newsSettingsHandle = handle;
+			});
+			
+			$scope.rules = $meteor.collection(Rules);
+			console.log($scope.rules);
+		});
+		
 		
 		// remove role
 		$scope.deleteRole = function(role) {

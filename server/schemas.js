@@ -24,7 +24,7 @@ Schemas.NewsPosts = new SimpleSchema({
 		type: Boolean,
 		autoValue: function() {
 			
-			var all = Rules.findOne({name: 'news'}).rules.all;
+			var all = Rules.findOne({name: 'news'}).all;
 			
 			var field = this.field('visible');
 			if (this.isInsert) {
@@ -159,7 +159,7 @@ Schemas.roles = new SimpleSchema({
 		type: String,
 		autoValue: function() {
 			
-			var all = Rules.findOne({name: 'roles'}).rules.all;
+			var all = Rules.findOne({name: 'roles'}).all;
 			
 			var field = this.field('name');
 			

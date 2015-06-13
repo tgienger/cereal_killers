@@ -39,39 +39,43 @@ Meteor.startup(function() {
 	if (Rules.find().count() === 0) {
 		Rules.insert({
 			name: 'news',
-			rules: {
-				'all': ['admin', 'superModerator'],
-				'private': ['member', 'moderator'],
-				'none': []
-			}
+			all: ['admin', 'superModerator'],
+			view: ['admin', 'superModerator', 'member'],
+			insert: ['admin', 'superModerator'],
+			update: ['admin', 'superModerator'],
+			remove: ['admin', 'superModerator']
 		});
 		Rules.insert({
 			name: 'roles',
-			rules: {
-				'all': ['admin']
-			}
+			all: ['admin', 'superModerator'],
+			view: ['admin', 'superModerator', 'member'],
+			insert: ['admin', 'superModerator'],
+			update: ['admin', 'superModerator'],
+			remove: ['admin', 'superModerator']
 		});
 		Rules.insert({
 			name: 'chat',
-			rules: {
-				all: ['admin', 'superModerator'],
-				private: ['member', 'moderator'],
-				none: []
-			}
+			all: ['admin', 'superModerator'],
+			view: ['admin', 'superModerator', 'member'],
+			insert: ['admin', 'superModerator'],
+			update: ['admin', 'superModerator'],
+			remove: ['admin', 'superModerator']
 		});
 		Rules.insert({
 			name: 'settings',
-			rules: {
-				all: ['admin', 'superModerator']
-			}
+			all: ['admin', 'superModerator'],
+			view: ['admin', 'superModerator'],
+			insert: ['admin', 'superModerator'],
+			update: ['admin', 'superModerator'],
+			remove: ['admin', 'superModerator']
 		});
 		Rules.insert({
 			name: 'users',
-			rules: {
-				all: ['admin', 'superModerator'],
-				private: ['member', 'moderator'],
-				none: []
-			}
+			all: ['admin'],
+			view: ['admin', 'superModerator', 'member'],
+			insert: ['admin', 'superModerator'],
+			update: ['admin', 'superModerator'],
+			remove: ['admin', 'superModerator']
 		});
 	}
 	
