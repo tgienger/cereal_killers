@@ -58,5 +58,48 @@ angular.module('app').controller('RolesController', [
 			});
 			
 		};
+		
+		$scope.editRole = function(role) {
+			
+			var oldName = role.name;
+			
+			swal({
+				title: "Edit Role Name",
+				text: "Change the name of this role",
+				type: "input",
+				showCancelButton: true,
+				closeOnConfirm: false,
+				inputPlaceholder: role.name 
+			}, function(inputValue){
+				if (inputValue === false) 
+					return false;
+				if (inputValue === "") {
+					return false;
+				}
+				var newName = inputValue;
+				swal({
+					title: 'Are you sure?',
+					text: 'Change ' + oldName + ' to ' + newName + ' ?',
+					showCancelButton: true,
+					closeOnConfirm: true,
+					confirmButtonText: 'Yes, change the name.'
+				}, function(confirm) {
+					
+					if (confirm) {
+						if (oldName === newName) {
+							return false;
+						}			
+						
+						$meteor.call('editRole', oldName, newName).then(function(data) {
+							Materialize.toast(oldName + ' changed to ' + newName , 4000);
+						}, function(err) {
+							Materialize.toast(err, 4000);
+						});
+					} else {
+						return false;
+					}
+				})
+			});
+		};
 	}
 ]);

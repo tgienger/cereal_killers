@@ -686,9 +686,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/roles/roles.controller.ng.html.js?9a7765b995effa6c6c01bafd9c70b7f6758f4a59",
-      "size": 2746,
-      "hash": "9a7765b995effa6c6c01bafd9c70b7f6758f4a59"
+      "url": "/client/admin/roles/roles.controller.ng.html.js?3320fbc1e8f062dabf02fe8d8efcd6f93ebbbde2",
+      "size": 3104,
+      "hash": "3320fbc1e8f062dabf02fe8d8efcd6f93ebbbde2"
     },
     {
       "path": "app/client/admin/settings/settings.controller.ng.html.js",
@@ -698,15 +698,6 @@
       "url": "/client/admin/settings/settings.controller.ng.html.js?5cf0c9cada45f200d7d13993c76b4d9f157b17e6",
       "size": 1853,
       "hash": "5cf0c9cada45f200d7d13993c76b4d9f157b17e6"
-    },
-    {
-      "path": "app/client/admin/site_rules/rules.controller.ng.html.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/client/admin/site_rules/rules.controller.ng.html.js?27e4a1e8130a45b18f55f82f3bd0ef603222487d",
-      "size": 1012,
-      "hash": "27e4a1e8130a45b18f55f82f3bd0ef603222487d"
     },
     {
       "path": "app/client/admin/userPage/admin.user.controller.ng.html.js",
@@ -758,9 +749,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/header/header.directive.ng.html.js?25073f19bfb772c45f9c9c25898d76bcf4091001",
-      "size": 882,
-      "hash": "25073f19bfb772c45f9c9c25898d76bcf4091001"
+      "url": "/client/header/header.directive.ng.html.js?7c0d567c12b14409e1abd9484d1eb7d396bc0d12",
+      "size": 942,
+      "hash": "7c0d567c12b14409e1abd9484d1eb7d396bc0d12"
     },
     {
       "path": "app/client/home/home.controller.ng.html.js",
@@ -830,9 +821,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/roles/roles.controller.js?0791b324f26de5ef652fe7c1207e0026becd87a5",
-      "size": 1319,
-      "hash": "0791b324f26de5ef652fe7c1207e0026becd87a5"
+      "url": "/client/admin/roles/roles.controller.js?0447209655b8b5bbd09a4c1759b04e3fa2dce581",
+      "size": 2344,
+      "hash": "0447209655b8b5bbd09a4c1759b04e3fa2dce581"
     },
     {
       "path": "app/client/admin/roles/roles.js",
@@ -860,24 +851,6 @@
       "url": "/client/admin/settings/settings.js?85d231796764c92555f671a34fe4f58e00e3a050",
       "size": 565,
       "hash": "85d231796764c92555f671a34fe4f58e00e3a050"
-    },
-    {
-      "path": "app/client/admin/site_rules/rules.controller.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/client/admin/site_rules/rules.controller.js?07ab963651d1429ea5396f69e4009a55957e9a4d",
-      "size": 399,
-      "hash": "07ab963651d1429ea5396f69e4009a55957e9a4d"
-    },
-    {
-      "path": "app/client/admin/site_rules/rules.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/client/admin/site_rules/rules.js?3c77516531448968d92f125d7773143e1adfea5d",
-      "size": 1135,
-      "hash": "3c77516531448968d92f125d7773143e1adfea5d"
     },
     {
       "path": "app/client/admin/userPage/admin.user.controller.js",
@@ -947,9 +920,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/camelCaseFilter/camelCase.js?edf3b8353f1551c21add1f3fc7a8cda6780c5ced",
-      "size": 584,
-      "hash": "edf3b8353f1551c21add1f3fc7a8cda6780c5ced"
+      "url": "/client/camelCaseFilter/camelCase.js?9b1dd95907e0dea40646691b4371241672a5f093",
+      "size": 776,
+      "hash": "9b1dd95907e0dea40646691b4371241672a5f093"
     },
     {
       "path": "app/client/chat/chat.controller.js",
@@ -992,9 +965,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/header/header.directive.js?5f619c4f1a6697d5fdc6d1d8e43a9528b22363da",
-      "size": 2432,
-      "hash": "5f619c4f1a6697d5fdc6d1d8e43a9528b22363da"
+      "url": "/client/header/header.directive.js?885915394fce9deb4b01f1bc2418601eddca09e8",
+      "size": 2699,
+      "hash": "885915394fce9deb4b01f1bc2418601eddca09e8"
     },
     {
       "path": "app/client/home/home.controller.js",
@@ -1123,15 +1096,15 @@
       "hash": "21a902291eac9f2147d43b622c15fe6ade8281e7"
     },
     {
-      "path": "e0ace8604f6e6047afb6d50da480a3ebe2080e81.css",
+      "path": "b5fd30285c081721581dc398c97e4f3b6b729c23.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/e0ace8604f6e6047afb6d50da480a3ebe2080e81.css",
-      "sourceMap": "e0ace8604f6e6047afb6d50da480a3ebe2080e81.css.map",
-      "sourceMapUrl": "/e0ace8604f6e6047afb6d50da480a3ebe2080e81.map",
-      "size": 292558,
-      "hash": "e0ace8604f6e6047afb6d50da480a3ebe2080e81"
+      "url": "/b5fd30285c081721581dc398c97e4f3b6b729c23.css",
+      "sourceMap": "b5fd30285c081721581dc398c97e4f3b6b729c23.css.map",
+      "sourceMapUrl": "/b5fd30285c081721581dc398c97e4f3b6b729c23.map",
+      "size": 292259,
+      "hash": "b5fd30285c081721581dc398c97e4f3b6b729c23"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",

@@ -3,7 +3,9 @@
   <h6 class="">
     <div class="valign">
       <a href="/home" class=""><i class="mdi-action-home tooltipped" data-tooltip="Home" data-position="bottom"></i></a>
-      <meteor-include src="adminLink"></meteor-include>
+      <!--<meteor-include src="adminLink"></meteor-include>-->
+      <a ng-if="userIsAdmin()" href="/admin">Admin</a>
+      
       &nbsp;
 
       <meteor-include src="loginButtons" class=""></meteor-include>

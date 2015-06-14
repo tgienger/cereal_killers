@@ -5,8 +5,9 @@ Meteor.methods({
 	// user is an admin
 	isAdmin: function() {
 		var user = Meteor.user();
+		var all = Rules.findOne({name: 'roles'}).all;
 		
-		if (!user || !Roles.userIsInRole(user, ['admin'])) {
+		if (!user || !Roles.userIsInRole(user, all)) {
 			throw new Meteor.Error(401, "AUTH_REQUIRED");
 		}
 		
@@ -68,5 +69,29 @@ Meteor.methods({
 		}
 		
 		Roles.removeUsersFromRoles(targetUserId, role);
+	},
+	
+	
+	// edit existing roles - propagate throughout user documents
+	editRole: function(oldName, newName) {
+		if (oldName === 'admin') {
+			throw new Meteor.Error(403, 'ADMIN CANNOT BE CHANGED');
+		}
+		
+		if (oldName === newName) {
+			throw new Meteor.Error(403, 'NO CHANGE');
+		}
+		
+		var all = Rules.findOne({name: 'roles'}).all;
+		var user = Meteor.user();
+		
+		if (!user || !Roles.userIsInRole(user, all)) {
+			throw new Meteor.Error(401, 'AUTH_REQUIRED');
+		}
+		
+		Meteor.users.update({roles: oldName}, {$set: {'roles.$': newName}}, {multi:true}, function() {
+			Meteor.roles.update({name: oldName}, {$set: {name: newName}}, {multi:true});
+		});
+		
 	}
 });

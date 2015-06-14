@@ -1,4 +1,4 @@
-angular.module('app').directive('toolbar',['$rootScope', function($rootScope) {
+angular.module('app').directive('toolbar',['$rootScope', '$meteor', function($rootScope, $meteor) {
 
   return {
     restrict     : 'E',
@@ -22,6 +22,16 @@ angular.module('app').directive('toolbar',['$rootScope', function($rootScope) {
       function() {
         isAtTop = true;
       });
+      
+      
+  //		check if user is admin
+  		scope.userIsAdmin = function() {
+  			if (!$rootScope.currentUser) {
+  				return false;
+  			}
+  			var userId = $rootScope.currentUser._id;
+  			return Roles.userIsInRole(userId, ['admin']);
+  		};
 
 
       element.on('mouseover', function() {

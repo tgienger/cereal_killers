@@ -22,12 +22,12 @@
 				<div class="row">
 					<div class="col s12">
 					<ul class="role-list">
-						<li ng-repeat="role in roles"><span class="available-roles">{{role.name}}</span></li>
+						<li ng-repeat="role in roles" class="pointer" ng-dblclick="editRole(role)"><span class="available-roles">{{role.name | camelCase}}</span></li>
 					</ul>
 					</div>
 				</div>
-				<div class="row info-header">
-					<span class="col s12">What they can do</span>
+				<div class="row">
+					<h6 class="col s12 white-text center-align">Role Rules</h6>
 				</div>
 				<div class="row">
 					<div class="col s12">
@@ -36,33 +36,33 @@
 								<div class="card-panel">
 									<h5 class="center-align">{{rule.name | camelCase}}</h5>
 									<div class="">
-										<p class="rule-header">All: <span class="smaller orange-text text-accent-4">Grants 'most' powers to these roles</span></p> 
-										<ul class="row">
-											<li class="col s12" ng-repeat="r in rule.all">{{r}}</li>
+										<ul class="row collection with-header">
+										<li class="rule-header collection-header">All: <span class="smaller orange-text text-accent-4">Grants 'most' powers to these roles</span></li> 
+											<li class="col s12 collection-item" ng-repeat="r in rule.all">{{r}}</li>
 										</ul>
 									</div>
 									<div class="">
-										<p class="rule-header">View: <span class="smaller orange-text text-accent-4">Users with these roles can view {{rule.name}}</span></p> 
-										<ul class="row">
-											<li class="col s12" ng-repeat="r in rule.view">{{r}}</li>
+										<ul class="row collection with-header">
+										<li class="rule-header collection-header">View: <span class="smaller orange-text text-accent-4">Users with these roles can view {{rule.name}}</span></li> 
+											<li class="col s12 collection-item" ng-repeat="r in rule.view">{{r}}</li>
 										</ul>
 									</div>
 									<div class="">
-										<p class="rule-header">Insert: <span class="smaller orange-text text-accent-4">Users with these roles will be able to create {{rule.name}}</span></p> 
-										<ul class="row">
-											<li class="col s12" ng-repeat="r in rule.insert">{{r}}</li>
+										<ul class="row collection with-header">
+										<li class="rule-header collection-header">Insert: <span class="smaller orange-text text-accent-4">Users with these roles will be able to create {{rule.name}}</span></li> 
+											<li class="col s12 collection-item" ng-repeat="r in rule.insert">{{r}}</li>
 										</ul>
 									</div>
 									<div class="">
-										<p class="rule-header">Update: <span class="smaller orange-text text-accent-4">Users with these roles can edit {{rule.name}}</span></p>
-										<ul class="row">
-											<li class="col s12" ng-repeat="r in rule.update">{{r}}</li>
+										<ul class="row collection with-header">
+										<li class="rule-header collection-header">Update: <span class="smaller orange-text text-accent-4">Users with these roles can edit {{rule.name}}</span></li>
+											<li class="col s12 collection-item" ng-repeat="r in rule.update">{{r}}</li>
 										</ul>
 									</div>
 									<div class="">
-										<p class="rule-header">Remove: <span class="smaller orange-text text-accent-4">Users with these roles can delete {{rule.name}}</span></p>
-										<ul class="row">
-											<li class="col s12" ng-repeat="r in rule.remove">{{r}}</li>
+										<ul class="row collection with-header">
+										<li class="rule-header collection-header">Remove: <span class="smaller orange-text text-accent-4">Users with these roles can delete {{rule.name}}</span></li>
+											<li class="col s12 collection-item" ng-repeat="r in rule.remove">{{r}}</li>
 										</ul>
 									</div>
 									

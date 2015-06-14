@@ -169,6 +169,12 @@ Schemas.roles = new SimpleSchema({
 				} else {
 					this.unset();
 				}
+			} else if (this.isUpdate) {
+				if (this.isFromTrustedCode) {
+					return field.value;
+				} else {
+					this.unset();
+				}
 			}
 		}
 	}
