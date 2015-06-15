@@ -1,11 +1,12 @@
 angular.module('app').controller('RolesController', [
 	'$scope',
 	'$meteor',
-	function($scope, $meteor) {
+	'$document',
+	function($scope, $meteor, $document) {
 		
 		$scope.newRole = '';
 		$scope.roles = $meteor.collection(Meteor.roles);
-		
+		// console.log($scope.roles);
 		
 		// subscribe to rules
 		$meteor.autorun($scope, function() {
@@ -101,5 +102,67 @@ angular.module('app').controller('RolesController', [
 				})
 			});
 		};
+		
+		$scope.swal = swal;
+		
+		
+		$scope.addNewRole = function(rule, name, newRole) {
+			
+			// _.each($scope.rules, function(el, index, list) {
+			// 	if (el.name === name) {
+			// 		var index = _.indexOf($scope.rules, el);
+			// 		if (_.indexOf($scope.rules[index][rule], newRole) < 0) {
+			// 			return false;
+			// 		}
+			// 	}
+			// });
+			
+			swal({
+				title: 'Add [' + newRole.name + '] to ['+ name + '] ' + rule + '?',
+				showCancelButton: true,
+				closeOnConfirm: true
+			}, function(confirm) {
+				if (confirm) {
+					_.each($scope.rules, function(el, index, list) {
+						if (el.name === name) {
+							var index = _.indexOf($scope.rules, el);
+							if (_.indexOf($scope.rules[index][rule], newRole.name) > -1) {
+								return false;
+							}
+							
+							$scope.rules[index][rule].push(newRole.name);
+							$scope.rules.save();
+						}
+					});
+				}
+			});			
+		};
+		
+		
+		$scope.removeRole = function(rule, name, oldRule, _index) {
+			
+			swal({
+				title: 'Remove [' + oldRule + '] from [' + name + '] ' + rule + '?',
+				showCancelButton: true,
+				closeOnConfirm: true
+			}, function(confirm) {
+				if (confirm) {
+					_.each($scope.rules, function(el, index, list) {
+						
+						if (el.name === name) {
+							
+							var i = _.indexOf($scope.rules, el);
+							$scope.rules[i][rule].splice(_index);
+							$scope.rules.save();
+						}
+						
+					});
+				}
+			});
+		};
+		
+		// $document.ready(function(that) {
+		// 	console.log(that);
+		// });
 	}
 ]);

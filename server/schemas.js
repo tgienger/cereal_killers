@@ -29,7 +29,6 @@ Schemas.NewsPosts = new SimpleSchema({
 			var field = this.field('visible');
 			if (this.isInsert) {
 				var setting = SiteSettings.find({}).fetch();
-				console.log(setting);
 				return setting[0].news.visible;
 			}
 			if (this.isUpdate) {
@@ -157,6 +156,8 @@ Chat.attachSchema(Schemas.chatPosts);
 Schemas.roles = new SimpleSchema({
 	name: {
 		type: String,
+		index: true,
+		unique: true,
 		autoValue: function() {
 			
 			var all = Rules.findOne({name: 'roles'}).all;

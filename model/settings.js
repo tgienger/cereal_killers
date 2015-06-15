@@ -5,6 +5,9 @@ SiteSettings = new Mongo.Collection('sitesettings');
 
 SiteSettings.allow({
 	insert: function(userId, news) {
+		
+		var all = Rules.findONe
+		
 		if (!Roles.userIsInRole(userId, ['admin'])) {
 			return false;
 		}

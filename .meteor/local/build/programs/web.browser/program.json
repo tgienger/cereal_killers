@@ -686,9 +686,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/roles/roles.controller.ng.html.js?3320fbc1e8f062dabf02fe8d8efcd6f93ebbbde2",
-      "size": 3104,
-      "hash": "3320fbc1e8f062dabf02fe8d8efcd6f93ebbbde2"
+      "url": "/client/admin/roles/roles.controller.ng.html.js?720c31f5b5d3904472469924bf57b7be44b484f6",
+      "size": 6781,
+      "hash": "720c31f5b5d3904472469924bf57b7be44b484f6"
     },
     {
       "path": "app/client/admin/settings/settings.controller.ng.html.js",
@@ -731,9 +731,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/chat/chat.controller.ng.html.js?faa1866718e01db53ff8513038a9504f74902cb0",
-      "size": 1167,
-      "hash": "faa1866718e01db53ff8513038a9504f74902cb0"
+      "url": "/client/chat/chat.controller.ng.html.js?13c111c7efbfb228e4c87030692705f766b143e2",
+      "size": 1182,
+      "hash": "13c111c7efbfb228e4c87030692705f766b143e2"
     },
     {
       "path": "app/client/header/template.adminLink.js",
@@ -821,9 +821,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/roles/roles.controller.js?0447209655b8b5bbd09a4c1759b04e3fa2dce581",
-      "size": 2344,
-      "hash": "0447209655b8b5bbd09a4c1759b04e3fa2dce581"
+      "url": "/client/admin/roles/roles.controller.js?7ce0053a6ee2ca7b40ea5ca9f278fdfd1665a632",
+      "size": 3869,
+      "hash": "7ce0053a6ee2ca7b40ea5ca9f278fdfd1665a632"
     },
     {
       "path": "app/client/admin/roles/roles.js",
@@ -920,9 +920,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/camelCaseFilter/camelCase.js?9b1dd95907e0dea40646691b4371241672a5f093",
-      "size": 776,
-      "hash": "9b1dd95907e0dea40646691b4371241672a5f093"
+      "url": "/client/camelCaseFilter/camelCase.js?ad2a9a2cdb1662590c5afd078a4d9410295a490e",
+      "size": 779,
+      "hash": "ad2a9a2cdb1662590c5afd078a4d9410295a490e"
     },
     {
       "path": "app/client/chat/chat.controller.js",
@@ -1055,18 +1055,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/model/chat.js?7d7280dfb2e4b874d71d4cf375b604f7c4b8ba14",
-      "size": 533,
-      "hash": "7d7280dfb2e4b874d71d4cf375b604f7c4b8ba14"
+      "url": "/model/chat.js?12451b7eba71d8a14ec51bf934d72d65c6118552",
+      "size": 627,
+      "hash": "12451b7eba71d8a14ec51bf934d72d65c6118552"
     },
     {
       "path": "app/model/news.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/model/news.js?3e036eccad1da3057bb80d522280c2d3c67cb127",
-      "size": 478,
-      "hash": "3e036eccad1da3057bb80d522280c2d3c67cb127"
+      "url": "/model/news.js?526fe8edc401f79f16fabc8c4d45a394e19e54fb",
+      "size": 732,
+      "hash": "526fe8edc401f79f16fabc8c4d45a394e19e54fb"
     },
     {
       "path": "app/model/roles.js",
@@ -1082,9 +1082,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/model/settings.js?d0afedbbde94766efe5f51a7febb04cc9159b642",
-      "size": 519,
-      "hash": "d0afedbbde94766efe5f51a7febb04cc9159b642"
+      "url": "/model/settings.js?da3eac617ab92cd7d2efb969ba71e223b1db229a",
+      "size": 551,
+      "hash": "da3eac617ab92cd7d2efb969ba71e223b1db229a"
     },
     {
       "path": "app/model/site_rules.js",

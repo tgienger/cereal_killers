@@ -1,5 +1,6 @@
 Meteor.publish('rules', function() {
-	if (Roles.userIsInRole(this.userId, ['admin'])) {
+	var all = Rules.findOne({name: 'roles'}).all;
+	if (Roles.userIsInRole(this.userId, all)) {
 	    return Rules.find({});
 	}
 });

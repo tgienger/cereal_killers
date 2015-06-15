@@ -10,7 +10,7 @@ angular.module('camelCaseFilter', [])
 		
 		// insert a space in place of a - between 2 lower case letters
 		// TODO: make the second word upper case (after removing the -)
-		string = string.replace(/([a-z])-([a-z])/g, '$1 $2');
+		// string = string.replace(/([a-z])-([a-z])/g, '$1 $2');
 		
 		// find first character
 		var oldFirst = string.charAt(0);

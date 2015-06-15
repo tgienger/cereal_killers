@@ -25,7 +25,7 @@
 
 	<div class="input-field col s12 chat-input">
 		<form ng-submit="sendChat(chat)">
-			<input type="text" id="chatInput" class="validate white-text" ng-model="chat.message">
+			<input type="text" id="chatInput" class="validate white-text" ng-model="chat.message" length="150">
 				<span class="badge" ng-class="chat.message.length > 150 ? 'chat-error': 'chat-error'">{{chat.message.length}}/150</span>
 			<label for="chatInput">write a comment...</label>
 		</form>
