@@ -16,7 +16,7 @@ Rules.allow({
 			
 		return false;
 	},
-	remove: function(userId, news) {
+	remove: function(userId, rule) {
 		if (Roles.userIsInRole(userId, ['admin'])) {
 			return true;
 		}

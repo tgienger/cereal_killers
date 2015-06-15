@@ -821,9 +821,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/roles/roles.controller.js?7ce0053a6ee2ca7b40ea5ca9f278fdfd1665a632",
-      "size": 3869,
-      "hash": "7ce0053a6ee2ca7b40ea5ca9f278fdfd1665a632"
+      "url": "/client/admin/roles/roles.controller.js?b188634f3ed84a1d324d8a188e5b3cd23e60987b",
+      "size": 3932,
+      "hash": "b188634f3ed84a1d324d8a188e5b3cd23e60987b"
     },
     {
       "path": "app/client/admin/roles/roles.js",
@@ -1091,9 +1091,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/model/site_rules.js?21a902291eac9f2147d43b622c15fe6ade8281e7",
+      "url": "/model/site_rules.js?3fe237959a859d7038bc4fd43d586670df2a5758",
       "size": 470,
-      "hash": "21a902291eac9f2147d43b622c15fe6ade8281e7"
+      "hash": "3fe237959a859d7038bc4fd43d586670df2a5758"
     },
     {
       "path": "b5fd30285c081721581dc398c97e4f3b6b729c23.css",

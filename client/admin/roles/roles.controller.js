@@ -15,7 +15,7 @@ angular.module('app').controller('RolesController', [
 			});
 			
 			$scope.rules = $meteor.collection(Rules);
-			console.log($scope.rules);
+			// console.log($scope.rules);
 		});
 		
 		
@@ -141,6 +141,10 @@ angular.module('app').controller('RolesController', [
 		
 		$scope.removeRole = function(rule, name, oldRule, _index) {
 			
+			if (oldRule === 'admin') {
+				return false;
+			}
+			
 			swal({
 				title: 'Remove [' + oldRule + '] from [' + name + '] ' + rule + '?',
 				showCancelButton: true,
@@ -152,7 +156,7 @@ angular.module('app').controller('RolesController', [
 						if (el.name === name) {
 							
 							var i = _.indexOf($scope.rules, el);
-							$scope.rules[i][rule].splice(_index);
+							$scope.rules[i][rule].splice(_index, 1);
 							$scope.rules.save();
 						}
 						
