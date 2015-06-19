@@ -183,3 +183,49 @@ Schemas.roles = new SimpleSchema({
 
 
 Meteor.roles.attachSchema(Schemas.roles);
+
+Schemas.mail = new SimpleSchema({
+	recipient: {
+		type: Object,
+		autoValue: function() {
+			var recipient = this.field('recipient');
+			if (recipient.isSet()) {
+				var user = Meteor.users.findOne({username: recipient});
+				return {
+					_id: user._id,
+					username: user._id
+				};
+			}
+		}
+	},
+	'recipient.$._id': {
+		type: String
+	},
+	'recipient.$.username': {
+		type: String
+	},
+	sender: {
+		type: [Object],
+		autoValue: function () {
+			var user = Meteor.user();
+			return {
+				_id: user._id,
+				usenrame: user.username
+			};
+		}
+	},
+	'sender.$._id': {
+		type: String
+	},
+	'sender.$.username': {
+		type: String
+	},
+	title: {
+		type: String
+	},
+	body: {
+		type: String
+	}
+});
+
+Mail.attachSchema(Schemas.mail);

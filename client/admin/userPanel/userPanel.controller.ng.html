@@ -1,9 +1,9 @@
-<h6 class="newsBlock white-text chatTitle">User Administration</h6>
+<h5 class="center-align">User Administration</h5>
 <ul id="newsStream" class="noList">
 		
 <!--	create new news-->
 	<div class="createPost">
-		<button ng-click="createUser()" ng-show="userIsAdmin()" class="waves-effect btn grey add-news-button"><span>Create New User</span></button>
+		<button ng-click="createUser()" disabled ng-show="userIsAdmin()" class="waves-effect btn grey add-news-button"><span>Create New User</span></button>
 	</div>
 	
 	<li ng-repeat="user in users | orderBy : 'createdAt' : 'reversed'">
@@ -19,6 +19,7 @@
 					<div class="col s3">
 						{{::user.profile.firstName}}
 						{{::user.profile.lastName}}
+						<i style="margin-left: 25px;" class="pointer green-text mdi-communication-email" ng-click="sendMail(user)"></i>
 					</div>
 					</div>
 					<div class="row info-header">

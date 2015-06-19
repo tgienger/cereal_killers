@@ -1,9 +1,12 @@
-<div class="userAdminContainer">
-	<div class="mainBody row">
-		<div class="newsFeed col l12 s12">
-			<div class="panel">
-				<h6 class="newsBlock white-text chatTitle">Website Settings</h6>
-				<p class="white-text center-align">Default values for the website.</p>
+<div class="user-admin-container">
+	<div class="row">
+		<div class=" col l12 s12">
+			<div class="">
+				<h5 class="admin-header center-align">Website Settings</h5>
+				<p class="center-align">Default values for the website.</p>
+				
+				
+				
 				<div class="row info-header" ng-repeat-start="setting in settings">
 					<span class="col s12">News Settings</span>
 				</div>
@@ -17,7 +20,7 @@
 								</div>
 								<p>
 									Setting the news item to private will only allow users of the 'member' group or higher
-									to view it. Leave unchecked to allow all visitors to view.
+									to view it. Leave unchecked to allow all visitors to view. (each post editable)
 								</p>
 							</div>
 						</div>
@@ -31,12 +34,36 @@
 								</div>
 								<p>
 									Setting the news item to visible will allow it to be seen. Leaving unchecked will prevent anyone
-									besides the admin from viewing.
+									besides the admin from viewing. (each post editable)
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
+				
+				
+				
+				<div class="row info-header">
+					<span class="col s12">User Admin Settings</span>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<div class="row">
+							<div class="col s12 settings-description">
+								<div class="privateCheckbox">
+									<input class="" type="checkbox" name="privateCheck" id="roleChangeConfirm" ng-model="setting.users.roleConfirm">
+									<label class="checkbox-label" for="roleChangeConfirm">role change confirm</label>
+								</div>
+								<p>
+									Checking this will require you to confirm changes made to users roles. (admin will always require confirmation)
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				
 				<div class="row info-header">
 					<span class="col s12">Forum Settings</span>
 				</div>

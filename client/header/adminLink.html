@@ -1,5 +1,5 @@
 <template name="adminLink">
 	{{#if isInRole 'admin'}}
-		<a href="/admin">Admin</a>
+		<a ui-sref="admin.settings">Admin</a>
 	{{/if}}
 </template>

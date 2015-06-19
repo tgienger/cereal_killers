@@ -7,7 +7,7 @@ News.allow({
 	insert: function(userId, news) {
 		
 		var all = Rules.findOne({name: 'news'}).all;
-		var insert = Rules.indOne({name: 'news'}).insert;
+		var insert = Rules.findOne({name: 'news'}).insert;
 		
 		var allowed = _.union(all, insert);
 		

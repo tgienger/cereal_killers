@@ -295,6 +295,102 @@
       "path": "packages/materialize_materialize.js"
     },
     {
+      "sourceMap": "packages/service-configuration.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/service-configuration.js"
+    },
+    {
+      "sourceMap": "packages/localstorage.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/localstorage.js"
+    },
+    {
+      "sourceMap": "packages/url.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/url.js"
+    },
+    {
+      "sourceMap": "packages/oauth.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/oauth.js",
+      "assets": {
+        "end_of_popup_response.html": "assets/packages/oauth/end_of_popup_response.html",
+        "end_of_redirect_response.html": "assets/packages/oauth/end_of_redirect_response.html"
+      }
+    },
+    {
+      "sourceMap": "packages/accounts-oauth.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/accounts-oauth.js"
+    },
+    {
+      "sourceMap": "packages/oauth2.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/oauth2.js"
+    },
+    {
+      "node_modules": "/C/Users/Tj/AppData/Local/.meteor/packages/http/1.1.0/npm/node_modules",
+      "sourceMap": "packages/http.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/http.js"
+    },
+    {
+      "sourceMap": "packages/mrt_steam.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/mrt_steam.js"
+    },
+    {
+      "sourceMap": "packages/mrt_accounts-steam.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/mrt_accounts-steam.js"
+    },
+    {
+      "sourceMap": "packages/facebook.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/facebook.js"
+    },
+    {
+      "sourceMap": "packages/accounts-facebook.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/accounts-facebook.js"
+    },
+    {
+      "sourceMap": "packages/google.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/google.js"
+    },
+    {
+      "sourceMap": "packages/accounts-google.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/accounts-google.js"
+    },
+    {
+      "sourceMap": "packages/coffeescript.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/coffeescript.js"
+    },
+    {
+      "sourceMap": "packages/handlebars.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/handlebars.js"
+    },
+    {
+      "node_modules": "/C/Users/Tj/AppData/Local/.meteor/packages/cmather_handlebars-server/2.0.0/npm/node_modules",
+      "sourceMap": "packages/cmather_handlebars-server.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/cmather_handlebars-server.js"
+    },
+    {
+      "sourceMap": "packages/yogiben_pretty-email.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/yogiben_pretty-email.js"
+    },
+    {
+      "sourceMap": "packages/angular_angular-animate.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/angular_angular-animate.js"
+    },
+    {
       "sourceMap": "packages/session.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/session.js"
@@ -314,6 +410,9 @@
       "path": "app/model/chat.js"
     },
     {
+      "path": "app/model/mail.js"
+    },
+    {
       "path": "app/model/news.js"
     },
     {
@@ -327,6 +426,9 @@
     },
     {
       "path": "app/server/chat.js"
+    },
+    {
+      "path": "app/server/mail.js"
     },
     {
       "path": "app/server/methods.js"
@@ -348,11 +450,6 @@
     },
     {
       "path": "app/server/users.js"
-    },
-    {
-      "sourceMap": "packages/service-configuration.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/service-configuration.js"
     }
   ]
 }

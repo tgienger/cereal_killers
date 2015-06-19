@@ -2,6 +2,16 @@
 /* global Meteor */
 Meteor.methods({
 	
+	updateUserProfile: function(user) {
+		
+		var User = Meteor.user();
+		var all = Rules.findOne({name: 'users'}).all;
+		
+		if (User._id === user._id) {
+			Meteor.users.update({_id: user._id}, {$set: {profile: user.profile}});
+		}
+	},
+	
 	// user is an admin
 	isAdmin: function() {
 		var user = Meteor.user();

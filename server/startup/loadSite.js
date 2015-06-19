@@ -39,43 +39,52 @@ Meteor.startup(function() {
 	if (Rules.find().count() === 0) {
 		Rules.insert({
 			name: 'news',
-			all: ['admin', 'superModerator'],
-			view: ['admin', 'superModerator', 'member'],
-			insert: ['admin', 'superModerator'],
-			update: ['admin', 'superModerator'],
-			remove: ['admin', 'superModerator']
+			all: ['admin', 'super moderator'],
+			view: ['admin', 'super moderator', 'member'],
+			insert: ['admin', 'super moderator'],
+			update: ['admin', 'super moderator'],
+			remove: ['admin', 'super moderator']
 		});
 		Rules.insert({
 			name: 'roles',
-			all: ['admin', 'superModerator'],
-			view: ['admin', 'superModerator', 'member'],
-			insert: ['admin', 'superModerator'],
-			update: ['admin', 'superModerator'],
-			remove: ['admin', 'superModerator']
+			all: ['admin', 'super moderator'],
+			view: ['admin', 'super moderator', 'member'],
+			insert: ['admin', 'super moderator'],
+			update: ['admin', 'super moderator'],
+			remove: ['admin', 'super moderator']
 		});
 		Rules.insert({
 			name: 'chat',
-			all: ['admin', 'superModerator'],
-			view: ['admin', 'superModerator', 'member'],
-			insert: ['admin', 'superModerator'],
-			update: ['admin', 'superModerator'],
-			remove: ['admin', 'superModerator']
+			all: ['admin', 'super moderator'],
+			view: ['admin', 'super moderator', 'member'],
+			insert: ['admin', 'super moderator'],
+			update: ['admin', 'super moderator'],
+			remove: ['admin', 'super moderator']
 		});
 		Rules.insert({
 			name: 'settings',
-			all: ['admin', 'superModerator'],
-			view: ['admin', 'superModerator'],
-			insert: ['admin', 'superModerator'],
-			update: ['admin', 'superModerator'],
-			remove: ['admin', 'superModerator']
+			all: ['admin', 'super moderator'],
+			view: ['admin', 'super moderator'],
+			insert: ['admin', 'super moderator'],
+			update: ['admin', 'super moderator'],
+			remove: ['admin', 'super moderator']
 		});
 		Rules.insert({
 			name: 'users',
 			all: ['admin'],
-			view: ['admin', 'superModerator', 'member'],
-			insert: ['admin', 'superModerator'],
-			update: ['admin', 'superModerator'],
-			remove: ['admin', 'superModerator']
+			view: ['admin', 'super moderator', 'member'],
+			insert: ['admin', 'super moderator'],
+			update: ['admin', 'super moderator'],
+			remove: ['admin', 'super moderator']
+		});
+		Rules.insert({
+			name: 'mail',
+			all: ['admin', 'super moderator'],
+			view: ['admin', 'member', 'registered'],
+			insert: ['admin', 'member', 'registered'],
+			update: ['admin', 'super moderator'],
+			remove: ['admin', 'super moderator', 'registered']
+			
 		});
 	}
 	

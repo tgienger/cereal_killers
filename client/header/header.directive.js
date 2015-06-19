@@ -7,7 +7,7 @@ angular.module('app').directive('toolbar',['$rootScope', '$meteor', function($ro
     link         : function (scope, element, attrs) {
       var didScroll  = false,
           options    = [
-            {selector: '.bodyContainer', offset: 0, downScrollCallback: shrinkToolbar, upScrollCallback: expandToolbar}
+            {selector: '.bodyContainer', offset: attrs.offset || 0, downScrollCallback: shrinkToolbar, upScrollCallback: expandToolbar}
           ],
           isAtTop = true;
 

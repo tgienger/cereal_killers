@@ -3,6 +3,9 @@ angular.module('app', [
 	'ui.router',
 	'synergy.composer',
 	'camelCaseFilter',
+	'resizeDirective',
+	'mailDirectives',
+	'ngAnimate'
 ]);
 
 Accounts.ui.config({

@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('app')
+    angular.module('resizeDirective', [])
       .directive('resizeable', function () {
           // private variables
           var minHeight = 150;

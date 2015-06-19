@@ -1,0 +1,52 @@
+#admin-nav {
+	margin-top: 60px;
+}
+
+.ui-view-container {
+	padding-left: 240px;
+	background: white;
+	padding-top: 60px;
+	overflow-x: hidden;
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+	
+	// .view-animate {
+	// 	// padding: 10px;
+	// }
+	
+	// [ui-view].ng-enter, [ui-view].ng-leave {
+	// 	// -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s;
+	// 	// transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s;
+		
+	// 	transition: all .5s ease-in;
+		
+	// 	display:block;
+	// 	width:100%;
+		
+	// 	position:absolute;
+	// 	top:0;
+	// 	left:240px;
+	// 	right:0;
+	// 	bottom:0;
+	// 	// padding:10px;
+	// 	padding-top: 60px;
+	// }
+		
+	// [ui-view].ng-enter {
+	// 	left:100%;
+	// }
+	// [ui-view].ng-enter.ng-enter-active {
+	// 	left:240px;
+	// }
+	// [ui-view].ng-leave.ng-leave-active {
+	// 	left:-100%;
+	// }
+}
+
+.admin-header {
+	margin: auto;
+}
+
+.user-admin-container {
+}

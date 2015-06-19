@@ -24,11 +24,33 @@ angular.module('app').controller('UserPanelController', [
 //			insert the news posts into this array
 			$scope.users = $meteor.collection(Meteor.users);
 		});
+
 		
 		$scope.roles = $meteor.collection(Meteor.roles);
 		
 		
+		$scope.$meteorSubscribe('sitesettings').then(function(handle) {
+			var newsSettingsHandle = handle;
+		});
+		
+		$scope.settings = $meteor.object(SiteSettings, {});
+		
+		function addRole(user, roles) {
+			$meteor.call('addUsersToRoles', user, roles);
+		}
+		
+		function removeRole(user, roles) {
+			$meteor.call('removeUsersFromRoles', user, roles);
+		}
+		
+		
 		$scope.removeUsersFromRoles = function(user, index) {
+			
+			if ($scope.settings.users.roleConfirm === false && user.roles[index] !== 'admin') {
+				removeRole(user._id, [user.roles[index]]);
+				return;
+			}
+			
 			swal({
 				title: 'Are you sure?',
 				text: 'You are going to remove ' + user.username + ' from role ' + user.roles[index],
@@ -38,13 +60,17 @@ angular.module('app').controller('UserPanelController', [
 				confirmButtonText: 'Yes, remove role',
 			}, function(confirmed) {
 				if (confirmed) {
-					$meteor.call('removeUsersFromRoles', user._id, [user.roles[index]]);
+					removeRole(user._id, [user.roles[index]]);
 				}
 			});
 		};
-		
-		
 		$scope.addUsersToRoles = function(user, role) {
+			
+			if ($scope.settings.users.roleConfirm === false && role.name !== 'admin') {
+				addRole(user._id, [role.name]);
+				return;
+			}
+			
 			swal({
 				title: 'Are you sure?',
 				text: 'You are about to grant ' + user.username + ' with the role of ' + role.name,
@@ -54,9 +80,10 @@ angular.module('app').controller('UserPanelController', [
 				confirmButtonText: 'Yes, add role',
 			}, function(confirmed) {
 				if (confirmed) {
-					$meteor.call('addUsersToRoles', user._id, [role.name]);
+					addRole(user._id, [role.name]);
 				}
 			});
+			
 		};
 		
 		$scope.roleClicked = function(role) {
@@ -86,6 +113,10 @@ angular.module('app').controller('UserPanelController', [
 		angular.element(document).ready(function() {
 	        $scope.pageReady = true;
 	    });
+		
+		$scope.sendMail = function(user) {
+			console.log(user);
+		};
 		
 	}
 ]);

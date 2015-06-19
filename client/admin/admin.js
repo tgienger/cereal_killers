@@ -13,6 +13,44 @@ function($stateProvider) {
                     });
                 }]
             }
-		});
+		})
+		.state('admin.users', {
+			templateUrl: 'client/admin/userPage/admin.user.controller.ng.html',
+			controller: 'AdminUserController',
+			// resolve: {
+			// 	'users': ['$meteor', '$q', function($meteor, $q) {
+					
+			// 		var deferred = $q.defer();
+					
+			// 		$meteor.subscribe('users').then(function() {
+			// 			deferred.resolve($meteor.collection(Meteor.users));
+			// 		});
+					
+			// 		return deferred.promise;
+					
+			// 	}]
+			// }
+		})
+		.state('admin.roles', {
+			templateUrl: 'client/admin/roles/roles.controller.ng.html',
+			controller: 'RolesController',
+			// resolve: {
+			// 	'roleData': ['$meteor', '$q', function($meteor, $q) {
+					
+			// 		var deferred = $q.defer();
+					
+			// 		$meteor.subscribe('rules').then(function() {
+			// 			deferred.resolve($meteor.collection(Rules));
+			// 		});
+					
+			// 		return deferred.promise;
+			// 		// return $meteor.collection(Meteor.roles);
+			// 	}]
+			// }
+		})
+		.state('admin.settings', {
+			templateUrl: 'client/admin/settings/settings.controller.ng.html',
+			controller: 'SettingsController',
+		})
 }]);
 

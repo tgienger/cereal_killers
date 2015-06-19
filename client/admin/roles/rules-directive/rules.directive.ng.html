@@ -1,0 +1,36 @@
+<div class="">
+	<ul class="row">
+		<li class="rule-header" ng-repeat="(key, value) in rule" ng-hide="key == '_id' || key == 'name'">
+			
+			<div class="collection with-header">
+				<div class="collection-header col s12 grey lighten-2">
+					<div class="row">
+						<span class="col s6">{{key | camelCase}}: <span class="smaller orange-text text-accent-4">Users with these roles will be able to do {{key}} in {{rule.name}}</span></span>
+						<div class="col s6">
+							<div class="row">
+								<select 
+									class="browser-default col s10" 
+									ng-model="newRole.all" 
+									ng-options="role.name for role in roles"
+									ng-change="">
+									<option value="" disabled selected>choose a role to add</option>
+								</select>
+								<button class="btn col s2" ng-click="addRole(key, rule.name, newRole.all)">Add</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<ul>
+					<li class="col s12 collection-item blue-grey lighten-4" ng-repeat="r in rule[key] track by $index">
+						{{r}} 
+						<i ng-if="r !== 'admin'" class="secondary-content mdi-content-clear pointer" ng-click="removeRole(key, rule.name, r, $index)"></i>
+					</li>
+				</ul>
+			</div>
+			
+		</li> 
+		
+		
+	</ul>
+</div>

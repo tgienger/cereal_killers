@@ -1,0 +1,27 @@
+#profileForm {
+	input[type="text"]{
+		// background-color: ghostwhite;
+		// color: black;
+		// border-bottom: 2px solid mediumvioletred;
+		border-bottom: none;
+		-webkit-box-shadow: inset 0px 0px 10px 1px rgba(255, 255, 255, 0.75);
+		-moz-box-shadow:    inset 0px 0px 10px 1px rgba(255, 255, 255, 0.75);
+		box-shadow:         inset 0px 0px 10px 1px rgba(255, 255, 255, 0.75);
+		
+	}
+	input[type="text"]:focus {
+		border-bottom: none;
+		-webkit-box-shadow: inset 0px 0px 10px 1px rgba(0, 255, 255, 0.75);
+		-moz-box-shadow:    inset 0px 0px 10px 1px rgba(0, 255, 255, 0.75);
+		box-shadow:         inset 0px 0px 10px 1px rgba(0, 255, 255, 0.75);
+	}
+	textarea {
+		border-bottom: none;
+		-webkit-box-shadow: inset 0px 0px 10px 1px rgba(255, 255, 255, 0.75);
+		-moz-box-shadow:    inset 0px 0px 10px 1px rgba(255, 255, 255, 0.75);
+		box-shadow:         inset 0px 0px 10px 1px rgba(255, 255, 255, 0.75);
+	}
+	textarea:focus {
+		border: none;
+	}
+}

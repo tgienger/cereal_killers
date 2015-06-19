@@ -1,7 +1,7 @@
-<div class="userAdminContainer">
-	<div class="mainBody row">
-		<div class="newsFeed col l12 s12">
-			<div class="panel">
+<div class="user-admin-container">
+	<div class="row">
+		<div class="col l12 s12">
+			<div class="">
 				<h6 class="newsBlock white-text chatTitle">Roles Administration</h6>
 				<div class="row info-header">
 					<span class="col s12">Create / Remove Roles</span>
@@ -34,126 +34,10 @@
 						<ul class=" rule-sets">
 							<li class="" ng-repeat="rule in rules">
 								<div class="card-panel">
+									
 									<h5 class="center-align">{{rule.name | camelCase}}</h5>
-									<div class="">
-										<ul class="row collection with-header">
-										<li class="rule-header collection-header col s12 grey lighten-2">
-											<div class="row">
-												<span class="col s6">All: <span class="smaller orange-text text-accent-4">Users with these roles will be able to do 'most' things in {{rule.name}}</span></span>
-												<div class="col s6">
-													<div class="row">
-														<select 
-															class="browser-default col s10" 
-															ng-model="newRole.adding" 
-															ng-options="role.name for role in roles"
-															ng-change="">
-															<option value="" disabled selected>choose a role to add</option>
-														</select>
-														<button class="btn col s2" ng-click="addNewRole('all', rule.name, newRole.adding)">Add</button>
-													</div>
-												</div>
-											</div>
-										</li> 
-										<li class="col s12 collection-item blue-grey lighten-4" ng-repeat="r in rule.all">{{r}} <i class="secondary-content mdi-content-clear pointer" ng-click="removeRole('all', rule.name, r, $index)"></i></li>
-										</ul>
-									</div>
-									<div class="">
-										<ul class="row collection with-header">
-										<li class="rule-header collection-header col s12 grey lighten-2">
-											<div class="row">
-												<span class="col s6">View: <span class="smaller orange-text text-accent-4">Users with these roles will be able to view {{rule.name}}</span></span>
-												<!--<form class="col s6" novalidate>-->
-													<div class="col s6">
-														<div class="row">
-															<select 
-																class="browser-default col s10" 
-																ng-model="newRole.adding" 
-																ng-options="role.name for role in roles"
-																ng-change="">
-																<option value="" disabled selected>choose a role to add</option>
-															</select>
-															<button class="btn col s2" ng-click="addNewRole('view', rule.name, newRole.adding)">Add</button>
-														</div>
-													</div>
-												<!--</form>-->
-											</div>
-											<!--<input type="text" ng-model="newRule.selected"> <button ng-click="rule.insert.push(newRule.selected)">insert</button>-->
-										</li> 
-										<li class="col s12 collection-item blue-grey lighten-4" ng-repeat="r in rule.view">{{r}} <i class="secondary-content mdi-content-clear pointer" ng-click="removeRole('view', rule.name, r, $index)"></i></li>
-										</ul>
-									</div>
-									<div class="">
-										<ul class="row collection with-header">
-										<li class="rule-header collection-header col s12 grey lighten-2">
-											<div class="row">
-												<span class="col s6">Insert: <span class="smaller orange-text text-accent-4">Users with these roles will be able to create {{rule.name}}</span></span>
-													<div class="col s6">
-														<div class="row">
-															<select 
-																class="browser-default col s10" 
-																ng-model="newRole.adding" 
-																ng-options="role.name for role in roles"
-																ng-change="">
-																<option value="" disabled selected>choose a role to add</option>
-															</select>
-															<button class="btn col s2" ng-click="addNewRole('insert', rule.name, newRole.adding)">Add</button>
-														</div>
-													</div>
-											</div>
-										</li> 
-										<li class="col s12 collection-item blue-grey lighten-4" ng-repeat="r in rule.insert">{{r}} <i class="secondary-content mdi-content-clear pointer" ng-click="removeRole('insert', rule.name, r, $index)"></i></li>
-										</ul>
-									</div>
-									<div class="">
-										<ul class="row collection with-header">
-										<li class="rule-header collection-header col s12 grey lighten-2">
-											<div class="row">
-												<span class="col s6">Update: <span class="smaller orange-text text-accent-4">Users with these roles will be able to update {{rule.name}}</span></span>
-												<!--<form class="col s6" novalidate>-->
-													<div class="col s6">
-														<div class="row">
-															<select 
-																class="browser-default col s10" 
-																ng-model="newRole.adding" 
-																ng-options="role.name for role in roles"
-																ng-change="">
-																<option value="" disabled selected>choose a role to add</option>
-															</select>
-															<button class="btn col s2" ng-click="addNewRole('update', rule.name, newRole.adding)">Add</button>
-														</div>
-													</div>
-												<!--</form>-->
-											</div>
-											<!--<input type="text" ng-model="newRule.selected"> <button ng-click="rule.insert.push(newRule.selected)">insert</button>-->
-										</li> 
-										<li class="col s12 collection-item blue-grey lighten-4" ng-repeat="r in rule.update">{{r}} <i class="secondary-content mdi-content-clear pointer" ng-click="removeRole('update', rule.name, r, $index)"></i></li>
-										</ul>
-									</div>
-									<div class="">
-										<ul class="row collection with-header">
-										<li class="rule-header collection-header col s12 grey lighten-2">
-											<div class="row">
-												<span class="col s6">Remove: <span class="smaller orange-text text-accent-4">Users with these roles will be able to remove {{rule.name}}</span></span>
-												<!--<form class="col s6" novalidate>-->
-													<div class="col s6">
-														<div class="row">
-															<select 
-																class="browser-default col s10" 
-																ng-model="newRole.adding" 
-																ng-options="role.name for role in roles"
-																ng-change="">
-																<option value="" disabled selected>choose a role to add</option>
-															</select>
-															<button class="btn col s2" ng-click="addNewRole('remove', rule.name, newRole.adding)">Add</button>
-														</div>
-													</div>
-												<!--</form>-->
-											</div>
-											<!--<input type="text" ng-model="newRule.selected"> <button ng-click="rule.insert.push(newRule.selected)">insert</button>-->
-										</li> 
-										<li class="col s12 collection-item blue-grey lighten-4" ng-repeat="r in rule.remove">{{r}} <i class="secondary-content mdi-content-clear pointer" ng-click="removeRole('remove', rule.name, r, $index)"></i></li>
-										</ul>
-									</div>
+									
+									<rules-dir rules="rules" roles="roles" rule="rule"></rules-dir>
 									
 								</div>
 							</li>

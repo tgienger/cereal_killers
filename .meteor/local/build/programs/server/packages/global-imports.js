@@ -3,6 +3,7 @@
 Accounts = Package['accounts-base'].Accounts;
 Roles = Package['alanning:roles'].Roles;
 Showdown = Package.markdown.Showdown;
+PrettyEmail = Package['yogiben:pretty-email'].PrettyEmail;
 Meteor = Package.meteor.Meteor;
 WebApp = Package.webapp.WebApp;
 main = Package.webapp.main;

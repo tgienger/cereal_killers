@@ -1,13 +1,12 @@
-<div class="userAdminContainer">
-	<div class="mainBody row">
-		<div class="newsFeed col l12 s12">
-			
-			<div class="panel center-align">
-				<h6 class="newsBlock white-text chatTitle">Admin Control</h6>
-				<a class="btn blue-grey darken-1" href="/admin/user">Users <i class="fa fa-users right"></i></a>
-				<a class="btn blue-grey darken-1" href="/admin/roles">Roles <i class="fa fa-asterisk right"></i></a>
-				<a class="btn blue-grey darken-1" href="/admin/settings">Settings <i class="fa fa-cogs right"></i></a>
-			</div>
-		</div>
-	</div>
+<toolbar offset="-1"></toolbar>
+
+<div class="admin-container ui-view-container">
+	<ul id="admin-nav" class="side-nav fixed">
+		<!--<li><a class="" href="/admin/user">Users</a></li>-->
+		<li><a class="" ui-sref="admin.settings">Settings</a></li>
+		<li><a class="" ui-sref="admin.users">Users</a></li>
+		<li><a class="" ui-sref="admin.roles">Roles</a></li>
+	</ul>
+	
+	<div ui-view></div>
 </div>

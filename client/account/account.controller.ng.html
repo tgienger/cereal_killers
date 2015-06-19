@@ -1,0 +1,76 @@
+<toolbar offset="60"></toolbar>
+
+<div class="userAdminContainer">
+	<a href="/home" class="header-image"></a>
+	<div class="mainBody row">
+		<div class="newsFeed col s12">
+			
+			<div class="panel">
+				<h6 class="newsBlock white-text chatTitle">Profile</h6>
+				<ul class="white-text row">
+					<form name="profileForm" id="profileForm" novalidate>
+						
+						<li class="col s12">
+							<div class="row">
+								<span class="col s3">Username: {{user.username}}</span>
+							</div>
+						</li>
+						
+						<li class="col s12">
+							<div class="row">
+								<span class="col s2">First Name: </span> <input class="col s4" type="text" ng-model="user.profile.firstName">
+							</div>
+						</li>
+						<li class="col s12">
+							<div class="row">
+								<span class="col s2">Last Name:</span> <input class="col s4" type="text" ng-model="user.profile.lastName">
+							</div>
+						</li>
+						<li class="col s12">
+							<div class="row">
+								<span class="col s2">Bio: </span> <textarea class="col s4" ng-model="user.profile.bio"></textarea>
+							</div>
+						</li>
+						<input class="btn" ng-disabled="profileForm.$pristine" type="submit" value="Update Profile" ng-click="updateProfile(user)">
+						<!--<button class="btn" ng-click="profileForm.$rollbackViewValue()">reset</button>-->
+						
+					</form>
+					<li>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="panel">
+				<h6 class="newsBlock white-text chatTitle">Email Addresses</h6>
+				<ul class="white-text row">
+					<li class="col s12">
+						<div class="row">
+							<p class="col s6">Emails</p>
+							<p class="col s6">Verified</p>
+						</div>
+					</li>
+					<li class="col s12" ng-repeat="email in user.emails">
+						<div class="row">
+							<p class="col s6">{{email.address}}</p>
+							<p class="col s3">{{email.verified}}</p>
+							<p class="col s3" ng-show="!email.verified"><a href="#">Send Verification Email</a></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="panel">
+				<h6 class="newsBlock white-text chatTitle">Mail</h6>
+				<mail></mail>
+			</div>
+			
+			<div class="panel">
+				<h6 class="newsBlock white-text chatTitle">Roles</h6>
+				<ul>
+					<li ng-repeat="role in roles">{{role}}</li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</div>
