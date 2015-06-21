@@ -103,5 +103,18 @@ Meteor.methods({
 			Meteor.roles.update({name: oldName}, {$set: {name: newName}}, {multi:true});
 		});
 		
+		// var rules = Rules.find({}).fetch();
+		
+		// console.log(rules);
+		
+		// _.each(rules, function(rule) {
+		// 	_.each(rule, function(r) {
+		// 		if (Object.prototype.toString.call(r) === '[object Array]') {
+		// 			var index = _.indexOf(r, oldName);
+		// 			Rules.update({rule: {$set: {r: newName}}});
+		// 		}
+		// 	});
+		// });
+		
 	}
 });

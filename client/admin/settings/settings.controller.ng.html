@@ -5,70 +5,84 @@
 				<h5 class="admin-header center-align">Website Settings</h5>
 				<p class="center-align">Default values for the website.</p>
 				
+				<div class="divider"></div>
 				
-				
-				<div class="row info-header" ng-repeat-start="setting in settings">
-					<span class="col s12">News Settings</span>
-				</div>
-				<div class="row">
-					<div class="col s12">
-						<div class="row">
-							<div class="col s12 settings-description">
-								<div class="privateCheckbox">
-									<input class="" type="checkbox" name="privateCheck" id="privateCheck_{{setting._id}}" ng-change="privateChange(post)" ng-click="privateClicked(post)" ng-model="setting.news.private">
-									<label class="checkbox-label" for="privateCheck_{{setting._id}}">private</label>
+				<div class="section" ng-repeat-start="setting in settings">
+					<div class="row info-header">
+						<span class="col s12">News Settings</span>
+					</div>
+					<div class="row">
+						
+						<div class="col settings-description">
+							<div class="row valign-wrapper">
+								<div class="col l2 valign">
+									<div class="privateCheckbox">
+										<input class="" type="checkbox" name="privateCheck" id="privateCheck_{{setting._id}}" ng-change="privateChange(post)" ng-click="privateClicked(post)" ng-model="setting.news.private">
+										<label class="checkbox-label" for="privateCheck_{{setting._id}}">private</label>
+									</div>
 								</div>
-								<p>
-									Setting the news item to private will only allow users of the 'member' group or higher
-									to view it. Leave unchecked to allow all visitors to view. (each post editable)
-								</p>
+								<div class="col l6 valign">
+									<p class="smaller-text">
+										Setting the news item to private will only allow users of the 'member' group or higher
+										to view it. Leave unchecked to allow all visitors to view. (each post editable)
+									</p>
+								</div>
+							</div>
+							
+							<div class="row valign-wrapper">
+								<div class="col l2  valign">
+									<div class="privateCheckbox">
+										<input type="checkbox" name="hiddenCheck" id="hiddenCheck_{{setting._id}}" ng-model="setting.news.visible">
+										<label class="checkbox-label" for="hiddenCheck_{{setting._id}}">visible</label>
+									</div>
+								</div>
+								<div class="col l6  valign">
+									<p>
+										Setting the news item to visible will allow it to be seen. Leaving unchecked will prevent anyone
+										besides the admin from viewing. (each post editable)
+									</p>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+				<p class="center-align"><small>(these settings will be default when the post is created and can be set differently per post after creation. It is suggested to keep posts private and not visible so you don't accidentally make a private post public.)</small></p>
+				<div class="divider"></div>
+				
+				<div class="section">
+					<div class="row info-header">
+						<span class="col s12">User Admin Settings</span>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<div class="row valign-wrapper">
+								<div class="col s12 l2 valign">
+									<div class="privateCheckbox">
+										<input class="" type="checkbox" name="privateCheck" id="roleChangeConfirm" ng-model="setting.users.roleConfirm">
+										<label class="checkbox-label" for="roleChangeConfirm">role change confirm</label>
+									</div>
+								</div>
+								<div class="col s12 l6 valign">
+									<p>
+										Checking this will require you to confirm changes made to users roles. (admin will always require confirmation)
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col s12">
-						<div class="row">
-							<div class="col s12 settings-description">
-								<div class="privateCheckbox">
-									<input type="checkbox" name="hiddenCheck" id="hiddenCheck_{{setting._id}}" ng-model="setting.news.visible">
-									<label class="checkbox-label" for="hiddenCheck_{{setting._id}}">visible</label>
-								</div>
-								<p>
-									Setting the news item to visible will allow it to be seen. Leaving unchecked will prevent anyone
-									besides the admin from viewing. (each post editable)
-								</p>
-							</div>
-						</div>
+				</div>
+				
+				<div class="divider"></div>
+				
+				<div class="section" ng-repeat-end>
+					<div class="row info-header">
+						<span class="col s12">Forum Settings</span>
 					</div>
-				</div>
-				
-				
-				
-				<div class="row info-header">
-					<span class="col s12">User Admin Settings</span>
-				</div>
-				<div class="row">
-					<div class="col s12">
-						<div class="row">
-							<div class="col s12 settings-description">
-								<div class="privateCheckbox">
-									<input class="" type="checkbox" name="privateCheck" id="roleChangeConfirm" ng-model="setting.users.roleConfirm">
-									<label class="checkbox-label" for="roleChangeConfirm">role change confirm</label>
-								</div>
-								<p>
-									Checking this will require you to confirm changes made to users roles. (admin will always require confirmation)
-								</p>
-							</div>
+					<div class="row">
+						<div class="col s12">
 						</div>
-					</div>
-				</div>
-				
-				
-				
-				<div class="row info-header">
-					<span class="col s12">Forum Settings</span>
-				</div>
-				<div class="row" ng-repeat-end>
-					<div class="col s12">
 					</div>
 				</div>
 			</div>

@@ -50,3 +50,14 @@
 
 .user-admin-container {
 }
+
+@media only screen and (max-width : 992px) {
+    .ui-view-container {
+      padding-left: 0;
+    }
+  }
+.button-collapse {
+	position: fixed;
+	left: 50px;
+	top: 100px;
+}

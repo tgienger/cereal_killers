@@ -6,6 +6,8 @@ angular.module('app').controller('RolesController', [
 	'$timeout',
 	function($scope, $meteor, $document, $timeout) {
 		
+		
+		$scope.loading = true;
 		$scope.newRole = '';
 		$scope.roles = $meteor.collection(Meteor.roles);
 		// $scope.rules = roleData;
@@ -21,9 +23,10 @@ angular.module('app').controller('RolesController', [
 		});
 		
 		
-		// $timeout(function() {
-		// 	// end animation here
-		// });
+		$timeout(function() {
+			// end animation here
+			$scope.loading = false;
+		});
 		
 		
 		// remove role
@@ -100,6 +103,16 @@ angular.module('app').controller('RolesController', [
 						
 						$meteor.call('editRole', oldName, newName).then(function(data) {
 							Materialize.toast(oldName + ' changed to ' + newName , 4000);
+							
+							_.each($scope.rules, function(rule) {
+								_.each(rule, function(r) {
+									if (Object.prototype.toString.call(r) === '[object Array]') {
+										var index = _.indexOf(r, oldName);
+										r[index] = newName;
+									}
+								});
+							});
+							
 						}, function(err) {
 							Materialize.toast(err, 4000);
 						});
