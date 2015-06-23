@@ -44,23 +44,23 @@ angular.module('app').controller('UserPanelController', [
 		}
 		
 		
-		$scope.removeUsersFromRoles = function(user, index) {
+		$scope.removeUsersFromRoles = function(user, role) {
 			
-			if ($scope.settings.users.roleConfirm === false && user.roles[index] !== 'admin') {
-				removeRole(user._id, [user.roles[index]]);
+			if ($scope.settings.users.roleConfirm === false && role !== 'admin') {
+				removeRole(user._id, [role]);
 				return;
 			}
 			
 			swal({
 				title: 'Are you sure?',
-				text: 'You are going to remove ' + user.username + ' from role ' + user.roles[index],
+				text: 'You are going to remove ' + user.username + ' from role ' + role,
 				type: 'warning',
 				showCancelButton: true,
 				confirmButtonColor: 'red',
 				confirmButtonText: 'Yes, remove role',
 			}, function(confirmed) {
 				if (confirmed) {
-					removeRole(user._id, [user.roles[index]]);
+					removeRole(user._id, [role]);
 				}
 			});
 		};
@@ -120,6 +120,18 @@ angular.module('app').controller('UserPanelController', [
 		
 		$scope.sendMail = function(user) {
 			console.log(user);
+		};
+		
+		$scope.addRole = function(ui, user) {
+			var role = angular.element(ui.draggable).data('model');
+			$scope.addUsersToRoles(user, role);
+		};
+		
+		$scope.removeRole = function(ui) {
+			var model = angular.element(ui.draggable).data('model'),
+				role = model.role,
+				user = model.user;
+			$scope.removeUsersFromRoles(user, role);
 		};
 		
 	}

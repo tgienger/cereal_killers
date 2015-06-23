@@ -24,11 +24,6 @@
 }
 .user-roles-container {
 	margin-bottom: 10px;
-}.available-roles {
-	background: dodgerblue;
-	color: black;
-	padding: 3px;
-	margin-left: 5px;
 }
 
 .role-list {
@@ -55,4 +50,8 @@
 	    -webkit-column-count:1;
 	    -moz-column-count:1;		
 	}
+}
+.role-remove-square {
+	// border: 1px solid lightslategray;
+	// padding: 5px;
 }

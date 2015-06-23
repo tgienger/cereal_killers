@@ -391,6 +391,16 @@
       "path": "packages/twbs_bootstrap.js"
     },
     {
+      "sourceMap": "packages/linto_jquery-ui.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/linto_jquery-ui.js"
+    },
+    {
+      "sourceMap": "packages/dsyko_jquery-ui-touch-punch.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/dsyko_jquery-ui-touch-punch.js"
+    },
+    {
       "sourceMap": "packages/session.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/session.js"

@@ -7,7 +7,8 @@ angular.module('app', [
 	'mailDirectives',
 	'ngAnimate',
 	'truncate',
-	'hideEmptyImages'
+	'hideEmptyImages',
+	'dragdrop'
 ]);
 
 Accounts.ui.config({

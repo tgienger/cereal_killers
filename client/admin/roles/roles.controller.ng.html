@@ -21,7 +21,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12">
-					<ul class="role-list list-unstyled">
+					<ul class="role-list list-unstyled list-inline">
 						<li ng-repeat="role in roles | orderBy : 'order'" class="pointer" ng-dblclick="editRole(role)"><span class="">
 							<image hide-empty-images ng-src="/images/{{role.name}}.png" width="15px" alt="{{role.name}} badge image"></image>
 							{{role.name}}</span>
@@ -30,19 +30,18 @@
 					</div>
 				</div>
 				<div class="row">
-					<h6 class="col-sm-12 white-text center-align">Role Rules</h6>
-					<div class="center-align" ng-show="loading">loading <i class="fa fa-spinner fa-pulse"></i></div>
+					<div class="center-align" ng-show="loading"><h3>loading <i class="fa fa-spinner fa-pulse"></i></h3></div>
 				</div>
 				
 				
 				<div class="row">
 					<div class="col-sm-12">
 						
-						<ul class=" rule-sets">
+						<ul class=" rule-sets list-unstyled">
 							<li class="" ng-repeat="rule in rules">
 								<div class="card-panel">
 									
-									<h5 class="center-align">{{rule.name | camelCase}}</h5>
+									<h3 class="center-align">{{rule.name | camelCase}}</h3>
 									<rules-dir rules="rules" roles="roles" rule="rule"></rules-dir>
 									
 								</div>

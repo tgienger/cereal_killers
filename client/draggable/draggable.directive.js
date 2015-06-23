@@ -6,13 +6,6 @@ angular.module('app').directive('draggable', function($document) {
 			
 			var startX = 0, startY = 0, x = 0, y = 0;
 			
-			function mousedown() {
-				console.log('mouse down');
-			}
-			
-			function mouseup() {
-				console.log('mouse up');
-			}
 			
 			function mousemove(event) {
 				y = event.pageY - startY;

@@ -24,3 +24,5 @@ accounts-google
 yogiben:pretty-email
 angular:angular-animate
 twbs:bootstrap
+linto:jquery-ui
+dsyko:jquery-ui-touch-punch
