@@ -1,69 +1,73 @@
-<h5 class="center-align">User Administration</h5>
-<ul id="newsStream" class="noList">
-		
+<h3 class="center-align">User Administration</h3>
+<hr>
 <!--	create new news-->
-	<div class="createPost">
-		<button ng-click="createUser()" disabled ng-show="userIsAdmin()" class="waves-effect btn grey add-news-button"><span>Create New User</span></button>
-	</div>
-	
-	<li ng-repeat="user in users | orderBy : 'createdAt' : 'reversed'">
-		<div class="newsPost">
-			<div class="newsHeader">{{::user.username}}
-				<small class="newsDate pull-right"> created @ {{::user.createdAt | date:'MM/dd/yyyy @ h:mm a'}}</small>
-			</div>
-			<div class="user-info">
-				<div class="row info-header">
-					Name
-				</div>
-				<div class="user-profile row">
-					<div class="col s3">
+<div class="createPost row">
+	<!--<button ng-click="createUser()" disabled ng-show="userIsAdmin()" class="waves-effect btn grey add-news-button col-sm-12"><span>Create New User</span></button>-->
+</div>
+
+<div class="input-group">
+	<div class="input-group-addon"><i class="fa fa-search"></i></div>
+	<input type="text" class="form-control" id="userSearch" placeholder="search">
+</div>
+
+
+<ul class="role-list list-unstyled list-inline" aria-labelledby="dLabel1">
+	<li ng-repeat="role in roles | orderBy : 'order'"> <image hide-empty-images ng-src="/images/{{role.name}}.png" width="15px" alt="{{role.name}} badge image"></image> {{::role.name}}</li>
+</ul>
+
+
+<ul id="newsStream" class="list-unstyled">
+	<li>
+		<table class="table table-hover table-bordered table-condensed">
+			<thead>
+				<tr>
+					<th>Username</th>
+					<th>Created</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Emails</th>
+					<th>verified</th>
+					<th style="position: relative;">Roles</th>
+					<th>Bio</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="user in users | orderBy : 'username' ">
+					<td>
+						<image tooltip="{{user.roles[0]}}" hide-empty-images ng-src="/images/{{user.roles[0]}}.png" width="15px" alt="{{user.roles[0]}} badge image"></image>  {{::user.username}}
+					</td>
+					<td>
+						{{::user.createdAt | date: 'MM/dd/yyyy @ h:mm a'}}
+					</td>
+					<td>
 						{{::user.profile.firstName}}
+					</td>
+					<td>
 						{{::user.profile.lastName}}
-						<i style="margin-left: 25px;" class="pointer green-text mdi-communication-email" ng-click="sendMail(user)"></i>
-					</div>
-					</div>
-					<div class="row info-header">
-						<span class="col s3">Email Addresses:</span>
-						<span class="col s3">verified</span>
-					</div>
-					<ul class="email-list">
-						<li ng-repeat="email in user.emails">
-							<div class="row">
-								<span class="col s3">{{::$index + 1}}. {{::email.address}}</span>
-								<span class="col s3" ng-class="email.verified ? 'verfied' : ''">{{::email.verified}}</span>
-							</div>
-						</li>
-					</ul>
-					
-					<div class="row info-header">
-						<span class="col s12">Roles assigned to user: (double click to remove)</span>
-					</div>
-					<div class="row">
-						<div class="col s12">
-							<ul class="role-list">
-								<li ng-repeat="role in user.roles"><span class="user-role" ng-dblclick="removeUsersFromRoles(user, $index)">{{role}}</span></li>
-								<span ng-if="user.roles.length < 1">no roles yet</span>
-							</ul>
-						</div>
-					</div>
-					
-					<div class="row info-header">
-						<span class="col s12">Available Roles (double click to add)</span>
-					</div>
-					<div class="row">
-						<div class="col s12">
-						<ul class="role-list">
-							<li ng-repeat="role in roles" ng-hide="containsRole(user, role)"><span class="available-roles" ng-dblclick="addUsersToRoles(user, role)">{{role.name}}</span></li>
+					</td>
+					<td ng-repeat-start="email in user.emails">
+						<ul class="list-unstyled">
+							<li>
+								{{::$index + 1}}. {{::email.address}}
+							</li>
 						</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col s12 user-bio">
-							Bio:
-							<p>{{::user.profile.bio}}</p>
-						</div>
-					</div>
-			</div>
-		</div>
-	</li>
+					</td>
+					<td ng-repeat-end class="" ng-class="email.verified ? 'verified' : 'not-verified'">
+						<i ng-class="email.verified ? 'fa fa-check' : 'fa fa-close'"></i>
+					</td>
+					<td class="roles-list">
+						<ul class="list-unstyled">
+							<li ng-repeat="role in user.roles">
+							<image hide-empty-images ng-src="/images/{{role}}.png" width="15px" alt="{{role}} badge image"></image>
+							</li>
+						</ul>
+						
+					</td>
+					<td>
+						<p>{{::user.profile.bio | truncate:25}}</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</li>		
 </ul>

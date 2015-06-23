@@ -640,17 +640,6 @@
       "hash": "1232cbe6841acfb7f115480a9b1454536c077b2c"
     },
     {
-      "path": "packages/materialize_materialize.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/materialize_materialize.js?0b80cbda18ca9012a2d963f00c95da52c6cf16df",
-      "sourceMap": "packages/materialize_materialize.js.map",
-      "sourceMapUrl": "/packages/0b80cbda18ca9012a2d963f00c95da52c6cf16df.map",
-      "size": 122007,
-      "hash": "0b80cbda18ca9012a2d963f00c95da52c6cf16df"
-    },
-    {
       "path": "packages/oauth2.js",
       "where": "client",
       "type": "js",
@@ -783,6 +772,17 @@
       "hash": "da28dc184c79186c39eaf27e2e0a5c7f63c8bdf3"
     },
     {
+      "path": "packages/twbs_bootstrap.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/twbs_bootstrap.js?59690a9e1e4e6ade9768154f87426a085be0db75",
+      "sourceMap": "packages/twbs_bootstrap.js.map",
+      "sourceMapUrl": "/packages/59690a9e1e4e6ade9768154f87426a085be0db75.map",
+      "size": 301446,
+      "hash": "59690a9e1e4e6ade9768154f87426a085be0db75"
+    },
+    {
       "path": "packages/webapp.js",
       "where": "client",
       "type": "js",
@@ -842,9 +842,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/packages/global-imports.js?7540a475a234b935b8fd7e332839d687ac9ff931",
-      "size": 1025,
-      "hash": "7540a475a234b935b8fd7e332839d687ac9ff931"
+      "url": "/packages/global-imports.js?2b36b979700aa2c12a6af52a1f4ce4479f8193c8",
+      "size": 963,
+      "hash": "2b36b979700aa2c12a6af52a1f4ce4479f8193c8"
     },
     {
       "path": "app/client/admin/roles/rules-directive/rules.directive.ng.html.js",
@@ -869,36 +869,36 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/roles/roles.controller.ng.html.js?3de5383cd5070e439bfda465de9b7abea9fe57b9",
-      "size": 1687,
-      "hash": "3de5383cd5070e439bfda465de9b7abea9fe57b9"
+      "url": "/client/admin/roles/roles.controller.ng.html.js?4f958fe6adbf5909fe2ac4602fbf590a6fbfeb71",
+      "size": 1818,
+      "hash": "4f958fe6adbf5909fe2ac4602fbf590a6fbfeb71"
     },
     {
       "path": "app/client/admin/settings/settings.controller.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/settings/settings.controller.ng.html.js?079d8ac1d927fd09d3866c45a90bb4e3300ecfe8",
-      "size": 3028,
-      "hash": "079d8ac1d927fd09d3866c45a90bb4e3300ecfe8"
+      "url": "/client/admin/settings/settings.controller.ng.html.js?3b06c2f9c3a551ddf5a80c7d589a27415ddffcfb",
+      "size": 2593,
+      "hash": "3b06c2f9c3a551ddf5a80c7d589a27415ddffcfb"
     },
     {
       "path": "app/client/admin/userPage/admin.user.controller.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/userPage/admin.user.controller.ng.html.js?8ef8d1cca663519e53580074e141b509526e7c05",
-      "size": 351,
-      "hash": "8ef8d1cca663519e53580074e141b509526e7c05"
+      "url": "/client/admin/userPage/admin.user.controller.ng.html.js?cdb7c520c9d8104bba55479b03b4c9af68d0503c",
+      "size": 349,
+      "hash": "cdb7c520c9d8104bba55479b03b4c9af68d0503c"
     },
     {
       "path": "app/client/admin/userPanel/userPanel.controller.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/userPanel/userPanel.controller.ng.html.js?3797dce9b8cf3a65666e9c6d3058a3b5f4733a52",
-      "size": 2360,
-      "hash": "3797dce9b8cf3a65666e9c6d3058a3b5f4733a52"
+      "url": "/client/admin/userPanel/userPanel.controller.ng.html.js?2219f9b5ce6580efc817aae3e62da47070e42efb",
+      "size": 2261,
+      "hash": "2219f9b5ce6580efc817aae3e62da47070e42efb"
     },
     {
       "path": "app/client/account/account.controller.ng.html.js",
@@ -914,18 +914,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/admin.controller.ng.html.js?291d2e8fcdf00c81fc243b32274c7eb99098253f",
-      "size": 660,
-      "hash": "291d2e8fcdf00c81fc243b32274c7eb99098253f"
+      "url": "/client/admin/admin.controller.ng.html.js?080f263af0261dac2f30e12836e0d03e35298119",
+      "size": 1418,
+      "hash": "080f263af0261dac2f30e12836e0d03e35298119"
     },
     {
       "path": "app/client/chat/chat.controller.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/chat/chat.controller.ng.html.js?13c111c7efbfb228e4c87030692705f766b143e2",
-      "size": 1182,
-      "hash": "13c111c7efbfb228e4c87030692705f766b143e2"
+      "url": "/client/chat/chat.controller.ng.html.js?c81d3f36418ab1ed557713564cd40fbc5f9fb4ce",
+      "size": 1580,
+      "hash": "c81d3f36418ab1ed557713564cd40fbc5f9fb4ce"
     },
     {
       "path": "app/client/header/template.adminLink.js",
@@ -941,18 +941,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/header/header.directive.ng.html.js?ecb4bf695b04e0777fc2f54ed54caa1937a3cc9c",
-      "size": 635,
-      "hash": "ecb4bf695b04e0777fc2f54ed54caa1937a3cc9c"
+      "url": "/client/header/header.directive.ng.html.js?e83d71d2b6b5e17de1c85de3a8bfc39a9f387af9",
+      "size": 679,
+      "hash": "e83d71d2b6b5e17de1c85de3a8bfc39a9f387af9"
     },
     {
       "path": "app/client/home/home.controller.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/home/home.controller.ng.html.js?26f8703134c0c7fde5783d8becca1d5eddd1ec8d",
-      "size": 589,
-      "hash": "26f8703134c0c7fde5783d8becca1d5eddd1ec8d"
+      "url": "/client/home/home.controller.ng.html.js?6dc388610b1515db76cfd6de42fa2fdbe5c3a50a",
+      "size": 723,
+      "hash": "6dc388610b1515db76cfd6de42fa2fdbe5c3a50a"
     },
     {
       "path": "app/client/mail-directive/mail.directive.ng.html.js",
@@ -1004,18 +1004,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/template.index.js?25e4663c4d0f5153bf8200bd412016dbe3ea75ed",
-      "size": 450,
-      "hash": "25e4663c4d0f5153bf8200bd412016dbe3ea75ed"
+      "url": "/client/template.index.js?213445cc8dacfbce02b4b63a89cbce1f7d807fb5",
+      "size": 449,
+      "hash": "213445cc8dacfbce02b4b63a89cbce1f7d807fb5"
     },
     {
       "path": "app/client/lib/app.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/lib/app.js?588a87f64d568096d72ddebe5eff1e0ce371c900",
-      "size": 244,
-      "hash": "588a87f64d568096d72ddebe5eff1e0ce371c900"
+      "url": "/client/lib/app.js?7ffe152b1de75ee9cb5986a5cc07464b95a21f6e",
+      "size": 277,
+      "hash": "7ffe152b1de75ee9cb5986a5cc07464b95a21f6e"
     },
     {
       "path": "app/client/admin/roles/rules-directive/rules.directive.js",
@@ -1058,9 +1058,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/userPanel/userPanel.controller.js?9575114b21996577b23e8c7b0fd31cc9061052ca",
-      "size": 2827,
-      "hash": "9575114b21996577b23e8c7b0fd31cc9061052ca"
+      "url": "/client/admin/userPanel/userPanel.controller.js?ec55fae2de5f81f4daaaf4f06053b1117d637884",
+      "size": 2920,
+      "hash": "ec55fae2de5f81f4daaaf4f06053b1117d637884"
     },
     {
       "path": "app/client/admin/userPanel/userPanel.directive.js",
@@ -1094,18 +1094,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/admin.controller.js?9b582e03059f837431a8918f191e0d1e5a8c3f6d",
-      "size": 816,
-      "hash": "9b582e03059f837431a8918f191e0d1e5a8c3f6d"
+      "url": "/client/admin/admin.controller.js?de770399f00ff4333388d3be08312b56d8828319",
+      "size": 825,
+      "hash": "de770399f00ff4333388d3be08312b56d8828319"
     },
     {
       "path": "app/client/admin/admin.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/admin.js?e2f3d5efd3b0ef0e359eb7d63f5dd928156cdddd",
-      "size": 1603,
-      "hash": "e2f3d5efd3b0ef0e359eb7d63f5dd928156cdddd"
+      "url": "/client/admin/admin.js?87df5e28720536b5dded868be3d2e75146fc1c4a",
+      "size": 1660,
+      "hash": "87df5e28720536b5dded868be3d2e75146fc1c4a"
     },
     {
       "path": "app/client/bbcode/bbcode.filter.js",
@@ -1171,6 +1171,15 @@
       "hash": "b009e8afe5497838bcb7e7f584455831827827f4"
     },
     {
+      "path": "app/client/hideEmptyImage/hideEmptyImages.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/hideEmptyImage/hideEmptyImages.js?e6e63c6b03498baa9a743b4b30577e3f7b0f4916",
+      "size": 233,
+      "hash": "e6e63c6b03498baa9a743b4b30577e3f7b0f4916"
+    },
+    {
       "path": "app/client/home/home.controller.js",
       "where": "client",
       "type": "js",
@@ -1211,9 +1220,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.js?3ceb82aa60226f041a23bf9e85fda285c03fc018",
-      "size": 2473,
-      "hash": "3ceb82aa60226f041a23bf9e85fda285c03fc018"
+      "url": "/client/news/news.controller.js?914aca48e525cd6d9af146e57c76eb478a7b96d7",
+      "size": 2476,
+      "hash": "914aca48e525cd6d9af146e57c76eb478a7b96d7"
     },
     {
       "path": "app/client/news/news.directive.js",
@@ -1252,13 +1261,22 @@
       "hash": "56409d4f53c03e55fb6705c6ee338e280f2ef5ec"
     },
     {
+      "path": "app/client/truncate/truncate.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/truncate/truncate.js?8f13fc2170e5f81af20267a05e8bff74a043bd97",
+      "size": 440,
+      "hash": "8f13fc2170e5f81af20267a05e8bff74a043bd97"
+    },
+    {
       "path": "app/client/routes.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/routes.js?9fad22e6bf4cfbba60ac81c596c4c6fb1ea461be",
-      "size": 735,
-      "hash": "9fad22e6bf4cfbba60ac81c596c4c6fb1ea461be"
+      "url": "/client/routes.js?89a21099b10d7bf5abd254f6fc396048c3c57467",
+      "size": 768,
+      "hash": "89a21099b10d7bf5abd254f6fc396048c3c57467"
     },
     {
       "path": "app/model/chat.js",
@@ -1315,15 +1333,15 @@
       "hash": "3fe237959a859d7038bc4fd43d586670df2a5758"
     },
     {
-      "path": "94d4794c79b5e15e9d20f127b598b3973e2ced70.css",
+      "path": "38834547b78106354820041bdc0b086954fff56d.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/94d4794c79b5e15e9d20f127b598b3973e2ced70.css",
-      "sourceMap": "94d4794c79b5e15e9d20f127b598b3973e2ced70.css.map",
-      "sourceMapUrl": "/94d4794c79b5e15e9d20f127b598b3973e2ced70.map",
-      "size": 301858,
-      "hash": "94d4794c79b5e15e9d20f127b598b3973e2ced70"
+      "url": "/38834547b78106354820041bdc0b086954fff56d.css",
+      "sourceMap": "38834547b78106354820041bdc0b086954fff56d.css.map",
+      "sourceMapUrl": "/38834547b78106354820041bdc0b086954fff56d.map",
+      "size": 277376,
+      "hash": "38834547b78106354820041bdc0b086954fff56d"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",
@@ -1380,184 +1398,58 @@
       "hash": "3efe27a8e5474d1285ec639e9d0dd818f9ffb0ea"
     },
     {
-      "path": "packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.eot",
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
       "where": "client",
       "type": "asset",
       "cacheable": false,
-      "url": "/packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.eot",
-      "size": 141748,
-      "hash": "5b769d54a3c3f67cdbbe0d798b018d7903d14e1b"
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
+      "size": 20127,
+      "hash": "86b6f62b7853e67d3e635f6512a5a5efc58ea3c3"
     },
     {
-      "path": "packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.svg",
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
       "where": "client",
       "type": "asset",
       "cacheable": false,
-      "url": "/packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.svg",
-      "size": 330132,
-      "hash": "cca9f54d4f77567a1081eb3bae99b847df7daf9b"
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
+      "size": 108738,
+      "hash": "de51a8494180a6db074af2dee2383f0a363c5b08"
     },
     {
-      "path": "packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.ttf",
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
       "where": "client",
       "type": "asset",
       "cacheable": false,
-      "url": "/packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.ttf",
-      "size": 141528,
-      "hash": "a76e6a868bd3632392872272032cc22ade12090a"
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
+      "size": 45404,
+      "hash": "44bc1850f570972267b169ae18f1cb06b611ffa2"
     },
     {
-      "path": "packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.woff",
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff",
       "where": "client",
       "type": "asset",
       "cacheable": false,
-      "url": "/packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.woff",
-      "size": 141604,
-      "hash": "e7fdf38f5e9eeb468db71f39e449feb8752d0e89"
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff",
+      "size": 23424,
+      "hash": "278e49a86e634da6f2a02f3b47dd9d2a8f26210f"
     },
     {
-      "path": "packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.woff2",
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
       "where": "client",
       "type": "asset",
       "cacheable": false,
-      "url": "/packages/materialize_materialize/font/material-design-icons/Material-Design-Icons.woff2",
-      "size": 37396,
-      "hash": "e2002220b7b0829bd2bda76a5b621cee0725726a"
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
+      "size": 18028,
+      "hash": "ca35b697d99cae4d1b60f2d60fcd37771987eb07"
     },
     {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Bold.ttf",
+      "path": "app/images/admin.png",
       "where": "client",
       "type": "asset",
       "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Bold.ttf",
-      "size": 127744,
-      "hash": "47327df0f35e7cd7c8645874897a7449697544ae"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Bold.woff",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Bold.woff",
-      "size": 62876,
-      "hash": "ee99cd87a59a9a5d4092c83232bb3eec67547425"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Bold.woff2",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Bold.woff2",
-      "size": 49976,
-      "hash": "933b866d09c2b087707a98dab64b3888865eeb96"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Light.ttf",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Light.ttf",
-      "size": 126792,
-      "hash": "e321c183e2b75ee19813892b7bac8d7c411cb88a"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Light.woff",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Light.woff",
-      "size": 62316,
-      "hash": "6300f659be9e834ab263efe2fb3c581d48b1e7b2"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Light.woff2",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Light.woff2",
-      "size": 49380,
-      "hash": "bbdc28b887400fcb340b504ec2904993af42a5d7"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Medium.ttf",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Medium.ttf",
-      "size": 127488,
-      "hash": "6060ca726b9760b76f7c347dce9d2fa1fe42ec92"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Medium.woff",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Medium.woff",
-      "size": 62980,
-      "hash": "d45f84922131364989ad6578c7a06b6b4fc22c34"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Medium.woff2",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Medium.woff2",
-      "size": 50224,
-      "hash": "6cc1b73571af9e827c4e7e91418f476703cd4c4b"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Regular.ttf",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Regular.ttf",
-      "size": 126072,
-      "hash": "824b5480c977a8166e177e5357d13164ccc45f47"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Regular.woff",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Regular.woff",
-      "size": 61736,
-      "hash": "74734dde8d94e7268170f9b994dedfbdcb5b3a15"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Regular.woff2",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Regular.woff2",
-      "size": 49236,
-      "hash": "ed1558b0541f5e01ce48c7db1588371b990eec19"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Thin.ttf",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Thin.ttf",
-      "size": 127584,
-      "hash": "173ed64528b4d010a76d8d38deb1d7e7eed58eda"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Thin.woff",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Thin.woff",
-      "size": 61628,
-      "hash": "fbc3e71d456c96667d8082ab910e3946ef89240b"
-    },
-    {
-      "path": "packages/materialize_materialize/font/roboto/Roboto-Thin.woff2",
-      "where": "client",
-      "type": "asset",
-      "cacheable": false,
-      "url": "/packages/materialize_materialize/font/roboto/Roboto-Thin.woff2",
-      "size": 48524,
-      "hash": "2449e3dac5ddb7c3da8bb07450493b62d052758c"
+      "url": "/images/admin.png",
+      "size": 431983,
+      "hash": "833ef6bc607d13488be6c673a95455addcf8020c"
     },
     {
       "path": "app/images/cereal_killers_background.fw.png",
@@ -1567,6 +1459,33 @@
       "url": "/images/cereal_killers_background.fw.png",
       "size": 160830,
       "hash": "54c5c9581124a867900b0fbac3012bc58e7203c5"
+    },
+    {
+      "path": "app/images/member.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/member.png",
+      "size": 179754,
+      "hash": "d5da00a5286356a70f6a94381b90f30ec7ca93fd"
+    },
+    {
+      "path": "app/images/moderator.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/moderator.png",
+      "size": 742016,
+      "hash": "57f91f77d83550419bc0b46df24559ab989a3f41"
+    },
+    {
+      "path": "app/images/super moderator.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/super moderator.png",
+      "size": 415863,
+      "hash": "9a9b9d309787b832ab3a967ead88ba8fdcfee1db"
     },
     {
       "path": "head.html",

@@ -29,9 +29,9 @@ angular.module('app').controller('AdminController', [
 			$scope.loading = false;
 		};
 		
-		angular.element('.button-collapse').sideNav({
-			closeOnClick: false
-		});
+		// angular.element('.button-collapse').sideNav({
+		// 	closeOnClick: false
+		// });
 		
 	}
 ]);

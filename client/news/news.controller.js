@@ -71,7 +71,7 @@ angular.module('app').controller('NewsCtrl', [
 			}, function(confirmed){   
 				if (confirmed) {
 					$scope.posts.remove(news);
-					Materialize.toast('Post deleted!', 4000)
+					// Materialize.toast('Post deleted!', 4000)
 				} 
 			});
 		};

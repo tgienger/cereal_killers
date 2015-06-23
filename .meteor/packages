@@ -18,9 +18,9 @@ urigo:angular@=0.8.10
 superchris:angular-ui-bootstrap
 fortawesome:fontawesome
 kevohagan:sweetalert
-materialize:materialize
 mrt:accounts-steam
 accounts-facebook
 accounts-google
 yogiben:pretty-email
 angular:angular-animate
+twbs:bootstrap

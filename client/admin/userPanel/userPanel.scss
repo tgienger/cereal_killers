@@ -32,7 +32,27 @@
 }
 
 .role-list {
-	li {
-		display:inline;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 15px;
+}
+
+.verified {
+	color: green;
+}
+.not-verified {
+	color: red;
+}
+.borderless {
+	background: blue;
+	tbody tr td, tbody tr th, thead tr th {
+		border: none;
+	}
+}
+.roles-list {
+	ul {
+	    column-count:1;
+	    -webkit-column-count:1;
+	    -moz-column-count:1;		
 	}
 }

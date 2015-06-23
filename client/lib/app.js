@@ -5,7 +5,9 @@ angular.module('app', [
 	'camelCaseFilter',
 	'resizeDirective',
 	'mailDirectives',
-	'ngAnimate'
+	'ngAnimate',
+	'truncate',
+	'hideEmptyImages'
 ]);
 
 Accounts.ui.config({

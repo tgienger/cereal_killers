@@ -2,6 +2,9 @@
 angular.module('app')
 .run(["$rootScope", "$state",
 function($rootScope, $state) {
+	
+	$rootScope.$state = $state;
+	
 	$rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
 		
 		// if the route requires authentication

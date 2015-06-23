@@ -9,6 +9,7 @@
 		overflow-y: auto;
 		overflow-x: none;
 		width: calc(100% + 17px);
+		color: white;
 		
 		.chatList {
 			padding-left: 5px;
@@ -19,7 +20,7 @@
 		.chatSentence {
 			word-wrap: break-word;
 			.msg-title {
-				font-size: .8em;
+				// font-size: .8em;
 //				background: rgba($color: #fff, $alpha: .5);
 //				width: 100%;
 			}

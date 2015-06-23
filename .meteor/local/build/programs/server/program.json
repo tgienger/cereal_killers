@@ -290,11 +290,6 @@
       "path": "packages/kevohagan_sweetalert.js"
     },
     {
-      "sourceMap": "packages/materialize_materialize.js.map",
-      "sourceMapRoot": "packages",
-      "path": "packages/materialize_materialize.js"
-    },
-    {
       "sourceMap": "packages/service-configuration.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/service-configuration.js"
@@ -389,6 +384,11 @@
       "sourceMap": "packages/angular_angular-animate.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/angular_angular-animate.js"
+    },
+    {
+      "sourceMap": "packages/twbs_bootstrap.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/twbs_bootstrap.js"
     },
     {
       "sourceMap": "packages/session.js.map",

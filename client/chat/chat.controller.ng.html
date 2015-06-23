@@ -6,14 +6,21 @@
 			
 			
 		<div class="chatList">
-			<li ng-repeat="post in chatMessages | orderBy : 'date'">
-				<p id="chat_message_{{post._id}}" class="white-text chatSentence">
+			<!--<li ng-repeat="post in chatMessages | orderBy : 'date'">-->
+				<!--<p id="chat_message_{{post._id}}" class="chatSentence">
 					<span class="msg-title">{{post.username}} - 
 						<small>{{post.date | date:'short' }}</small> 
 						<i class="mdi-content-reply pull-right pointer" ng-click="replyTo(post)"></i>
-					</span>
-					<br> <span markdown="post.message | bbcode"></span></p>
-			</li>
+					</span>-->
+					<!--<br> -->
+					<!--<span markdown="post.message | bbcode"></span>-->
+				<!--</p>
+				<p markdown="post.message | bbcode"></p>-->
+			<!--</li>-->
+			<dl ng-repeat="post in chatMessages | orderBy : 'date'">
+				<dt class="">{{post.username}} - <small>{{post.date | date:'short'}}</small> <i class="fa fa-reply" ng-click="replyTo(post)" ></i></dt>
+				<dd markdown="post.message | bbcode"></dd>
+			</dl>
 		</div>
 		
 	</ul>
@@ -23,7 +30,7 @@
 
 <div class="row chat-input-container">
 
-	<div class="input-field col s12 chat-input">
+	<div class="input-field col-sm-12 chat-input">
 		<form ng-submit="sendChat(chat)">
 			<input type="text" id="chatInput" class="validate white-text" ng-model="chat.message" length="150">
 				<span class="badge" ng-class="chat.message.length > 150 ? 'chat-error': 'chat-error'">{{chat.message.length}}/150</span>

@@ -15,6 +15,7 @@ function($stateProvider) {
             }
 		})
 		.state('admin.users', {
+			url: '/users',
 			templateUrl: 'client/admin/userPage/admin.user.controller.ng.html',
 			controller: 'AdminUserController',
 			// resolve: {
@@ -32,6 +33,7 @@ function($stateProvider) {
 			// }
 		})
 		.state('admin.roles', {
+			url: '/roles',
 			templateUrl: 'client/admin/roles/roles.controller.ng.html',
 			controller: 'RolesController',
 			// resolve: {
@@ -49,6 +51,7 @@ function($stateProvider) {
 			// }
 		})
 		.state('admin.settings', {
+			url: '/settings',
 			templateUrl: 'client/admin/settings/settings.controller.ng.html',
 			controller: 'SettingsController',
 		})

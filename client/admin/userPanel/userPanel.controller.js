@@ -109,6 +109,10 @@ angular.module('app').controller('UserPanelController', [
 			return Roles.userIsInRole(userId, ['admin']);
 		};
 		
+		$scope.adminRole = function(user) {
+			return _.indexOf(user.roles, 'admin') > -1;
+		};
+		
 		
 		angular.element(document).ready(function() {
 	        $scope.pageReady = true;

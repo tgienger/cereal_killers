@@ -10,13 +10,16 @@
 		<div class="mainBody row">
 			
 <!--			News Feed-->
-			<div class="newsFeed col l9 s12">
+
+			<!--<div class="col-lg-3"></div>-->
+			
+			<div class="newsFeed" ng-class="!$root.currentUser ? 'col-sm-12 col-lg-12' : 'col-sm-9 col-lg-6'">
 				<div class="panel">
 					<news-panel></news-panel>
 				</div>
 			</div>
 			
-			<div class="chatFeed col l3 s12">
+			<div class="chatFeed col-sm-3" ng-hide="!$root.currentUser">
 				<div class="panel">
 					<chat-panel></chat-panel>
 				</div>

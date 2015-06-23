@@ -1,14 +1,14 @@
 <div class="user-admin-container">
 	<div class="row">
-		<div class="col l12 s12">
+		<div class="col-sm-12">
 			<div class="">
-				<h6 class="newsBlock white-text chatTitle">Roles Administration</h6>
+				<h3 class="center-align">Roles Administration</h3>
 				<div class="row info-header">
-					<span class="col s12">Create / Remove Roles</span>
+					<span class="col-sm-12">Create / Remove Roles</span>
 				</div>
 				<div class="row">
-					<form novalidate class="s12">
-						<div class="input-field col s12">
+					<form novalidate class="">
+						<div class="input-field col-sm-12">
 							<input type="text" id="addRole" class="validate white-text" ng-model="newRole">
 							<label for="addRole">Role Name</label>
 						</div>
@@ -17,23 +17,26 @@
 					</form>
 				</div>
 				<div class="row info-header">
-					<span class="col s12">Current Roles</span>
+					<span class="col-sm-12">Current Roles</span>
 				</div>
 				<div class="row">
-					<div class="col s12">
-					<ul class="role-list">
-						<li ng-repeat="role in roles" class="pointer" ng-dblclick="editRole(role)"><span class="available-roles">{{role.name}}</span></li>
+					<div class="col-sm-12">
+					<ul class="role-list list-unstyled">
+						<li ng-repeat="role in roles | orderBy : 'order'" class="pointer" ng-dblclick="editRole(role)"><span class="">
+							<image hide-empty-images ng-src="/images/{{role.name}}.png" width="15px" alt="{{role.name}} badge image"></image>
+							{{role.name}}</span>
+						</li>
 					</ul>
 					</div>
 				</div>
 				<div class="row">
-					<h6 class="col s12 white-text center-align">Role Rules</h6>
-					<div class="center-align" ng-show="loading">loading <i class="fa fa-spinner fa-spin"></i></div>
+					<h6 class="col-sm-12 white-text center-align">Role Rules</h6>
+					<div class="center-align" ng-show="loading">loading <i class="fa fa-spinner fa-pulse"></i></div>
 				</div>
 				
 				
 				<div class="row">
-					<div class="col s12">
+					<div class="col-sm-12">
 						
 						<ul class=" rule-sets">
 							<li class="" ng-repeat="rule in rules">

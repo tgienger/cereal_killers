@@ -1,13 +1,13 @@
 <div class="header closed valign-wrapper" id="header">
 
-  <h6 class="">
+  <h6 class="valign">
     <div class="valign">
-      <a href="/home" class=""><i class="mdi-action-home tooltipped" data-tooltip="Home" data-position="bottom"></i></a>
+      <a href="/home" class="valign"><i class="glyphicon glyphicon-home tooltipped" data-tooltip="Home" data-position="bottom"></i></a>
       <!--<meteor-include src="adminLink"></meteor-include>-->
-      <a ng-if="userIsAdmin()" ui-sref="admin.settings">Admin</a>
+      <a class="valign" ng-if="userIsAdmin()" ui-sref="admin.settings">Admin</a>
       &nbsp;
 
-      <meteor-include src="loginButtons" class=""></meteor-include>
+      <meteor-include src="loginButtons" class="valign"></meteor-include>
       
       <mail-count></mail-count>
     </div>
