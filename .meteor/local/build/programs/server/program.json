@@ -401,6 +401,24 @@
       "path": "packages/dsyko_jquery-ui-touch-punch.js"
     },
     {
+      "sourceMap": "packages/meteorhacks_npm.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/meteorhacks_npm.js"
+    },
+    {
+      "sourceMap": "packages/npm-container.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/npm-container.js",
+      "assets": {
+        "../../packages.json": "assets/packages.json"
+      }
+    },
+    {
+      "sourceMap": "packages/chrismbeckett_toastr.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/chrismbeckett_toastr.js"
+    },
+    {
       "sourceMap": "packages/session.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/session.js"
@@ -409,6 +427,11 @@
       "sourceMap": "packages/livedata.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/livedata.js"
+    },
+    {
+      "sourceMap": "packages/meteorhacks_async.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/meteorhacks_async.js"
     },
     {
       "path": "packages/global-imports.js"

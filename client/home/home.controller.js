@@ -1,16 +1,14 @@
-angular.module('app').controller('HomeCtrl', [
-	'$scope',
-	function($scope) {
-		
-//		scroll to top of page on load
+var Controller = (function() {
+	
+	function Controller($scope) {
 		$scope.$on('$stateChangeSuccess', function() {
 			document.body.scrollTop = document.documentElement.scrollTop = 0;
 		});
-		
-		$scope.closeComposer = function() {
-	        $scope.synergyComposer.reset().close();
-	    };
-	
-	
 	}
-]);
+	
+	return Controller;
+}());
+
+Controller.$inject = ['$scope'];
+
+angular.module('app').controller('HomeCtrl', Controller);

@@ -4,6 +4,7 @@ function($stateProvider) {
 		.state('home', {
 			url: '/home',
 			templateUrl: 'client/home/home.controller.ng.html',
+			controllerAs: 'home',
 			controller: 'HomeCtrl'
 		});
 }]);

@@ -26,3 +26,8 @@ angular:angular-animate
 twbs:bootstrap
 linto:jquery-ui
 dsyko:jquery-ui-touch-punch
+meteorhacks:npm
+
+
+npm-container
+chrismbeckett:toastr

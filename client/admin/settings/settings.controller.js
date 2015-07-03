@@ -1,9 +1,7 @@
-angular.module('app').controller('SettingsController', [
-	'$scope',
-	'$meteor',
-	function($scope, $meteor) {
-		
-		
+
+var SettingsController = (function() {
+	
+	function SettingsController($scope, $meteor) {
 		
 		// subscribe to news settings
 		$meteor.autorun($scope, function() {
@@ -16,4 +14,11 @@ angular.module('app').controller('SettingsController', [
 		});
 		
 	}
-]);
+	
+	return SettingsController;
+	
+}());
+
+SettingsController.$inject = ['$scope', '$meteor'];
+
+angular.module('app').controller('SettingsController', SettingsController);

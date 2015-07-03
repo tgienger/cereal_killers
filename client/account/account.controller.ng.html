@@ -7,31 +7,31 @@
 			
 			<div class="panel">
 				<h6 class="newsBlock white-text chatTitle">Profile</h6>
-				<ul class="white-text row">
+				<ul class="white-text row list-unstyled">
 					<form name="profileForm" id="profileForm" novalidate>
 						
 						<li class="col s12">
 							<div class="row">
-								<span class="col s3">Username: {{user.username}}</span>
+								<span class="col s3">Username: {{account.user.username}}</span>
 							</div>
 						</li>
 						
 						<li class="col s12">
 							<div class="row">
-								<span class="col s2">First Name: </span> <input class="col s4" type="text" ng-model="user.profile.firstName">
+								<span class="col s2">First Name: </span> <input class="col s4" type="text" ng-model="account.user.profile.firstName">
 							</div>
 						</li>
 						<li class="col s12">
 							<div class="row">
-								<span class="col s2">Last Name:</span> <input class="col s4" type="text" ng-model="user.profile.lastName">
+								<span class="col s2">Last Name:</span> <input class="col s4" type="text" ng-model="account.user.profile.lastName">
 							</div>
 						</li>
 						<li class="col s12">
 							<div class="row">
-								<span class="col s2">Bio: </span> <textarea class="col s4" ng-model="user.profile.bio"></textarea>
+								<span class="col s2">Bio: </span> <textarea class="col s4" ng-model="account.user.profile.bio"></textarea>
 							</div>
 						</li>
-						<input class="btn" ng-disabled="profileForm.$pristine" type="submit" value="Update Profile" ng-click="updateProfile(user)">
+						<input class="btn" ng-disabled="profileForm.$pristine" type="submit" value="Update Profile" ng-click="account.updateProfile(account.user)">
 						<!--<button class="btn" ng-click="profileForm.$rollbackViewValue()">reset</button>-->
 						
 					</form>
@@ -49,7 +49,7 @@
 							<p class="col s6">Verified</p>
 						</div>
 					</li>
-					<li class="col s12" ng-repeat="email in user.emails">
+					<li class="col s12" ng-repeat="email in account.user.emails">
 						<div class="row">
 							<p class="col s6">{{email.address}}</p>
 							<p class="col s3">{{email.verified}}</p>
@@ -67,7 +67,7 @@
 			<div class="panel">
 				<h6 class="newsBlock white-text chatTitle">Roles</h6>
 				<ul>
-					<li ng-repeat="role in roles">{{role}}</li>
+					<li ng-repeat="role in user.roles">{{role}}</li>
 				</ul>
 			</div>
 			

@@ -26,5 +26,6 @@ EJSON = Package.ejson.EJSON;
 LaunchScreen = Package['launch-screen'].LaunchScreen;
 SimpleSchema = Package['aldeed:simple-schema'].SimpleSchema;
 MongoObject = Package['aldeed:simple-schema'].MongoObject;
+Async = Package['meteorhacks:async'].Async;
 HTML = Package.htmljs.HTML;
 

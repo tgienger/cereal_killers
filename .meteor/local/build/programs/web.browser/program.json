@@ -805,6 +805,39 @@
       "hash": "01652554cc72cd435627572387196a8f6b58df16"
     },
     {
+      "path": "packages/meteorhacks_npm.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/meteorhacks_npm.js?604e35d5437f43224cde2c1f9e5e9aace95a9a95",
+      "sourceMap": "packages/meteorhacks_npm.js.map",
+      "sourceMapUrl": "/packages/604e35d5437f43224cde2c1f9e5e9aace95a9a95.map",
+      "size": 1300,
+      "hash": "604e35d5437f43224cde2c1f9e5e9aace95a9a95"
+    },
+    {
+      "path": "packages/npm-container.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/npm-container.js?c4195e22b5a0a7239a415a3d95b3b702c34fa28d",
+      "sourceMap": "packages/npm-container.js.map",
+      "sourceMapUrl": "/packages/c4195e22b5a0a7239a415a3d95b3b702c34fa28d.map",
+      "size": 1298,
+      "hash": "c4195e22b5a0a7239a415a3d95b3b702c34fa28d"
+    },
+    {
+      "path": "packages/chrismbeckett_toastr.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/chrismbeckett_toastr.js?22ac6b3b91d1e2065870c011d4bd9ae92ac88a70",
+      "sourceMap": "packages/chrismbeckett_toastr.js.map",
+      "sourceMapUrl": "/packages/22ac6b3b91d1e2065870c011d4bd9ae92ac88a70.map",
+      "size": 49649,
+      "hash": "22ac6b3b91d1e2065870c011d4bd9ae92ac88a70"
+    },
+    {
       "path": "packages/webapp.js",
       "where": "client",
       "type": "js",
@@ -860,40 +893,42 @@
       "hash": "495e58cf2465ba553324c68301cc62076b1fda1e"
     },
     {
+      "path": "packages/meteorhacks_async.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/meteorhacks_async.js?e687b9e863dc811fb3f313d1c6f237c7a2b1924b",
+      "sourceMap": "packages/meteorhacks_async.js.map",
+      "sourceMapUrl": "/packages/e687b9e863dc811fb3f313d1c6f237c7a2b1924b.map",
+      "size": 1360,
+      "hash": "e687b9e863dc811fb3f313d1c6f237c7a2b1924b"
+    },
+    {
       "path": "packages/global-imports.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/packages/global-imports.js?2b36b979700aa2c12a6af52a1f4ce4479f8193c8",
-      "size": 963,
-      "hash": "2b36b979700aa2c12a6af52a1f4ce4479f8193c8"
-    },
-    {
-      "path": "app/client/admin/roles/rules-directive/rules.directive.ng.html.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/client/admin/roles/rules-directive/rules.directive.ng.html.js?7645082cbd16bc6134f579845cdf91ca837e55dd",
-      "size": 2855,
-      "hash": "7645082cbd16bc6134f579845cdf91ca837e55dd"
+      "url": "/packages/global-imports.js?d927547c59c3ea807bfc3538aafd2765bf4bcbea",
+      "size": 1007,
+      "hash": "d927547c59c3ea807bfc3538aafd2765bf4bcbea"
     },
     {
       "path": "app/client/account/mail/mail.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/account/mail/mail.ng.html.js?21bc547d69ee3136e673dda9a66a6e72348f22e3",
-      "size": 418,
-      "hash": "21bc547d69ee3136e673dda9a66a6e72348f22e3"
+      "url": "/client/account/mail/mail.ng.html.js?b5306a9b5a2f30d79d913aed4ca5d919acf3a960",
+      "size": 410,
+      "hash": "b5306a9b5a2f30d79d913aed4ca5d919acf3a960"
     },
     {
       "path": "app/client/admin/roles/roles.controller.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/roles/roles.controller.ng.html.js?13730bac934a7ad161b2842851d0f4c3492f0ddd",
-      "size": 1789,
-      "hash": "13730bac934a7ad161b2842851d0f4c3492f0ddd"
+      "url": "/client/admin/roles/roles.controller.ng.html.js?0acc7b0613f5baf292df22d8c7bf133da236c990",
+      "size": 3818,
+      "hash": "0acc7b0613f5baf292df22d8c7bf133da236c990"
     },
     {
       "path": "app/client/admin/settings/settings.controller.ng.html.js",
@@ -918,27 +953,36 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/userPanel/userPanel.controller.ng.html.js?64b928d4853647fdfee475d3e14ed406710faf79",
-      "size": 2805,
-      "hash": "64b928d4853647fdfee475d3e14ed406710faf79"
+      "url": "/client/admin/userPanel/userPanel.controller.ng.html.js?88461f591281ebaf9fdeb9d422a7dc90b08704ab",
+      "size": 2848,
+      "hash": "88461f591281ebaf9fdeb9d422a7dc90b08704ab"
+    },
+    {
+      "path": "app/client/admin/vpn/vpn.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/vpn/vpn.ng.html.js?cefc940d19149d3329a603449c27adc69596578c",
+      "size": 3882,
+      "hash": "cefc940d19149d3329a603449c27adc69596578c"
     },
     {
       "path": "app/client/account/account.controller.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/account/account.controller.ng.html.js?837903d1aaa23bfd556fd4a75d658defbda0edbd",
-      "size": 2176,
-      "hash": "837903d1aaa23bfd556fd4a75d658defbda0edbd"
+      "url": "/client/account/account.controller.ng.html.js?ebd08c472af427e6a387953e20fb2d792cffb223",
+      "size": 2251,
+      "hash": "ebd08c472af427e6a387953e20fb2d792cffb223"
     },
     {
       "path": "app/client/admin/admin.controller.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/admin.controller.ng.html.js?177f64a8a8ff2c8b41edd0ab559ef37d9ed8cd80",
-      "size": 780,
-      "hash": "177f64a8a8ff2c8b41edd0ab559ef37d9ed8cd80"
+      "url": "/client/admin/admin.controller.ng.html.js?f7c3827b988bc59dcf27f2b531eada28a5d0e5eb",
+      "size": 799,
+      "hash": "f7c3827b988bc59dcf27f2b531eada28a5d0e5eb"
     },
     {
       "path": "app/client/chat/chat.controller.ng.html.js",
@@ -1013,6 +1057,15 @@
       "hash": "46593772139f3d6c3585f23f341d4969fe9c796a"
     },
     {
+      "path": "app/client/splash/splash.controller.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/splash/splash.controller.ng.html.js?936ea5a1b7dba883f1469f5c6f86d9bdfcba3760",
+      "size": 191,
+      "hash": "936ea5a1b7dba883f1469f5c6f86d9bdfcba3760"
+    },
+    {
       "path": "app/client/synergyComposer/synergyComposer.ng.html.js",
       "where": "client",
       "type": "js",
@@ -1035,99 +1088,99 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/lib/app.js?ce4c6f318e353b688e2f94df1891272daf683944",
-      "size": 290,
-      "hash": "ce4c6f318e353b688e2f94df1891272daf683944"
-    },
-    {
-      "path": "app/client/admin/roles/rules-directive/rules.directive.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/client/admin/roles/rules-directive/rules.directive.js?b4d8076e0e1c3de71d025609e5483e02b79b282d",
-      "size": 1543,
-      "hash": "b4d8076e0e1c3de71d025609e5483e02b79b282d"
+      "url": "/client/lib/app.js?0f17484c5b349a3135cb8783a560277d22860c39",
+      "size": 311,
+      "hash": "0f17484c5b349a3135cb8783a560277d22860c39"
     },
     {
       "path": "app/client/admin/roles/roles.controller.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/roles/roles.controller.js?d16b6a458e4af6aa722f266da44bd9a93258338d",
-      "size": 2858,
-      "hash": "d16b6a458e4af6aa722f266da44bd9a93258338d"
+      "url": "/client/admin/roles/roles.controller.js?bd67d16574d1cf78d39b98ee1f6f96a8cbf15678",
+      "size": 5217,
+      "hash": "bd67d16574d1cf78d39b98ee1f6f96a8cbf15678"
     },
     {
       "path": "app/client/admin/settings/settings.controller.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/settings/settings.controller.js?da792d1ce63242257c805960b2d41b9a799a7f0b",
-      "size": 430,
-      "hash": "da792d1ce63242257c805960b2d41b9a799a7f0b"
+      "url": "/client/admin/settings/settings.controller.js?0be86abe4ae7b069abe5a03dfe241e98195a663d",
+      "size": 569,
+      "hash": "0be86abe4ae7b069abe5a03dfe241e98195a663d"
     },
     {
       "path": "app/client/admin/userPage/admin.user.controller.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/userPage/admin.user.controller.js?85c1f24bbabb6a768a6b73aa6cfd06db49775488",
-      "size": 321,
-      "hash": "85c1f24bbabb6a768a6b73aa6cfd06db49775488"
+      "url": "/client/admin/userPage/admin.user.controller.js?0f6b79fa00d803aadbbe63cb5c1fa4facdcf4312",
+      "size": 722,
+      "hash": "0f6b79fa00d803aadbbe63cb5c1fa4facdcf4312"
     },
     {
       "path": "app/client/admin/userPanel/userPanel.controller.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/userPanel/userPanel.controller.js?be21a1025fce92593da91f110b4b206298246728",
-      "size": 3208,
-      "hash": "be21a1025fce92593da91f110b4b206298246728"
+      "url": "/client/admin/userPanel/userPanel.controller.js?62806ab4aeab2649b763b536d7b013746cbd95f1",
+      "size": 3717,
+      "hash": "62806ab4aeab2649b763b536d7b013746cbd95f1"
     },
     {
       "path": "app/client/admin/userPanel/userPanel.directive.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/userPanel/userPanel.directive.js?dbdfb106c4a483c15942ffc5d60a1f2e3132e938",
+      "url": "/client/admin/userPanel/userPanel.directive.js?094ba987ff89e4db36e7384af97576c7ee4af45f",
+      "size": 452,
+      "hash": "094ba987ff89e4db36e7384af97576c7ee4af45f"
+    },
+    {
+      "path": "app/client/admin/vpn/vpn.controller.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/admin/vpn/vpn.controller.js?4b783bcfded4b713619bfd51903959475da9c5d3",
       "size": 342,
-      "hash": "dbdfb106c4a483c15942ffc5d60a1f2e3132e938"
+      "hash": "4b783bcfded4b713619bfd51903959475da9c5d3"
     },
     {
       "path": "app/client/account/account.controller.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/account/account.controller.js?540684bae5c9410ecf13c8c587ea1ec876b95974",
-      "size": 828,
-      "hash": "540684bae5c9410ecf13c8c587ea1ec876b95974"
+      "url": "/client/account/account.controller.js?18a14c298c99fc7877649864f14bf42fb691e9e8",
+      "size": 2292,
+      "hash": "18a14c298c99fc7877649864f14bf42fb691e9e8"
     },
     {
       "path": "app/client/account/account.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/account/account.js?c53cbe7cce8df5a1726cd672ca9b499ad48e3f75",
-      "size": 679,
-      "hash": "c53cbe7cce8df5a1726cd672ca9b499ad48e3f75"
+      "url": "/client/account/account.js?935f18fa908f05b3c25723c30ffddfd8ff2d06b4",
+      "size": 1195,
+      "hash": "935f18fa908f05b3c25723c30ffddfd8ff2d06b4"
     },
     {
       "path": "app/client/admin/admin.controller.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/admin.controller.js?4be6e765ec856cc87c812c8f7856813b98ad7a38",
-      "size": 939,
-      "hash": "4be6e765ec856cc87c812c8f7856813b98ad7a38"
+      "url": "/client/admin/admin.controller.js?c1b05d2179194ace2a411d8a9e17aa2b1a3c6570",
+      "size": 1260,
+      "hash": "c1b05d2179194ace2a411d8a9e17aa2b1a3c6570"
     },
     {
       "path": "app/client/admin/admin.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/admin.js?87df5e28720536b5dded868be3d2e75146fc1c4a",
-      "size": 1660,
-      "hash": "87df5e28720536b5dded868be3d2e75146fc1c4a"
+      "url": "/client/admin/admin.js?f61a325f1c0d0b9dda83c700e9165eb3bc9994bc",
+      "size": 1966,
+      "hash": "f61a325f1c0d0b9dda83c700e9165eb3bc9994bc"
     },
     {
       "path": "app/client/bbcode/bbcode.filter.js",
@@ -1137,6 +1190,15 @@
       "url": "/client/bbcode/bbcode.filter.js?5bdc359768a3d9464f5e4e3ef69f08a2c52eec25",
       "size": 37011,
       "hash": "5bdc359768a3d9464f5e4e3ef69f08a2c52eec25"
+    },
+    {
+      "path": "app/client/bootstrap-affixed/affixed.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/bootstrap-affixed/affixed.js?0baf85b0db7a16304276687600031a614bc8e62b",
+      "size": 2385,
+      "hash": "0baf85b0db7a16304276687600031a614bc8e62b"
     },
     {
       "path": "app/client/camelCaseFilter/camelCase.js",
@@ -1179,9 +1241,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/dragdrop/dragdrop.js?cb5b80b1a6a25c95d1f205970d0c9634b7846788",
-      "size": 654,
-      "hash": "cb5b80b1a6a25c95d1f205970d0c9634b7846788"
+      "url": "/client/dragdrop/dragdrop.js?305221cc2b09a17c216c42c2eaa28942d34ae681",
+      "size": 724,
+      "hash": "305221cc2b09a17c216c42c2eaa28942d34ae681"
     },
     {
       "path": "app/client/draggable/draggable.directive.js",
@@ -1215,18 +1277,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/home/home.controller.js?db24dd3d51cad0f40c673ab3307fb3ab08b910ed",
-      "size": 367,
-      "hash": "db24dd3d51cad0f40c673ab3307fb3ab08b910ed"
+      "url": "/client/home/home.controller.js?e0e1c55c374a0fab9225c6ac69656af882302436",
+      "size": 331,
+      "hash": "e0e1c55c374a0fab9225c6ac69656af882302436"
     },
     {
       "path": "app/client/home/home.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/home/home.js?62470a1eee9b386d9f2c3532f0aeb6c61b3f0ea9",
-      "size": 238,
-      "hash": "62470a1eee9b386d9f2c3532f0aeb6c61b3f0ea9"
+      "url": "/client/home/home.js?4ffeb7f691dd8a3c6615754a05e9daab29325189",
+      "size": 263,
+      "hash": "4ffeb7f691dd8a3c6615754a05e9daab29325189"
     },
     {
       "path": "app/client/mail-directive/mail.directive.js",
@@ -1281,6 +1343,24 @@
       "url": "/client/resizable/resizable.directive.js?fa916efce27f80cbe6c903c96fc7353d947439e7",
       "size": 2786,
       "hash": "fa916efce27f80cbe6c903c96fc7353d947439e7"
+    },
+    {
+      "path": "app/client/splash/splash.controller.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/splash/splash.controller.js?c6eafdc44b83501e12ef199e6378deb035aee1dd",
+      "size": 116,
+      "hash": "c6eafdc44b83501e12ef199e6378deb035aee1dd"
+    },
+    {
+      "path": "app/client/splash/splash.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/splash/splash.js?bd67169e8e59bff3071130741720f64bf37e1165",
+      "size": 248,
+      "hash": "bd67169e8e59bff3071130741720f64bf37e1165"
     },
     {
       "path": "app/client/synergyComposer/synergyComposer.directive.js",
@@ -1364,15 +1444,15 @@
       "hash": "3fe237959a859d7038bc4fd43d586670df2a5758"
     },
     {
-      "path": "23ba699dcb8a02cee81b8fa6e26877b326ef79b9.css",
+      "path": "76b910eb52380aa1f476bdfbb3f4f01dc5a33ba7.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/23ba699dcb8a02cee81b8fa6e26877b326ef79b9.css",
-      "sourceMap": "23ba699dcb8a02cee81b8fa6e26877b326ef79b9.css.map",
-      "sourceMapUrl": "/23ba699dcb8a02cee81b8fa6e26877b326ef79b9.map",
-      "size": 314226,
-      "hash": "23ba699dcb8a02cee81b8fa6e26877b326ef79b9"
+      "url": "/76b910eb52380aa1f476bdfbb3f4f01dc5a33ba7.css",
+      "sourceMap": "76b910eb52380aa1f476bdfbb3f4f01dc5a33ba7.css.map",
+      "sourceMapUrl": "/76b910eb52380aa1f476bdfbb3f4f01dc5a33ba7.map",
+      "size": 324252,
+      "hash": "76b910eb52380aa1f476bdfbb3f4f01dc5a33ba7"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",

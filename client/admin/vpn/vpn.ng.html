@@ -1,8 +1,10 @@
-<h3 class="center-align">User Administration</h3>
+<h3 class="center-align">VPN Administration</h3>
 <hr>
 <!--	create new news-->
 <div class="createPost row">
-	<!--<button ng-click="createUser()" disabled class="waves-effect btn grey add-news-button col-sm-12"><span>Create New User</span></button>-->
+	<input type="text" class="col-sm-12" ng-model="vpn.user">
+	<button ng-click="addVpnUser(vpn.user)" ng-show="userIsAdmin()" class="btn add-news-button col-sm-12"><span>Create New User</span></button>
+	<button ng-click="removeVpnUser(vpn.user)" ng-show="userIsAdmin()" class="btn add-news-button col-sm-12"><span>Remove User</span></button>
 </div>
 
 <div class="input-group">
@@ -10,13 +12,13 @@
 	<input type="text" class="form-control" id="userSearch" placeholder="search">
 </div>
 
-
+<!--
 <div class="row">
 	<table>
 		<tr>
 			<td class="col-sm-10">
 				<ul class="role-list list-unstyled list-inline" aria-labelledby="dLabel1">
-					<li class="available-roles pointer" ui-draggable ui-drag-helper="clone" ui-drag-model="role" ng-repeat="role in roles | orderBy : 'order'">
+					<li class="available-roles" ui-draggable ui-drag-helper="clone" ui-drag-model="role" ng-repeat="role in roles | orderBy : 'order'">
 						<div>
 							 <image hide-empty-images ng-src="/images/{{role.name}}.png" width="15px" alt="{{role.name}} badge image"></image> 
 							 {{::role.name}}
@@ -24,7 +26,7 @@
 					 </li>
 				</ul>
 			</td>
-			<td ui-hover-class="remove-role-class" ui-droppable ui-drop-accept=".user-roles" drop-callback="removeRole(ui)" class="role-remove-square col-sm-2 well">drag role here to remove</td>
+			<td ui-droppable ui-drop-accept=".user-roles" drop-callback="removeRole(ui)" class="role-remove-square col-sm-2 well">drag role here to remove</td>
 		</tr>
 	</table>
 	
@@ -85,4 +87,4 @@
 			</tbody>
 		</table>
 	</li>		
-</ul>
+</ul>-->

@@ -19,8 +19,11 @@ angular.module('dragdrop', [])
 		scope: {callback: '&dropCallback'},
 		link: function(scope, elem, attrs) {
 			
-			var accept = attrs.uiDropAccept;
+			var accept = attrs.uiDropAccept,
+				hoverClass = attrs.uiHoverClass;
+				
 			elem.droppable({
+				hoverClass: hoverClass,
 				accept: accept,
 				drop: function(event, ui) {
 					scope.callback({ui: ui});

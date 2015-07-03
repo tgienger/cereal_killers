@@ -2,7 +2,8 @@ angular.module('app').controller('AdminController', [
 	'$scope',
 	'$meteor',
 	'$timeout',
-	function($scope, $meteor, $timeout) {
+	'$rootScope',
+	function($scope, $meteor, $timeout, $rootScope) {
 		
 		
 		$scope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
@@ -33,15 +34,31 @@ angular.module('app').controller('AdminController', [
 		$scope.adminNav = [
 			{
 				route: 'admin.settings',
-				name: 'Settings'
+				name: 'Settings',
+				'if': function() {
+					return true;
+				}
 			},
 			{
 				route: 'admin.users',
-				name: 'Users'
+				name: 'Users',
+				'if': function() {
+					return true;
+				}
 			},
 			{
 				route: 'admin.roles',
-				name: 'Roles'
+				name: 'Roles',
+				'if': function () {
+					return true;
+				}
+			},
+			{
+				route: 'admin.vpn',
+				name: 'VPN Access',
+				'if': function() {
+					return $rootScope.currentUser.username === 'webmaster';
+				}
 			}
 		];
 		

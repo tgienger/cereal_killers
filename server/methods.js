@@ -116,5 +116,42 @@ Meteor.methods({
 		// 	});
 		// });
 		
+	},
+	
+	addVpnUser: function(username) {
+		
+		var user = Meteor.user();
+		
+		if (!user || !Roles.userIsInRole(user, ['admin'])) {
+			throw new Meteor.Error(401, "AUTH_REQUIRED");
+		}
+		
+		var vpnUser = username.trim();
+		vpnUser = vpnUser.replace(/\s+/g, '');
+		// console.log(vpnUser);
+		
+		var spawn = Meteor.npmRequire('child_process').spawn;
+		
+		// gain sudo access
+		var sudo = spawn('su');
+		sudo.stderr.on('data', function(data) {
+			sudo.stdin.write('Elkmeat1' + '\n');
+		});
+		
+		var command = spawn('bash', ['newuser.sh', username], {stdio: ['pipe', 'pipe', 'pipe'], uid: 0});
+		var output = [];
+		
+		command.stdout.on('data', function(chunk) {
+			output.push(chunk);
+		});
+		
+		command.on('close', function(code) {
+			if (code !== 0) {
+				return 'Error: ' + code;
+			}
+			
+			return output[output.length - 1];
+		});
+		return 'Error: ' +  vpnUser + ' was not created.' ;
 	}
 });

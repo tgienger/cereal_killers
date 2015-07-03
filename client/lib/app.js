@@ -8,7 +8,8 @@ angular.module('app', [
 	'ngAnimate',
 	'truncate',
 	'hideEmptyImages',
-	'dragdrop'
+	'dragdrop',
+	'BootstrapAffixed'
 ]);
 
 Accounts.ui.config({
