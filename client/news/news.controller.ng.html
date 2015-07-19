@@ -1,9 +1,12 @@
 <h6 class="newsBlock white-text chatTitle">CK News</h6>
+<p class="news-count">
+	Total News: {{newsCount.count}}
+</p>
 <ul id="newsStream" class="noList">
-		
+
 <!--	create new news-->
 	<div class="createPost">
-		<button ng-click="openCreate()" ng-show="userIsAdmin()" class="waves-effect btn grey add-news-button"><span>Create New</span></button>
+		<button ng-click="openCreate()" ng-show="userIsAdmin()" class="btn add-news-button"><span>Create New</span></button>
 	</div>
 <!--	<div class="inputForm" ng-show="createPost">
 		<form novalidate>
@@ -14,31 +17,37 @@
 			<input type="submit" class="newsSubmit" ng-click="save(news)">
 		</form>
 	</div>-->
-		
+
 	<li ng-repeat="post in posts | orderBy : 'date' : 'reversed'">
 		<div class="newsPost">
-			<div class="newsHeader">{{::post.title}}
+			<div class="newsHeader">{{::post.subject}}
 				<small class="newsDate">{{::post.date | date:'MM/dd/yyyy @ h:mm a'}}</small>
 				<small class="postCreator">By: {{::post.username}}</small>
-					
-<!--					private checkbox-->
-					<div class="pull-right privateCheckbox" ng-show="userIsAdmin()">
-						<input class="" type="checkbox" name="privateCheck" id="privateCheck_{{post._id}}" ng-change="privateChange(post)" ng-click="privateClicked(post)" ng-model="post.private">
-						<label class="checkbox-label" for="privateCheck_{{post._id}}" ng-model="post.private">private</label>
 
-						<input type="checkbox" name="hiddenCheck" id="hiddenCheck_{{post._id}}" ng-model="post.visible">
-						<label class="checkbox-label" for="hiddenCheck_{{post._id}}">visible</label>
-						
-						<a class="pointer tooltipped" data-tooltip="delete post" data-position="top" name="deletePost" id="deletePost_{{post._id}}" ng-click="deletePost(post)">
-							<i class="fa fa-trash-o red-text"></i>
-						</a>
-						
-					</div>
-					
+
 			</div>
-			<div class="newsBody flow-text" markdown="post.body | bbcode"></div>
+<!--					private checkbox-->
+			<div class=" privateCheckbox" ng-show="userIsAdmin()">
+				<input class="" type="checkbox" name="privateCheck" id="privateCheck_{{post._id}}" ng-change="privateChange(post)" ng-click="privateClicked(post)" ng-model="post.private">
+				<label class="checkbox-label" for="privateCheck_{{post._id}}" ng-model="post.private">private</label>
+
+				<input type="checkbox" name="hiddenCheck" id="hiddenCheck_{{post._id}}" ng-model="post.visible">
+				<label class="checkbox-label" for="hiddenCheck_{{post._id}}">visible</label>
+
+				<a class="pointer tooltipped" data-tooltip="delete post" data-position="top" name="deletePost" id="deletePost_{{post._id}}" ng-click="deletePost(post)">
+					<i class="fa fa-trash-o red-text"></i>
+				</a>
+
+				<a class="pointer" ng-click="edit(post)">Edit</a>
+
+			</div>
+
+			<!-- <div class="newsBody" markdown="post.markdown | bbcode"></div> -->
+			<div class="newsBody">
+				<meteor-md markdown="post.markdown | youtube"></meteor-md>
+			</div>
 		</div>
 	</li>
 </ul>
 
-<synergy-composer ng-show="pageReady" id="synergyComposer" synergy-controller="synergyComposer" synergy-submit="save" topics="topics" exit-composer="closeInput()"></synergy-composer>
+<synergy-composer ng-show="pageReady" id="synergyComposer" composer="composer" save="composerSave"></synergy-composer>

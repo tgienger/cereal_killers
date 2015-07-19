@@ -83,6 +83,12 @@ $post-border-color: #454545;
     /* height: -o-calc(100% - 89px); */
     height: calc(100% - 101px);
     left: 0;
+
+    .preview-container {
+        img {
+            max-width: 80%;
+        }
+    }
 }
 #dragbar {
     height: 12px;

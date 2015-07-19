@@ -2,16 +2,16 @@
 
 <div class="admin-container ui-view-container">
 	<ul id="admin-nav" class="side-nav fixed">
-		
+
 		<li ng-if="nav.if()" ng-repeat="nav in adminNav">
 			<a class="side-nav-buttons" ui-sref="{{nav.route}}">
-				<i class="fa fa-angle-right active-red" ng-show="$state.includes(nav.route)"></i> 
-				<span ng-class="{'active-font' : $state.includes(nav.route)}">{{nav.name}}</span> 
+				<i class="fa fa-angle-right active-red" ng-show="$state.includes(nav.route)"></i>
+				<span ng-class="{'active-font' : $state.includes(nav.route)}">{{nav.name}}</span>
 				<i class="fa fa-angle-left active-red" ng-show="$state.includes(nav.route)"></i>
 			</a>
 		</li>
-		
-		
+
+
 	</ul>
 	<i data-activates="admin-nav" class="mdi-navigation-menu small button-collapse"></i>
 	<div ui-view></div>

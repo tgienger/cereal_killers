@@ -18,7 +18,7 @@
 				<ul class="role-list list-unstyled list-inline" aria-labelledby="dLabel1">
 					<li class="available-roles pointer" ui-draggable ui-drag-helper="clone" ui-drag-model="role" ng-repeat="role in roles | orderBy : 'order'">
 						<div>
-							 <image hide-empty-images ng-src="/images/{{role.name}}.png" width="15px" alt="{{role.name}} badge image"></image> 
+							 <img hide-empty-images ng-src="/images/{{role.name}}.png" width="15px" alt="{{role.name}} badge image"> 
 							 {{::role.name}}
 						</div>
 					 </li>
@@ -49,7 +49,7 @@
 			<tbody>
 				<tr ui-droppable drop-callback="addRole(ui, user)" ui-drop-accept=".available-roles" ui-hover-class="info" ng-repeat="user in users | orderBy : 'username' ">
 					<td>
-						<image tooltip="{{user.roles[0]}}" hide-empty-images ng-src="/images/{{user.roles[0]}}.png" width="15px" alt="{{user.roles[0]}} badge image"></image>  {{::user.username}}
+						<img tooltip="{{user.roles[0]}}" hide-empty-images ng-src="/images/{{user.roles[0]}}.png" width="15px" alt="{{user.roles[0]}} badge image">  {{::user.username}}
 					</td>
 					<td>
 						{{::user.createdAt | date: 'MM/dd/yyyy @ h:mm a'}}
@@ -73,7 +73,7 @@
 					<td class="roles-list">
 						<ul class="list-unstyled list-inline">
 							<li ui-draggable ui-drag-helper="clone" ui-drag-model="{'role': role, 'user': user}" class="user-roles" ng-repeat="role in user.roles">
-							<image hide-empty-images ng-src="/images/{{role}}.png" width="15px" alt="{{role}} badge image"></image>
+							<img hide-empty-images ng-src="/images/{{role}}.png" width="15px" alt="{{role}} badge image">
 							</li>
 						</ul>
 						
@@ -85,4 +85,4 @@
 			</tbody>
 		</table>
 	</li>		
-</ul>
+</ul>	

@@ -1,0 +1,10 @@
+<div class="inner-container">
+	<ul ng-class="innerComment === true ? 'chat-ul-inner' : 'chat-ul-outer'">
+		<!-- <button ng-hide="innerComment" class="chat-button" ng-click="reSort();">change</button> -->
+		<li class="chat-li" ng-repeat="comment in comments">
+			<p class="chat-li-p comment-head"><span class="comment-author">{{comment.author.name}} - </span><span class="comment-date">{{comment.posted | date: 'medium'}}</span></p>
+			<p class="chat-li-p comment-text"><meteor-md markdown="comment.text"></meteor-md></p>
+			<comments inner-comment="true" parent="comment._id" per-page="5" page="1" sort="1"></comments>
+		</li>
+	</ul>
+</div>

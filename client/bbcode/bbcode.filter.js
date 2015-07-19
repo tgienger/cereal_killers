@@ -516,6 +516,21 @@ angular.module('app')
                         return '</a>';
                     }
                 },
+                "youtube": {
+                    openTag: function(params, content) {
+                        var url = 'https://www.youtube.com/watch?v=';
+                        if (!params) {
+                            url = '';
+                        } else {
+                            url = url + content;
+                        }
+                        return '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + content + '" frameborder="0" allowfullscreen>';
+
+                    },
+                    closeTag: function(params, content) {
+                        return '</iframe>';
+                    }
+                },
                 /*
                     The [*] tag is special since the user does not define a closing [/*] tag when writing their bbcode.
                     Instead this module parses the code and adds the closing [/*] tag in for them. None of the tags you
@@ -750,8 +765,10 @@ angular.module('app')
                 var ret = {html: "", error: false},
                     errQueue = [];
 
-                config.text = config.text.replace(/</g, "&lt;"); // escape HTML tag brackets
-                config.text = config.text.replace(/>/g, "&gt;"); // escape HTML tag brackets
+                if (config.escapeHtml) {
+                    config.text = config.text.replace(/</g, "&lt;"); // escape HTML tag brackets
+                    config.text = config.text.replace(/>/g, "&gt;"); // escape HTML tag brackets
+                }
 
                 config.text = config.text.replace(openTags, function(matchStr, openB, contents, closeB) {
                     return "<" + contents + ">";
@@ -808,7 +825,8 @@ angular.module('app')
             var result = XBBCODE.process({
                 text: str,
                 removeMisalignedTags: false,
-                addInLineBreaks: false
+                addInLineBreaks: false,
+                escapeHtml: false
             });
 
             return result.html;

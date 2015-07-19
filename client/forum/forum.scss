@@ -1,0 +1,13 @@
+.forum-container {
+	background: white;
+	padding: 10px;
+	margin-bottom: 10px;
+	
+	.forum-ul {
+		list-style-type: none;
+		padding-left: 0;
+		.forum-li {
+			border-bottom: 1px solid black;
+		}
+	}
+}

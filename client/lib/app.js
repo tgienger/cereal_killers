@@ -9,7 +9,9 @@ angular.module('app', [
 	'truncate',
 	'hideEmptyImages',
 	'dragdrop',
-	'BootstrapAffixed'
+	'BootstrapAffixed',
+	'RecursionHelper',
+	'MeteorMarkdown',
 ]);
 
 Accounts.ui.config({

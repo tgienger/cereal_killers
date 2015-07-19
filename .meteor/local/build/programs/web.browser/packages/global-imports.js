@@ -3,6 +3,9 @@
 Accounts = Package['accounts-base'].Accounts;
 Roles = Package['alanning:roles'].Roles;
 Showdown = Package.markdown.Showdown;
+meteorts = Package['dataflows:typescript-utils'].meteorts;
+moment = Package['momentjs:moment'].moment;
+Counts = Package['tmeasday:publish-counts'].Counts;
 Meteor = Package.meteor.Meteor;
 WebApp = Package.webapp.WebApp;
 Log = Package.logging.Log;

@@ -32,9 +32,9 @@ body {
 .image-container {
   margin-top: 60px;
 //  background: #070d1a url('http://images.mmorpg.com/images/crowfall_skin_mar23.jpg') no-repeat top center !important;
-  background: #070d1a url('/images/cereal_killers_background.fw.png') no-repeat top center !important;
+  background: #000000 url('/images/cereal_killers_background.fw.png') no-repeat top center !important;
   position: relative;
-  
+
   .header-image {
     // border: 1px solid white;
     height: 140px;
@@ -42,7 +42,7 @@ body {
     position: absolute;
     left: 15%;
   }
-  
+
 }
 .container {
   width: 100%;

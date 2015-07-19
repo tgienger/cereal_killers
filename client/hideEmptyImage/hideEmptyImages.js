@@ -4,7 +4,8 @@ angular.module('hideEmptyImages', [])
 		restrict: 'AE',
 		link: function(scope, elem, attrs) {
 			elem.error(function(err) {
-				elem.hide();
+				attrs.$set('ngSrc', '/images/member.png');
+				// elem.hide();
 			});
 		}
 	};

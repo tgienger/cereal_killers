@@ -1,0 +1,20 @@
+<toolbar></toolbar>
+
+
+<div class="image-container">
+	<div class="headerScrollPos"></div>
+
+    <div id="discussions-container">
+        <div class="header">
+            <h3 class="main-comment-head">{{::discussion.topic.text}}</h3>
+            <p class="main-comment-subhead">
+                Started by: {{::discussion.topic.author.name}} on {{::discussion.topic.posted | date: 'medium'}}
+            </p>
+        </div>
+        <div id="main-comment">
+            <p class="chat-li-p comment-head"><span class="comment-author">{{discussion.comment.author.name}} - </span><span class="comment-date">{{discussion.comment.posted | date: 'medium'}}</span></p>
+            <p class="chat-li-p comment-text">{{discussion.comment.text}}</p>
+        </div>
+        <comments inner-comment="false" parent="discussion.comment._id" per-page="discussion.perPage" page="discussion.page" sort="discussion.sort"></comments>
+    </div>
+</div>

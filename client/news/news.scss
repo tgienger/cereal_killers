@@ -1,6 +1,11 @@
+
+.news-count {
+	color: white;
+}
+
 #newsStream {
 	margin: auto;
-	
+
 	textarea {
 		outline: none;
 		border: 1px solid red;
@@ -16,27 +21,31 @@
 	}
 	.newsBlock {
 	}
-	
+
 	.newsBody {
-		min-height: 100px;
+		min-height: 75px;
 		padding: 3px;
 //		background: black;
 		color: white;
 		font-size: 1.2em;
+
+		img {
+			max-width: 80%;
+		}
 	}
 	.editBody {
 		color:black;
 		min-height: 100px;
-		
+
 	}
-	
+
 	input .newsTitle{
 		outline: none;
 		border: 1px solid red;
 		//background: black;
 		//color: white;
 	}
-	
+
 	.newsHeader {
 		width: 100%;
 		height: 30px;
@@ -47,20 +56,21 @@
 		border-top-left-radius: 3px;
 		border-top-right-radius: 3px;
 		background: rgba(33, 33, 33, 1);
+		margin-bottom: 10px;
 //		background: url('http://www.kcfaa.org/wp-content/uploads/2011/07/red-repeat-background.png');
 	}
 	.postCreator {
 		margin-left: 15px;
 	}
-	
+
 	.privateCheckbox {
-		margin-right: 15px;
+		// margin-right: 15px;
 	}
-	
+
 	.newsSubmit {
 //		margin-left: -10px;
 	}
-	
+
 	.newsPost {
 		width: 100%;
 		border: 1px solid white;
@@ -72,11 +82,11 @@
 	.add-news-button {
 		width: 100%;
 	}
-	
+
 	.newsDate {
 		margin-left: 15px;
 	}
-	
+
 	.inputForm {
 		border: 1px solid white;
 		padding: 5px;
@@ -84,16 +94,16 @@
 		transition: all .3s linear;
 		overflow: none;
 	}
-	
+
 	.closed {
 		height: 0px;
 		display: none;
 	}
-	
+
 	.createPost {
 		margin-bottom: 15px;
 	}
-	
+
 	.checkbox-label {
 		margin-right: 15px;
 	}

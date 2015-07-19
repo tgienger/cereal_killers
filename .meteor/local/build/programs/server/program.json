@@ -419,6 +419,45 @@
       "path": "packages/chrismbeckett_toastr.js"
     },
     {
+      "sourceMap": "packages/dataflows_typescript-utils.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/dataflows_typescript-utils.js"
+    },
+    {
+      "sourceMap": "packages/momentjs_moment.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/momentjs_moment.js"
+    },
+    {
+      "sourceMap": "packages/pbastowski_angular-babel.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/pbastowski_angular-babel.js",
+      "assets": {
+        "../../babel.json": "assets/babel.json"
+      }
+    },
+    {
+      "node_modules": "/C/Users/Tj/AppData/Local/.meteor/packages/djedi_sanitize-html/1.7.0/npm/node_modules",
+      "sourceMap": "packages/djedi_sanitize-html.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/djedi_sanitize-html.js"
+    },
+    {
+      "sourceMap": "packages/tmeasday_publish-counts.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/tmeasday_publish-counts.js"
+    },
+    {
+      "sourceMap": "packages/netanelgilad_ng-infinite-scroll.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/netanelgilad_ng-infinite-scroll.js"
+    },
+    {
+      "sourceMap": "packages/oshai_angular-marked.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/oshai_angular-marked.js"
+    },
+    {
       "sourceMap": "packages/session.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/session.js"
@@ -437,52 +476,107 @@
       "path": "packages/global-imports.js"
     },
     {
-      "path": "app/server/startup/loadSite.js"
+      "sourceMap": "app/server/startup/loadSite.es6.map",
+      "sourceMapRoot": "server/startup",
+      "path": "app/server/startup/loadSite.es6"
     },
     {
-      "path": "app/model/chat.js"
+      "sourceMap": "app/model/chat.es6.map",
+      "sourceMapRoot": "model",
+      "path": "app/model/chat.es6"
     },
     {
-      "path": "app/model/mail.js"
+      "sourceMap": "app/model/comments.es6.map",
+      "sourceMapRoot": "model",
+      "path": "app/model/comments.es6"
     },
     {
-      "path": "app/model/news.js"
+      "sourceMap": "app/model/discussions.es6.map",
+      "sourceMapRoot": "model",
+      "path": "app/model/discussions.es6"
     },
     {
-      "path": "app/model/roles.js"
+      "sourceMap": "app/model/mail.es6.map",
+      "sourceMapRoot": "model",
+      "path": "app/model/mail.es6"
     },
     {
-      "path": "app/model/settings.js"
+      "sourceMap": "app/model/news.es6.map",
+      "sourceMapRoot": "model",
+      "path": "app/model/news.es6"
     },
     {
-      "path": "app/model/site_rules.js"
+      "sourceMap": "app/model/roles.es6.map",
+      "sourceMapRoot": "model",
+      "path": "app/model/roles.es6"
     },
     {
-      "path": "app/server/chat.js"
+      "sourceMap": "app/model/settings.es6.map",
+      "sourceMapRoot": "model",
+      "path": "app/model/settings.es6"
     },
     {
-      "path": "app/server/mail.js"
+      "sourceMap": "app/model/site_rules.es6.map",
+      "sourceMapRoot": "model",
+      "path": "app/model/site_rules.es6"
     },
     {
-      "path": "app/server/methods.js"
+      "sourceMap": "app/server/chat.es6.map",
+      "sourceMapRoot": "server",
+      "path": "app/server/chat.es6"
     },
     {
-      "path": "app/server/news.js"
+      "sourceMap": "app/server/comments.es6.map",
+      "sourceMapRoot": "server",
+      "path": "app/server/comments.es6"
     },
     {
-      "path": "app/server/roles.js"
+      "sourceMap": "app/server/discussions.es6.map",
+      "sourceMapRoot": "server",
+      "path": "app/server/discussions.es6"
     },
     {
-      "path": "app/server/schemas.js"
+      "sourceMap": "app/server/mail.es6.map",
+      "sourceMapRoot": "server",
+      "path": "app/server/mail.es6"
     },
     {
-      "path": "app/server/settings.js"
+      "sourceMap": "app/server/methods.es6.map",
+      "sourceMapRoot": "server",
+      "path": "app/server/methods.es6"
     },
     {
-      "path": "app/server/site_rules.js"
+      "sourceMap": "app/server/news.es6.map",
+      "sourceMapRoot": "server",
+      "path": "app/server/news.es6"
     },
     {
-      "path": "app/server/users.js"
+      "sourceMap": "app/server/roles.es6.map",
+      "sourceMapRoot": "server",
+      "path": "app/server/roles.es6"
+    },
+    {
+      "sourceMap": "app/server/schemas.es6.map",
+      "sourceMapRoot": "server",
+      "path": "app/server/schemas.es6"
+    },
+    {
+      "sourceMap": "app/server/settings.es6.map",
+      "sourceMapRoot": "server",
+      "path": "app/server/settings.es6"
+    },
+    {
+      "sourceMap": "app/server/site_rules.es6.map",
+      "sourceMapRoot": "server",
+      "path": "app/server/site_rules.es6"
+    },
+    {
+      "sourceMap": "app/server/users.es6.map",
+      "sourceMapRoot": "server",
+      "path": "app/server/users.es6"
+    },
+    {
+      "path": "app/zzz.ts-compiler.js"
     }
   ]
 }

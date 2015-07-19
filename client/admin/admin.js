@@ -1,8 +1,9 @@
 
-var Config = (function() {
-	
-	function Config($stateProvider) {
-		
+var AdminConfig = (function() {
+
+	function AdminConfig($stateProvider, $urlMatcherFactoryProvider) {
+		$urlMatcherFactoryProvider.strictMode(false);
+
 		$stateProvider
 			.state('admin', {
 				url: '/admin',
@@ -22,15 +23,15 @@ var Config = (function() {
 				controller: 'AdminUserController',
 				// resolve: {
 				// 	'users': ['$meteor', '$q', function($meteor, $q) {
-						
+
 				// 		var deferred = $q.defer();
-						
+
 				// 		$meteor.subscribe('users').then(function() {
 				// 			deferred.resolve($meteor.collection(Meteor.users));
 				// 		});
-						
+
 				// 		return deferred.promise;
-						
+
 				// 	}].
 				// }
 			})
@@ -41,13 +42,13 @@ var Config = (function() {
 				controller: 'RolesController',
 				// resolve: {
 				// 	'roleData': ['$meteor', '$q', function($meteor, $q) {
-						
+
 				// 		var deferred = $q.defer();
-						
+
 				// 		$meteor.subscribe('rules').then(function() {
 				// 			deferred.resolve($meteor.collection(Rules));
 				// 		});
-						
+
 				// 		return deferred.promise;
 				// 		// return $meteor.collection(Meteor.roles);
 				// 	}]
@@ -63,11 +64,11 @@ var Config = (function() {
 				templateUrl: 'client/admin/vpn/vpn.ng.html',
 				controller: 'VpnController'
 			});
-			
+
 	}
-    return Config;
+    return AdminConfig;
 }());
 
-Config.$inject = ['$stateProvider'];
+AdminConfig.$inject = ['$stateProvider', '$urlMatcherFactoryProvider'];
 
-angular.module('app').config(Config);
+angular.module('app').config(AdminConfig);

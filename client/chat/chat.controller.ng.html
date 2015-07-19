@@ -1,41 +1,32 @@
 <h6 class="chatTitle white-text chat_bottom center-align">Chat</h6>
 <div id="chat_box" class="chatbox">
-	
-	
+
+
 	<ul id="chat_stream" class="noList chatStream">
-			
-			
+
+
 		<div class="chatList">
-			<!--<li ng-repeat="post in chatMessages | orderBy : 'date'">-->
-				<!--<p id="chat_message_{{post._id}}" class="chatSentence">
-					<span class="msg-title">{{post.username}} - 
-						<small>{{post.date | date:'short' }}</small> 
-						<i class="mdi-content-reply pull-right pointer" ng-click="replyTo(post)"></i>
-					</span>-->
-					<!--<br> -->
-					<!--<span markdown="post.message | bbcode"></span>-->
-				<!--</p>
-				<p markdown="post.message | bbcode"></p>-->
-			<!--</li>-->
-			<dl ng-repeat="post in chatMessages | orderBy : 'date'">
-				<dt class="">{{post.username}} - <small>{{post.date | date:'short'}}</small> <i class="fa fa-reply" ng-click="replyTo(post)" ></i></dt>
-				<dd markdown="post.message | bbcode"></dd>
+			<dl ng-repeat="post in chat.messages | orderBy : 'date'">
+				<dt class="">{{post.username}} - <small>{{post.date | date:'short'}}</small> <i class="fa fa-reply" ng-click="chat.replyTo(post)" ></i></dt>
+				<dd>
+					<meteor-md markdown="post.message"></meteor-md>
+				</dd>
 			</dl>
 		</div>
-		
+
 	</ul>
-	
-	
+
+
 </div>
 
 <div class="row chat-input-container">
 
 	<div class="input-field col-sm-12 chat-input">
-		<form ng-submit="sendChat(chat)">
+		<form ng-submit="chat.sendChat(chat.message)">
 			<input type="text" id="chatInput" class="validate white-text" ng-model="chat.message" length="150">
-				<span class="badge" ng-class="chat.message.length > 150 ? 'chat-error': 'chat-error'">{{chat.message.length}}/150</span>
+				<span class="badge" ng-class="chat.message.length > 150 ? 'chat-error': 'chat-error'">{{message.length}}/150</span>
 			<label for="chatInput">write a comment...</label>
 		</form>
 	</div>
 
-</div>	
+</div>

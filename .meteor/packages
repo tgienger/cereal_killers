@@ -31,3 +31,10 @@ meteorhacks:npm
 
 npm-container
 chrismbeckett:toastr
+dataflows:typescript-utils
+momentjs:moment
+pbastowski:angular-babel
+djedi:sanitize-html
+tmeasday:publish-counts
+netanelgilad:ng-infinite-scroll
+oshai:angular-marked
