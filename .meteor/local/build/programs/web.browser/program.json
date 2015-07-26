@@ -1081,9 +1081,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/discussions/discussions.ng.html.js?22d242c9e262d4de79f4786225b1affb6d36fa0a",
-      "size": 1997,
-      "hash": "22d242c9e262d4de79f4786225b1affb6d36fa0a"
+      "url": "/client/forum/discussions/discussions.ng.html.js?032af4c9bb3ad24ae8dde199ee75ff11db627fe8",
+      "size": 2007,
+      "hash": "032af4c9bb3ad24ae8dde199ee75ff11db627fe8"
     },
     {
       "path": "app/client/header/currentLocation/currentLocation.ng.html.js",
@@ -1144,9 +1144,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/comment.directive/comment.ng.html.js?aa7bcda6ea463ba249951f864b65df503d4a1131",
-      "size": 1173,
-      "hash": "aa7bcda6ea463ba249951f864b65df503d4a1131"
+      "url": "/client/comment.directive/comment.ng.html.js?8688d1a093e6b8acf806acdb8f1c1a9b3085d5d8",
+      "size": 1183,
+      "hash": "8688d1a093e6b8acf806acdb8f1c1a9b3085d5d8"
     },
     {
       "path": "app/client/forum/forum.controller.ng.html.js",
@@ -1464,11 +1464,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/comment.directive/comment.es6?46ac844cc80d2e7b26ee9d64dac573becd20d00e",
+      "url": "/client/comment.directive/comment.es6?197ed3b20045699cfed2f0d05e5a0ed3d6da0951",
       "sourceMap": "app/client/comment.directive/comment.es6.map",
-      "sourceMapUrl": "/client/comment.directive/46ac844cc80d2e7b26ee9d64dac573becd20d00e.map",
-      "size": 2814,
-      "hash": "46ac844cc80d2e7b26ee9d64dac573becd20d00e"
+      "sourceMapUrl": "/client/comment.directive/197ed3b20045699cfed2f0d05e5a0ed3d6da0951.map",
+      "size": 3615,
+      "hash": "197ed3b20045699cfed2f0d05e5a0ed3d6da0951"
     },
     {
       "path": "app/client/dragdrop/dragdrop.js",
@@ -1602,9 +1602,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.js?c7889531d20d619b2cc4d6307419d8302cf1a94e",
-      "size": 2587,
-      "hash": "c7889531d20d619b2cc4d6307419d8302cf1a94e"
+      "url": "/client/news/news.controller.js?7afb336e8a56f98d36a8b0e6102416a15a83c730",
+      "size": 2681,
+      "hash": "7afb336e8a56f98d36a8b0e6102416a15a83c730"
     },
     {
       "path": "app/client/news/news.directive.js",
@@ -1806,15 +1806,15 @@
       "hash": "cae0ed0b243fb415a497831d0df3dd8dda185637"
     },
     {
-      "path": "59a98d2b497c836876822621584b376d046290f0.css",
+      "path": "4dfc492085cda345c5f0934b1f3715879ebad6ba.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/59a98d2b497c836876822621584b376d046290f0.css",
-      "sourceMap": "59a98d2b497c836876822621584b376d046290f0.css.map",
-      "sourceMapUrl": "/59a98d2b497c836876822621584b376d046290f0.map",
-      "size": 347266,
-      "hash": "59a98d2b497c836876822621584b376d046290f0"
+      "url": "/4dfc492085cda345c5f0934b1f3715879ebad6ba.css",
+      "sourceMap": "4dfc492085cda345c5f0934b1f3715879ebad6ba.css.map",
+      "sourceMapUrl": "/4dfc492085cda345c5f0934b1f3715879ebad6ba.map",
+      "size": 347362,
+      "hash": "4dfc492085cda345c5f0934b1f3715879ebad6ba"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",
