@@ -50,12 +50,8 @@ angular.module('app').controller('NewsCtrl', [
 				return void 0;
 			}
 
-			$scope.posts.save(news, function(err) {
-				if (err) {
-					console.log(err);
-				}
-				console.log('callback');
-			});
+
+			$scope.posts.save(news);
 			$scope.composer.close().reset();
 		};
 

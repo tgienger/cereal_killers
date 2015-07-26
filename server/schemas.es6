@@ -5,11 +5,7 @@ Schemas.NewsPosts = new SimpleSchema({
 	subject: {
 		type: String,
 		max: 80,
-		min: 5,
-		autoValue: function() {
-			var field = this.field('subject');
-			return sanitizeHtml(field.value);
-		}
+		min: 5
 	},
 	markdown: {
 		type: String,
@@ -37,10 +33,8 @@ Schemas.NewsPosts = new SimpleSchema({
 			var all = Rules.findOne({name: 'news'}).all;
 
 			var field = this.field('visible');
-			
 			if (this.isInsert) {
 				var setting = SiteSettings.find({}).fetch();
-				
 				return setting[0].news.visible;
 			}
 			if (this.isUpdate) {
@@ -56,7 +50,6 @@ Schemas.NewsPosts = new SimpleSchema({
 			var field = this.field('private');
 			if (this.isInsert) {
 				var setting = SiteSettings.find({}).fetch();
-				
 				return setting[0].news.private;
 			} else if (this.isUpdate) {
 				return field.value;
@@ -76,7 +69,13 @@ Schemas.NewsPosts = new SimpleSchema({
 	latestDate: {
 		type: Date,
 		autoValue: function() {
-			return new Date;
+			if (this.isInsert) {
+				return new Date;
+			} else if (this.isUpdate) {
+				return new Date;
+			} else {
+				this.unset();
+			}
 		}
 	},
 	owner: {
@@ -84,6 +83,8 @@ Schemas.NewsPosts = new SimpleSchema({
 		autoValue: function() {
 	      if (this.isInsert) {
 	        return this.userId;
+	      } else if (this.isUpsert) {
+	        return {$setOnInsert: this.userId};
 	      } else {
 	        this.unset();
 	      }
