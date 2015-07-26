@@ -1,18 +1,55 @@
 <div class="header closed valign-wrapper" id="header">
 
-  <h6 class="valign">
-    <div class="valign">
-      <a href="/home" class="valign"><i class="glyphicon glyphicon-home tooltipped" data-tooltip="Home" data-position="bottom"></i></a>
+  <!-- <div class="valign"> -->
+    <!-- <div class="valign"> -->
       <!--<meteor-include src="adminLink"></meteor-include>-->
-      <a class="valign" ng-if="userIsAdmin()" ui-sref="admin.settings">Admin</a>
-      &nbsp;
+      <!-- <a class="" ng-if="userIsAdmin()" ui-sref="admin.settings">Admin</a> -->
+      <!-- &nbsp; -->
 
-      <meteor-include src="loginButtons" class="valign"></meteor-include>
+      <!-- <meteor-include src="loginButtons" class=""></meteor-include> -->
 
-      <a href="/forum">Forums</a>
+      <!-- <a href="/forum" class="">Forums</a> -->
 
-      <mail-count></mail-count>
-    </div>
-  </h6>
+      <!-- <mail-count></mail-count> -->
+
+     <div class="current-location-header">
+         <a ng-href="{{currentLocation.link}}" class="pointer home-link">{{currentLocation.header}}</a>
+         <div class="header-menu">
+             <p class="currentLocation-reply">
+                 <span ng-if="currentLocation.header === topic.text && currentLocation.header !== $root.siteName" class="header-reply-to pointer" ng-click="discussion.openComposer(discussion.comment)"><i class="fa fa-reply"></i> reply</span>
+             </p>
+             <div class="main-menu-login">
+                 <span class="pointer" ng-click="displayLoginForm()" ng-show="!$root.currentUser">log in</span>
+                 <span class="pointer" ng-click="logOut()" ng-show="$root.currentUser">log out</span>
+                 <div id="login-menu" class="main-menu-login-dropdown" ng-show="!$root.currentUser && showLogin">
+                     <form novalidate class="form-inline">
+                         <!-- <div class="form-group"> -->
+                             <input class="form-control" id="loginUsername" type="text" name="loginUsername" placeholder="username" ng-model="login.username">
+                         <!-- </div> -->
+                         <!-- <div class="form-group"> -->
+                             <input class="form-control" id="loginPassword" type="password" name="loginPassword" placeholder="password" ng-model="login.password">
+                         <!-- </div> -->
+                         <!-- <div class="form-group"> -->
+                             <input class="form-control" id="loginButton" type="submit" name="loginButton" value="log in" ng-click="logIn()">
+                         <!-- </div> -->
+                     </form>
+                 </div>
+             </div>
+             <div class="main-menu-search pointer"><i class="fa fa-search"></i></div>
+             <div class="main-menu-button pointer" ng-click="headerMenu.open = !headerMenu.open">
+                 <i class="fa fa-bars"></i>
+                 <div ng-show="headerMenu.open" class="header-dropdown">
+                     <ul>
+                         <li><a href="/home">Home</a></li>
+                         <li><a href="/forum">Forum</a></li>
+                         <li ng-show="userIsAdmin()"><a href="/admin">Admin</a></li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </div>
+          <!-- <a href="/home" class="valign" style="position:absolute;right: 10%;"><i class="fa fa-home tooltipped" data-tooltip="Home" data-position="bottom"></i></a> -->
+    <!-- </div> -->
+<!-- </div> -->
 
 </div>

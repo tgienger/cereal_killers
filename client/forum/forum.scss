@@ -1,13 +1,64 @@
 .forum-container {
-	background: white;
+    background: rgba(60, 60, 60, 0.25);
+	margin: auto;
 	padding: 10px;
-	margin-bottom: 10px;
-	
-	.forum-ul {
+	padding-top: 75px;
+	width: 80%;
+	color:white;
+
+	a {
+		color: white;
+		text-decoration: none;
+
+		:hover {
+			text-decoration: none;
+		}
+	}
+
+	ul {
 		list-style-type: none;
 		padding-left: 0;
+
+		li {
+			background-color: rgba(0,0,0,0.1);
+			border-radius: 5px;
+			box-shadow: inset 0 60px rgba(255,255,255,0.1),
+						inset 0 -15px 30px rgba(0,0,0,0.4);
+						// 	  0 5px 10px rgba(0,0,0,0.5);
+
+			height: 60px;
+			padding-top: 7px;
+			margin-bottom: 5px;
+			padding-left: 40px;
+			color: rgb(207, 207, 207);
+			vertical-align: middle;
+
+			.forum-p {
+				// font-size: 1.2em;
+				margin-bottom: 0;
+			}
+
+			.forum-p-bottom {
+				color: rgb(105, 105, 105);
+				a {
+					text-decoration: underline;
+					color: rgb(134, 134, 134);
+				}
+			}
+
+			a {
+				color:white;
+				text-decoration: none;
+
+				:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.forum-ul {
 		.forum-li {
-			border-bottom: 1px solid black;
 		}
 	}
 }

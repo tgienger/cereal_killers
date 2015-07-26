@@ -1,18 +1,22 @@
 <toolbar></toolbar>
-<h1 style="padding-top: 60px; color:white;">{{forum.title}}</h1>
 
 <div class="forum-container">
 
 	<div class="forum-header">
-		<a href="" class="btn" ng-click="forum.newPost()">Create</a>
+		<a href="" class="btn" ng-click="forum.openComposer()">Create</a>
 	</div>
 
 	<!-- Display all discussions here -->
 	<ul class="forum-ul">
 		<li class="forum-li" ng-repeat="discussion in forum.discussions">
 			<p class="forum-p">
-				<a href="#">{{discussion.author.name}} : {{discussion.posted | date : 'short'}}</a> - <a ng-href="/topic/{{discussion.slug}}">{{discussion.text}}</a>
+				<a ng-href="/topic/{{discussion.slug}}">{{discussion.text}}</a>
+			</p>
+			<p class="forum-p-bottom">
+				create by: <a href="#">{{discussion.author.name}}</a> on {{discussion.posted | date : 'short'}}
 			</p>
 		</li>
 	</ul>
 </div>
+
+<synergy-composer ng-show="forum.pageReady" id="synergyComposer" composer="forum.composer" save="forum.saveDiscussion(post)"></synergy-composer>

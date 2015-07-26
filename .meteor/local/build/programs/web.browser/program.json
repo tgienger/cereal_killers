@@ -926,6 +926,28 @@
       "hash": "773923cf8397ef4fe1c30bfb4116d9ef54c8899f"
     },
     {
+      "path": "packages/reywood_publish-composite.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/reywood_publish-composite.js?f8a4b4678e93f2105df0857cbdfdac20530f2702",
+      "sourceMap": "packages/reywood_publish-composite.js.map",
+      "sourceMapUrl": "/packages/f8a4b4678e93f2105df0857cbdfdac20530f2702.map",
+      "size": 1310,
+      "hash": "f8a4b4678e93f2105df0857cbdfdac20530f2702"
+    },
+    {
+      "path": "packages/lepozepo_streams.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/lepozepo_streams.js?34e6d5793081ce97a53e7fb43e07085452019b4e",
+      "sourceMap": "packages/lepozepo_streams.js.map",
+      "sourceMapUrl": "/packages/34e6d5793081ce97a53e7fb43e07085452019b4e.map",
+      "size": 9255,
+      "hash": "34e6d5793081ce97a53e7fb43e07085452019b4e"
+    },
+    {
       "path": "packages/webapp.js",
       "where": "client",
       "type": "js",
@@ -1059,9 +1081,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/discussions/discussions.ng.html.js?3015ab7e84ffb50d467f078e9ae24bb1e663bf4c",
-      "size": 1008,
-      "hash": "3015ab7e84ffb50d467f078e9ae24bb1e663bf4c"
+      "url": "/client/forum/discussions/discussions.ng.html.js?22d242c9e262d4de79f4786225b1affb6d36fa0a",
+      "size": 1997,
+      "hash": "22d242c9e262d4de79f4786225b1affb6d36fa0a"
+    },
+    {
+      "path": "app/client/header/currentLocation/currentLocation.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/header/currentLocation/currentLocation.ng.html.js?859a7fc22e9d8371200d83d57367a2e3c479e42e",
+      "size": 230,
+      "hash": "859a7fc22e9d8371200d83d57367a2e3c479e42e"
     },
     {
       "path": "app/client/account/account.controller.ng.html.js",
@@ -1091,22 +1122,40 @@
       "hash": "91a6b3e3b3aa26d2a6f78e58e9cdfb640879b3e0"
     },
     {
+      "path": "app/client/comment.directive/comment-header.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/comment.directive/comment-header.ng.html.js?e0c1d64c359f3b31a8f31e030020e87c0ecda35d",
+      "size": 600,
+      "hash": "e0c1d64c359f3b31a8f31e030020e87c0ecda35d"
+    },
+    {
       "path": "app/client/comment.directive/comment.directive.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/comment.directive/comment.directive.ng.html.js?4ef64c1c91bc440afa982c8b8fe90d6a0cda1e04",
-      "size": 840,
-      "hash": "4ef64c1c91bc440afa982c8b8fe90d6a0cda1e04"
+      "url": "/client/comment.directive/comment.directive.ng.html.js?57b4d5fa56d965eb8a7d8d6519d64173905f6e1c",
+      "size": 1362,
+      "hash": "57b4d5fa56d965eb8a7d8d6519d64173905f6e1c"
+    },
+    {
+      "path": "app/client/comment.directive/comment.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/comment.directive/comment.ng.html.js?aa7bcda6ea463ba249951f864b65df503d4a1131",
+      "size": 1173,
+      "hash": "aa7bcda6ea463ba249951f864b65df503d4a1131"
     },
     {
       "path": "app/client/forum/forum.controller.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/forum.controller.ng.html.js?dc8a0c3876c76f61ca1089d4b47b8a55cfce72f4",
-      "size": 720,
-      "hash": "dc8a0c3876c76f61ca1089d4b47b8a55cfce72f4"
+      "url": "/client/forum/forum.controller.ng.html.js?99285116499be1d94a3fae250221bb68bfb034b4",
+      "size": 858,
+      "hash": "99285116499be1d94a3fae250221bb68bfb034b4"
     },
     {
       "path": "app/client/header/template.adminLink.js",
@@ -1122,9 +1171,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/header/header.directive.ng.html.js?b0c21fc13b8c280ba26bd92b0d90b2612083f167",
-      "size": 709,
-      "hash": "b0c21fc13b8c280ba26bd92b0d90b2612083f167"
+      "url": "/client/header/header.directive.ng.html.js?cc0d28343c0d4a7289614598c6184d6111aa28f3",
+      "size": 2657,
+      "hash": "cc0d28343c0d4a7289614598c6184d6111aa28f3"
     },
     {
       "path": "app/client/home/home.controller.ng.html.js",
@@ -1167,9 +1216,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.ng.html.js?cc23ce6bcd220aa1cd63f3a8ca702438efbc6ec4",
-      "size": 2553,
-      "hash": "cc23ce6bcd220aa1cd63f3a8ca702438efbc6ec4"
+      "url": "/client/news/news.controller.ng.html.js?cab24280ee80911a0b2ed0845afd8684f4bbcab5",
+      "size": 2555,
+      "hash": "cab24280ee80911a0b2ed0845afd8684f4bbcab5"
     },
     {
       "path": "app/client/news/newsfeed.controller.ng.html.js",
@@ -1194,27 +1243,27 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/synergyComposer/synergyComposer.ng.html.js?437315ff83e340ec608fd662275cbfb4e382916f",
-      "size": 3379,
-      "hash": "437315ff83e340ec608fd662275cbfb4e382916f"
+      "url": "/client/synergyComposer/synergyComposer.ng.html.js?28d3582e3b679d5c2265140fd7a5574d64b11e4d",
+      "size": 3369,
+      "hash": "28d3582e3b679d5c2265140fd7a5574d64b11e4d"
     },
     {
       "path": "app/client/template.index.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/template.index.js?b66d86b8558967d66f849fa765b27dfc037852a6",
-      "size": 1325,
-      "hash": "b66d86b8558967d66f849fa765b27dfc037852a6"
+      "url": "/client/template.index.js?213445cc8dacfbce02b4b63a89cbce1f7d807fb5",
+      "size": 449,
+      "hash": "213445cc8dacfbce02b4b63a89cbce1f7d807fb5"
     },
     {
       "path": "app/client/lib/app.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/lib/app.js?1f44db2a96d0527caf8376b22376acaec4841f2d",
-      "size": 351,
-      "hash": "1f44db2a96d0527caf8376b22376acaec4841f2d"
+      "url": "/client/lib/app.js?34be60a0cc793e0d99184bfb3337dbe5f266fd55",
+      "size": 504,
+      "hash": "34be60a0cc793e0d99184bfb3337dbe5f266fd55"
     },
     {
       "path": "app/client/admin/roles/roles.controller.js",
@@ -1275,11 +1324,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/discussions/discussions.controller.es6?efa3c17cb0117dac3f7e09bf0b8b2aa514dda023",
+      "url": "/client/forum/discussions/discussions.controller.es6?3b2333521b5a303d8bf2647d97ce635fa59dc5fc",
       "sourceMap": "app/client/forum/discussions/discussions.controller.es6.map",
-      "sourceMapUrl": "/client/forum/discussions/efa3c17cb0117dac3f7e09bf0b8b2aa514dda023.map",
-      "size": 1808,
-      "hash": "efa3c17cb0117dac3f7e09bf0b8b2aa514dda023"
+      "sourceMapUrl": "/client/forum/discussions/3b2333521b5a303d8bf2647d97ce635fa59dc5fc.map",
+      "size": 3659,
+      "hash": "3b2333521b5a303d8bf2647d97ce635fa59dc5fc"
     },
     {
       "path": "app/client/forum/discussions/discussions.es6",
@@ -1291,6 +1340,17 @@
       "sourceMapUrl": "/client/forum/discussions/22bc6c004badd00fedeb67cb4567e670bd84ab56.map",
       "size": 394,
       "hash": "22bc6c004badd00fedeb67cb4567e670bd84ab56"
+    },
+    {
+      "path": "app/client/header/currentLocation/currentLocation.es6",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/header/currentLocation/currentLocation.es6?61b04375547b1dd2827e60af93010007d6890295",
+      "sourceMap": "app/client/header/currentLocation/currentLocation.es6.map",
+      "sourceMapUrl": "/client/header/currentLocation/61b04375547b1dd2827e60af93010007d6890295.map",
+      "size": 363,
+      "hash": "61b04375547b1dd2827e60af93010007d6890295"
     },
     {
       "path": "app/client/account/account.controller.js",
@@ -1315,18 +1375,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/admin.controller.js?c1b05d2179194ace2a411d8a9e17aa2b1a3c6570",
-      "size": 1260,
-      "hash": "c1b05d2179194ace2a411d8a9e17aa2b1a3c6570"
+      "url": "/client/admin/admin.controller.js?763fad85b7dccd7e3ce943ecfc332ab6f39b6565",
+      "size": 1246,
+      "hash": "763fad85b7dccd7e3ce943ecfc332ab6f39b6565"
     },
     {
       "path": "app/client/admin/admin.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/admin.js?279b415cb9f9f0f1df28684fe077665a2ca3266f",
-      "size": 2049,
-      "hash": "279b415cb9f9f0f1df28684fe077665a2ca3266f"
+      "url": "/client/admin/admin.js?6d503d55f20a15b8e0e94391b3b02e44b27266e5",
+      "size": 2015,
+      "hash": "6d503d55f20a15b8e0e94391b3b02e44b27266e5"
     },
     {
       "path": "app/client/bbcode/bbcode.filter.js",
@@ -1360,33 +1420,55 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/chat/chat.controller.es6?d3bb3cc48172586b70761acc21e1d8b424153da3",
+      "url": "/client/chat/chat.controller.es6?36f13f18f683cc0f1ff2f5931d1987679107b405",
       "sourceMap": "app/client/chat/chat.controller.es6.map",
-      "sourceMapUrl": "/client/chat/d3bb3cc48172586b70761acc21e1d8b424153da3.map",
-      "size": 2474,
-      "hash": "d3bb3cc48172586b70761acc21e1d8b424153da3"
+      "sourceMapUrl": "/client/chat/36f13f18f683cc0f1ff2f5931d1987679107b405.map",
+      "size": 3958,
+      "hash": "36f13f18f683cc0f1ff2f5931d1987679107b405"
     },
     {
-      "path": "app/client/chat/chst.directive.es6",
+      "path": "app/client/chat/chat.directive.es6",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/chat/chst.directive.es6?d98fd349e8fa9a564280ba02c8c360751ed0ba02",
-      "sourceMap": "app/client/chat/chst.directive.es6.map",
-      "sourceMapUrl": "/client/chat/d98fd349e8fa9a564280ba02c8c360751ed0ba02.map",
-      "size": 799,
-      "hash": "d98fd349e8fa9a564280ba02c8c360751ed0ba02"
+      "url": "/client/chat/chat.directive.es6?2f6cadecceadcf76da7b08d511d85f7dbe7a903c",
+      "sourceMap": "app/client/chat/chat.directive.es6.map",
+      "sourceMapUrl": "/client/chat/2f6cadecceadcf76da7b08d511d85f7dbe7a903c.map",
+      "size": 808,
+      "hash": "2f6cadecceadcf76da7b08d511d85f7dbe7a903c"
+    },
+    {
+      "path": "app/client/comment.directive/comment-header.directive.es6",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/comment.directive/comment-header.directive.es6?6c3068456414f3f271d65af57b6ee0039fb4565b",
+      "sourceMap": "app/client/comment.directive/comment-header.directive.es6.map",
+      "sourceMapUrl": "/client/comment.directive/6c3068456414f3f271d65af57b6ee0039fb4565b.map",
+      "size": 374,
+      "hash": "6c3068456414f3f271d65af57b6ee0039fb4565b"
     },
     {
       "path": "app/client/comment.directive/comment.directive.es6",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/comment.directive/comment.directive.es6?71a22a1e9ce23d6e7020da189813a9490ce25a60",
+      "url": "/client/comment.directive/comment.directive.es6?791476310ef7022dfaeb5420280fd8a2ec0db032",
       "sourceMap": "app/client/comment.directive/comment.directive.es6.map",
-      "sourceMapUrl": "/client/comment.directive/71a22a1e9ce23d6e7020da189813a9490ce25a60.map",
-      "size": 2261,
-      "hash": "71a22a1e9ce23d6e7020da189813a9490ce25a60"
+      "sourceMapUrl": "/client/comment.directive/791476310ef7022dfaeb5420280fd8a2ec0db032.map",
+      "size": 3248,
+      "hash": "791476310ef7022dfaeb5420280fd8a2ec0db032"
+    },
+    {
+      "path": "app/client/comment.directive/comment.es6",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/comment.directive/comment.es6?46ac844cc80d2e7b26ee9d64dac573becd20d00e",
+      "sourceMap": "app/client/comment.directive/comment.es6.map",
+      "sourceMapUrl": "/client/comment.directive/46ac844cc80d2e7b26ee9d64dac573becd20d00e.map",
+      "size": 2814,
+      "hash": "46ac844cc80d2e7b26ee9d64dac573becd20d00e"
     },
     {
       "path": "app/client/dragdrop/dragdrop.js",
@@ -1420,11 +1502,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/forum.controller.es6?023fd6cd0d384d9371ea0bee05f5a3695f36c230",
+      "url": "/client/forum/forum.controller.es6?49ec6f42458f181c671185d91589c88047f147e2",
       "sourceMap": "app/client/forum/forum.controller.es6.map",
-      "sourceMapUrl": "/client/forum/023fd6cd0d384d9371ea0bee05f5a3695f36c230.map",
-      "size": 2152,
-      "hash": "023fd6cd0d384d9371ea0bee05f5a3695f36c230"
+      "sourceMapUrl": "/client/forum/49ec6f42458f181c671185d91589c88047f147e2.map",
+      "size": 2998,
+      "hash": "49ec6f42458f181c671185d91589c88047f147e2"
     },
     {
       "path": "app/client/forum/forum.es6",
@@ -1442,9 +1524,20 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/header/header.directive.js?b009e8afe5497838bcb7e7f584455831827827f4",
-      "size": 2715,
-      "hash": "b009e8afe5497838bcb7e7f584455831827827f4"
+      "url": "/client/header/header.directive.js?d66e89464d33fabcf280e3b149128d1eeb6e67a4",
+      "size": 4624,
+      "hash": "d66e89464d33fabcf280e3b149128d1eeb6e67a4"
+    },
+    {
+      "path": "app/client/header/hide-on-blur.directive.es6",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/header/hide-on-blur.directive.es6?996b54e1267c650fd70a4b4dce3f17b20f24adc2",
+      "sourceMap": "app/client/header/hide-on-blur.directive.es6.map",
+      "sourceMapUrl": "/client/header/996b54e1267c650fd70a4b4dce3f17b20f24adc2.map",
+      "size": 422,
+      "hash": "996b54e1267c650fd70a4b4dce3f17b20f24adc2"
     },
     {
       "path": "app/client/hideEmptyImage/hideEmptyImages.js",
@@ -1460,18 +1553,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/home/home.controller.js?e0e1c55c374a0fab9225c6ac69656af882302436",
-      "size": 331,
-      "hash": "e0e1c55c374a0fab9225c6ac69656af882302436"
+      "url": "/client/home/home.controller.js?92ba087f966c3f868226a481c570aef845393fc6",
+      "size": 439,
+      "hash": "92ba087f966c3f868226a481c570aef845393fc6"
     },
     {
       "path": "app/client/home/home.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/home/home.js?4ffeb7f691dd8a3c6615754a05e9daab29325189",
-      "size": 263,
-      "hash": "4ffeb7f691dd8a3c6615754a05e9daab29325189"
+      "url": "/client/home/home.js?3c992c742e45d274dd272fd40bdfb6384675a793",
+      "size": 324,
+      "hash": "3c992c742e45d274dd272fd40bdfb6384675a793"
     },
     {
       "path": "app/client/mail-directive/mail.directive.js",
@@ -1509,9 +1602,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.js?f60224c1b90815adfd7fd69492dd4569cab9f508",
-      "size": 2617,
-      "hash": "f60224c1b90815adfd7fd69492dd4569cab9f508"
+      "url": "/client/news/news.controller.js?c7889531d20d619b2cc4d6307419d8302cf1a94e",
+      "size": 2587,
+      "hash": "c7889531d20d619b2cc4d6307419d8302cf1a94e"
     },
     {
       "path": "app/client/news/news.directive.js",
@@ -1567,22 +1660,22 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/synergyComposer/synergyComposer.controller.es6?85908e03dc5b9b74ed470cf03028caddd12044f2",
+      "url": "/client/synergyComposer/synergyComposer.controller.es6?37ab6db599b602c640e2ac417c97204bb55787ea",
       "sourceMap": "app/client/synergyComposer/synergyComposer.controller.es6.map",
-      "sourceMapUrl": "/client/synergyComposer/85908e03dc5b9b74ed470cf03028caddd12044f2.map",
-      "size": 15367,
-      "hash": "85908e03dc5b9b74ed470cf03028caddd12044f2"
+      "sourceMapUrl": "/client/synergyComposer/37ab6db599b602c640e2ac417c97204bb55787ea.map",
+      "size": 15676,
+      "hash": "37ab6db599b602c640e2ac417c97204bb55787ea"
     },
     {
       "path": "app/client/synergyComposer/synergyComposer.directive.es6",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/synergyComposer/synergyComposer.directive.es6?28f4e8d164f0fbd8232de8773251449066fd339f",
+      "url": "/client/synergyComposer/synergyComposer.directive.es6?0c9c8a9b249d580fe6664858f1dac4a65a1d3c75",
       "sourceMap": "app/client/synergyComposer/synergyComposer.directive.es6.map",
-      "sourceMapUrl": "/client/synergyComposer/28f4e8d164f0fbd8232de8773251449066fd339f.map",
-      "size": 4270,
-      "hash": "28f4e8d164f0fbd8232de8773251449066fd339f"
+      "sourceMapUrl": "/client/synergyComposer/0c9c8a9b249d580fe6664858f1dac4a65a1d3c75.map",
+      "size": 11933,
+      "hash": "0c9c8a9b249d580fe6664858f1dac4a65a1d3c75"
     },
     {
       "path": "app/client/third_party/recursion-helper.js",
@@ -1612,6 +1705,17 @@
       "sourceMapUrl": "/client/a03104d93c78b3fd88ef9b7d9b02446b83b20f5f.map",
       "size": 1723,
       "hash": "a03104d93c78b3fd88ef9b7d9b02446b83b20f5f"
+    },
+    {
+      "path": "app/model/avatar.es6",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/model/avatar.es6?c9868cb5ccbb2ab5d37c3c15951e7b74818d7648",
+      "sourceMap": "app/model/avatar.es6.map",
+      "sourceMapUrl": "/model/c9868cb5ccbb2ab5d37c3c15951e7b74818d7648.map",
+      "size": 995,
+      "hash": "c9868cb5ccbb2ab5d37c3c15951e7b74818d7648"
     },
     {
       "path": "app/model/chat.es6",
@@ -1651,11 +1755,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/model/mail.es6?64f7edd2db52dc51227e81ddce2dc4cbdb2c22d1",
+      "url": "/model/mail.es6?cf71b1c8461ca39dc847800245b1f789f20177ec",
       "sourceMap": "app/model/mail.es6.map",
-      "sourceMapUrl": "/model/64f7edd2db52dc51227e81ddce2dc4cbdb2c22d1.map",
-      "size": 697,
-      "hash": "64f7edd2db52dc51227e81ddce2dc4cbdb2c22d1"
+      "sourceMapUrl": "/model/cf71b1c8461ca39dc847800245b1f789f20177ec.map",
+      "size": 728,
+      "hash": "cf71b1c8461ca39dc847800245b1f789f20177ec"
     },
     {
       "path": "app/model/news.es6",
@@ -1702,24 +1806,15 @@
       "hash": "cae0ed0b243fb415a497831d0df3dd8dda185637"
     },
     {
-      "path": "app/zzz.ts-compiler.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/zzz.ts-compiler.js?58a316a201e655f9ddf4ae046a59f4145169ad53",
-      "size": 260,
-      "hash": "58a316a201e655f9ddf4ae046a59f4145169ad53"
-    },
-    {
-      "path": "3e1d7819ea1ab309e4babf8b814174b08c536898.css",
+      "path": "59a98d2b497c836876822621584b376d046290f0.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/3e1d7819ea1ab309e4babf8b814174b08c536898.css",
-      "sourceMap": "3e1d7819ea1ab309e4babf8b814174b08c536898.css.map",
-      "sourceMapUrl": "/3e1d7819ea1ab309e4babf8b814174b08c536898.map",
-      "size": 332189,
-      "hash": "3e1d7819ea1ab309e4babf8b814174b08c536898"
+      "url": "/59a98d2b497c836876822621584b376d046290f0.css",
+      "sourceMap": "59a98d2b497c836876822621584b376d046290f0.css.map",
+      "sourceMapUrl": "/59a98d2b497c836876822621584b376d046290f0.map",
+      "size": 347266,
+      "hash": "59a98d2b497c836876822621584b376d046290f0"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",
@@ -1972,6 +2067,15 @@
       "url": "/images/cereal_killers_background.fw.png",
       "size": 160830,
       "hash": "54c5c9581124a867900b0fbac3012bc58e7203c5"
+    },
+    {
+      "path": "app/images/default-user.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/default-user.png",
+      "size": 1245,
+      "hash": "5c9f01716c3efe4b7c27c910c89e0266d9f14f4c"
     },
     {
       "path": "app/images/member.png",

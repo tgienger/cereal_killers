@@ -1,29 +1,98 @@
-angular.module('app').directive('toolbar',['$rootScope', '$meteor', function($rootScope, $meteor) {
+angular.module('app').directive('toolbar',['$rootScope', '$meteor', '$timeout', function($rootScope, $meteor, $timeout) {
 
   return {
     restrict     : 'E',
     templateUrl  : 'client/header/header.directive.ng.html',
-    // scope     : {},
+    scope     : {user: '=', topic: '=', discussion: '='},
     link         : function (scope, element, attrs) {
+
+
+        scope.showLogin = false;
+
+
+		toastr.options = {
+			tapToDismiss: true
+		};
+
       var didScroll  = false,
           options    = [
             {selector: '.bodyContainer', offset: attrs.offset || 0, downScrollCallback: shrinkToolbar, upScrollCallback: expandToolbar}
           ],
           isAtTop = true;
 
+
+      scope.currentLocation = {
+          header: $rootScope.siteName,
+          link: '/home'
+      };
+
+
       function shrinkToolbar() {
-        angular.element('#header').addClass('opened');
+          if (scope.topic) {
+              scope.$apply(function() {
+                  scope.currentLocation = {
+                      header: scope.topic.text,
+                      link: 'topic/' + scope.topic.slug
+                  }
+              });
+          }
+        // angular.element('#header').addClass('opened');
       };
       function expandToolbar() {
-        angular.element('#header').removeClass('opened');
+          scope.$apply(function() {
+              scope.currentLocation = {
+                  header: $rootScope.siteName,
+                  link: '/home'
+              }
+          });
+        // angular.element('#header').removeClass('opened');
       };
+
+      scope.displayLoginForm = function() {
+          if (scope.showLogin) {
+              scope.showLogin = false;
+              $('#loginUsername').blur();
+              $('#loginPassword').blur();
+              $('#loginButton').blur();
+          } else {
+              scope.showLogin = true;
+              $timeout(function() {
+                  $('#loginUsername').focus();
+              });
+          }
+      }
+
+      scope.logIn = function() {
+          scope.displayLoginForm();
+          $meteor.loginWithPassword(scope.login.username, scope.login.password)
+          .then(function() {
+              toastr.success('logged in as ' + $rootScope.currentUser.username);
+          }, function(err) {
+              toastr.error(err.message);
+          });
+        //   $('#loginUsername').blur();
+        //   $('#loginPassword').blur();
+        //   $('#loginButton').blur();
+        //   scope.showlogin = false;
+      };
+
+      scope.logOut = function() {
+          scope.showLogin = false;
+          $meteor.logout().then(function() {
+              toastr.success('you logged out');
+          }, function(err) {
+              toastr.error(err);
+          });
+      };
+
+
 
       $rootScope.$on('$stateChangeStart',
       function() {
         isAtTop = true;
       });
-      
-      
+
+
   //		check if user is admin
   		scope.userIsAdmin = function() {
   			if (!$rootScope.currentUser) {
@@ -33,15 +102,15 @@ angular.module('app').directive('toolbar',['$rootScope', '$meteor', function($ro
   			return Roles.userIsInRole(userId, ['admin']);
   		};
 
-
-      element.on('mouseover', function() {
-        expandToolbar();
-      });
-      element.on('mouseout', function() {
-        if (!isAtTop) {
-          shrinkToolbar();
-        }
-      });
+      //
+    //   element.on('mouseover', function() {
+    //     expandToolbar();
+    //   });
+    //   element.on('mouseout', function() {
+    //     if (!isAtTop) {
+    //       shrinkToolbar();
+    //     }
+    //   });
 
 
       window.addEventListener('scroll', function() {

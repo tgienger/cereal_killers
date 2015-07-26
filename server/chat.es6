@@ -1,10 +1,19 @@
-Meteor.publish('chat', function() {
-	
+/// <reference path="../typings/tsd.d.ts" />
+
+Meteor.publish('chat', function(started) {
+
 	var rules = Rules.findOne({name: 'chat'});
-	
+
 	var view = rules.view;
-	
+
 	if (Roles.userIsInRole(this.userId, view)) {
-		return Chat.find({}, {sort: {date: -1}, limit: 25});
+
+		var query = Chat.find({date: {$gt: started}});
+
+		return query;
 	}
 });
+
+// Meteor.publish('newChat', function() {
+//
+// })

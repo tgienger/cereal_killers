@@ -1,9 +1,22 @@
+.main-discussion-container {
+    margin-top: 60px;
+    position:relative;
+    .header-image {
+        // border: 1px solid white;
+        height: 60px;
+        width: 70%;
+        position: absolute;
+        left: 15%;
+    }
+}
 #discussions-container {
     background: rgba(60, 60, 60, 0.25);
     padding: 25px;
-    padding-top: 60px;
+    // padding-top: 80px;
     width: 80%;
     margin: auto;
+
+
 
     .header {
         padding: 1px;

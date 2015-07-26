@@ -25,21 +25,20 @@ angular.module('app').controller('NewsCtrl', [
 				newsSubHandle = handle;
 				$scope.newsCount = $meteor.object(Counts ,'newsCount', false);
 
+	//			insert the news posts into this array
+				$scope.posts = $meteor.collection(function() {
+					return News.find({}, {
+						sort: $scope.getReactively('sort')
+					});
+				}, false);
+				
 			});
 
-//			insert the news posts into this array
-			$scope.posts = $meteor.collection(function() {
-				return News.find({}, {
-					sort: $scope.getReactively('sort')
-				});
-			}, false);
 
 		});
 
 //		Save a new news post
-		$scope.composerSave = function() {
-
-			var news = $scope.composer.submit();
+		$scope.saveNews = function(news) {
 
 			if (!news.subject) {
 //				TODO: Let the users know what they're missing. Maybe flashing the input or textarea

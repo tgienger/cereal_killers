@@ -1,12 +1,9 @@
-/// <reference path="../../typings/tsd.d.ts"/>
-/**
- * Comment Directive
- */
 
-function CommentDirective(RecursionHelper, $meteor, $stateParams, $rootScope) {
-	return {
+
+function CommentDirective() {
+    return {
 		restrict: 'E',
-		scope: { parent: '=', perPage: '=', page: '=', sort: '=', innerComment: '=', parentRe: '=', reply: '&reply', loaded: '=', loadingMore: '=' },
+		scope: { parent: '=', perPage: '=', page: '=', sort: '=', innerComment: '=', parentRe: '=', reply: '&reply' },
 		templateUrl: 'client/comment.directive/comment.directive.ng.html',
 		compile: (element) => {
 		    return RecursionHelper.compile(element, (scope, iElem, iAttrs, commentsController) => {
@@ -37,30 +34,17 @@ function CommentDirective(RecursionHelper, $meteor, $stateParams, $rootScope) {
 						// handle.stop();
 						// scope.commentCount = $meteor.object(Counts, 'numberOfComments', false);
 						// console.log(scope.commentCount.count);
-
-						/**
-						 * The commens collection
-						 */
-			            scope.comments = $meteor.collection(() => {
-			                return Comments.find({ parent_id: scope.getReactively('parent') }, {
-			                    sort: { full_slug: scope.getReactively('sort') }
-			                });
-			            });
-
-						if (scope.loaded !== undefined) {
-							scope.loaded = true;
-							if (scope.loadingMore !== undefined) {
-								scope.loadingMore = false;
-							}
-						}
-
 		            });
 
+					/**
+					 * The commens collection
+					 */
+		            scope.comments = $meteor.collection(() => {
+		                return Comments.find({ parent_id: scope.getReactively('parent') }, {
+		                    sort: { full_slug: scope.getReactively('sort') }
+		                });
+		            });
 		        });
-
-				scope.addMoreComments = function() {
-					console.log('add more items');
-				};
 
 
 				scope.commentAuthor = function(comment) {
@@ -86,7 +70,6 @@ function CommentDirective(RecursionHelper, $meteor, $stateParams, $rootScope) {
 				};
 
 
-
 				/**
 				 * Change the collection sorting order
 				 * @return {void 0}
@@ -99,6 +82,7 @@ function CommentDirective(RecursionHelper, $meteor, $stateParams, $rootScope) {
 	};
 
 }
+
 CommentDirective.$inject = ['RecursionHelper', '$meteor', '$stateParams'];
 
-angular.module('app').directive('comments', CommentDirective);
+// angular.module('app').directive('myComments', CommentDirective);

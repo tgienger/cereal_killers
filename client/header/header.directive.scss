@@ -6,11 +6,124 @@
 //  width: calc(100% + 10px);
   width: 100%;
   left: 0px;
-  transition: all .3s linear;
+  margin: auto;
+  color: rgb(240, 240, 240);
+  // transition: all .1s linear;
+  // \
+
+  .current-location-header {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+    //   margin: auto;
+      font-size: 2em;
+      position: relative;
+
+  }
+
+    .header-menu {
+        position: absolute;
+        right: 10%;
+        top: 0;
+        margin-right: 10px;
+        vertical-align: middle;
+
+        .home-link {
+        }
+        .header-reply-to {
+            position: relative;
+            top: -3px;
+            left: -50px;
+            font-size: .6em;
+        }
+        .currentLocation-reply {
+            float: left;
+        }
+        .main-menu-button {
+            font-size: .8em;
+            float: left;
+            position: relative;
+            // color:black;
+            // background: white;
+            // width: 25px;
+            // height: 25px;
+            // vertical-align: middle;
+            // margin-top: 10px;
+            // text-align: center;
+        }
+        .main-menu-search {
+            font-size: .8em;
+            float: left;
+            margin-right: 10px;
+        }
+        .main-menu-login {
+            font-size: .8em;
+            float: left;
+            margin-right: 10px;
+            position: relative;
+
+            .main-menu-login-dropdown {
+                width: 435px;
+                position: absolute;
+                right: 0;
+                top: 40px;
+                color: black;
+                font-size: .8em;
+
+                // input['text'] {
+                //     height: 30px;
+                // }
+            }
+        }
+
+
+    }
+    .header-dropdown {
+        background: white;
+        color: black;
+        width: 150px;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        font-size: 16px;
+
+        ul {
+            // background: white;
+            list-style-type: none;
+            padding-left: 0;
+            li {
+                color: black;
+                text-align: center;
+                padding: 0;
+
+                :hover {
+                    background: rgb(191, 184, 199);
+                }
+                a {
+                    color: black;
+                    display: block;
+                    text-decoration: none;
+
+                    :hover {
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+  a {
+      color: rgb(240, 240, 240);
+      text-decoration: none;
+      :hover {
+          text-decoration: none;
+      }
+  }
 }
 .closed {
   height: 60px;
-  font-size: 1.3em;
+  font-size: 1em;
   line-height: 60px;
   color: white;
   background: rgba(33, 33, 33, 1);

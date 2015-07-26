@@ -15,7 +15,7 @@
 
         <!-- Top bar: Subject box and topic select box -->
         <div class="composer_info">
-            <div class="input-field">
+            <div class="input-field" ng-if=" composer.post.reply_id === '' ">
                 <input type="text" id="composer_subject" ng-model="composer.post.subject">
                 <label for="composer_subject">Subject</label>
             </div>
@@ -62,7 +62,7 @@
                     &nbsp; &nbsp;
                     <i id="toolbar-ol" class="pointer fa fa-list-ol"></i>
                 </div>
-                <textarea class="" name="" id="synergy-composer" ng-model="composer.post.markdown" ng-model-options="{debounce: 250}"></textarea>
+                <textarea class="" name="" id="synergy-composer" ng-model="composer.post.markdown"></textarea>
             </div>
 
 
@@ -82,7 +82,7 @@
         <!-- Footer containing buttons -->
         <div id="composer_footer" class="center-align">
             <div class="btn post-button btn-sm waves-effect red white-text"  ng-click="composer.close().reset()">Cancel</div>
-            <div class="btn post-button btn-sm waves-effect" ng-click="save()(composer.submit())">Submit</div>
+            <div class="btn post-button btn-sm waves-effect" ng-click="sendSave()">Submit</div>
         </div>
 
 

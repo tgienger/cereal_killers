@@ -12,22 +12,4 @@
 			<ui-view></ui-view>
 		<!--</div>-->
 	</div>
-</body>											
-
-
-
-<template name="post">
-	{{post_text}}
-	{{#each comments}}
-		{{>comment}}
-	{{/each}}
-</template>
-
-<template name="comment">
-  {{comment_text}}
-
-  {{#each sub_comment}}
-    {{> comment}}
-  {{/each}}
-
-</template>
+</body>

@@ -458,6 +458,16 @@
       "path": "packages/oshai_angular-marked.js"
     },
     {
+      "sourceMap": "packages/reywood_publish-composite.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/reywood_publish-composite.js"
+    },
+    {
+      "sourceMap": "packages/lepozepo_streams.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/lepozepo_streams.js"
+    },
+    {
       "sourceMap": "packages/session.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/session.js"
@@ -479,6 +489,11 @@
       "sourceMap": "app/server/startup/loadSite.es6.map",
       "sourceMapRoot": "server/startup",
       "path": "app/server/startup/loadSite.es6"
+    },
+    {
+      "sourceMap": "app/model/avatar.es6.map",
+      "sourceMapRoot": "model",
+      "path": "app/model/avatar.es6"
     },
     {
       "sourceMap": "app/model/chat.es6.map",
@@ -574,9 +589,6 @@
       "sourceMap": "app/server/users.es6.map",
       "sourceMapRoot": "server",
       "path": "app/server/users.es6"
-    },
-    {
-      "path": "app/zzz.ts-compiler.js"
     }
   ]
 }

@@ -12,7 +12,12 @@ angular.module('app', [
 	'BootstrapAffixed',
 	'RecursionHelper',
 	'MeteorMarkdown',
-]);
+	'infinite-scroll',
+])
+.run(['$rootScope', function($rootScope) {
+	$rootScope.siteName = 'CK Gaming';
+	Session.set('chatTimeStart', moment().toDate());
+}]);
 
 Accounts.ui.config({
   passwordSignupFields: 'USERNAME_AND_EMAIL'

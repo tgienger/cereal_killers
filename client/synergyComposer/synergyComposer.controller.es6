@@ -2,7 +2,8 @@
 *  Creating a new Post
 */
 class Post {
-    constructor() {
+    constructor(post) {
+        this.reply_id = post ? post._id : '';
         this.markdown = '';
         this.subject = '';
         // this.topic = topic;
@@ -353,10 +354,18 @@ class SynergyComposerController {
 
     open(post, cb) {
 
-        this.post = post || new Post();
+        if (post) {
+            if (post.reply) {
+                this.post = new Post(post.parent);
+            } else {
+                this.post = post;
+            }
+        } else {
+            this.post = new Post();
+        }
 
         this.collapse = false;
-
+        // console.log(this.post);
         (cb || angular.noop)();
         return this;
     }
