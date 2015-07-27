@@ -155,7 +155,7 @@ Meteor.startup(function() {
 
 		var title = 'This is my 1st discussion';
 		var dPosted = new Date();
-		var slug = randomSlug() + '/' + string_to_slug(title);
+		var slug = randomSlug() + '-' + string_to_slug(title);
 		var text = 'this is the first post in my threaded forum';
 		var dAuthor = {id: 'kTz6uBSNjd8tqeFm6', name: 'Admin'};
 
@@ -165,7 +165,7 @@ Meteor.startup(function() {
 		var discussionId = Discussions.insert({
 			parent_id: '',
 			slug: slug,
-			full_slug: moment(dPosted).format() + '/' + slug,
+			full_slug: moment(dPosted).format() + '-' + slug,
 			posted: dPosted,
 			author: dAuthor,
 			text: title
@@ -189,7 +189,7 @@ Meteor.startup(function() {
 		// This will be a reply to the first comment.
 		var commentPosted = new Date();
 		var commentSlugPart = randomSlug();
-		var commentFullSlugPart = moment(commentPosted).format() + '/' + commentSlugPart;
+		var commentFullSlugPart = moment(commentPosted).format() + '-' + commentSlugPart;
 		var commentText = "This is a reply to the main post.";
 
 		// if there is a parent
@@ -197,8 +197,8 @@ Meteor.startup(function() {
 		// for the slug and full_slug.
 		var parent = Comments.findOne(
 			{discussion_id: discussionId, slug: slug});
-		var commentSlug = parent.slug + '/' + commentSlugPart;
-		var commentFullSlug = parent.full_slug + '/' + commentFullSlugPart;
+		var commentSlug = parent.slug + '-' + commentSlugPart;
+		var commentFullSlug = parent.full_slug + '-' + commentFullSlugPart;
 
 		var firstReply = Comments.insert({
 			discussion_id: discussionId,
@@ -216,7 +216,7 @@ Meteor.startup(function() {
 		// One more reply to the first comment (main discussion)
 		var commentPosted2 = new Date();
 		var commentSlugPart2 = randomSlug();
-		var commentFullSlugPart2 = moment(commentPosted2).format() + '/' + commentSlugPart2;
+		var commentFullSlugPart2 = moment(commentPosted2).format() + '-' + commentSlugPart2;
 		var commentText2 = "This is the second reply to the main post.";
 
 		// if there is a parent
@@ -224,8 +224,8 @@ Meteor.startup(function() {
 		// for the slug and full_slug
 		var parent2 = Comments.findOne(
 			{discussion_id: discussionId, slug: slug});
-		var commentSlug2 = parent2.slug + '/' + commentSlugPart;
-		var commentFullSlug2 = parent2.full_slug + '/' + commentFullSlugPart2;
+		var commentSlug2 = parent2.slug + '-' + commentSlugPart;
+		var commentFullSlug2 = parent2.full_slug + '-' + commentFullSlugPart2;
 
 		var secondReply = Comments.insert({
 			discussion_id: discussionId,
@@ -243,14 +243,14 @@ Meteor.startup(function() {
 		// Now I would like a threaded reply to the first comment
 		var threadedPosted = new Date();
 		var threadedSlugPart = randomSlug();
-		var threadedFullSlugPart = moment(threadedPosted).format() + '/' + threadedSlugPart;
+		var threadedFullSlugPart = moment(threadedPosted).format() + '-' + threadedSlugPart;
 		var threadedText = "this is a reply to the first comment";
 
 		// Another "if(parent)" deal here
 		var threadParent = Comments.findOne(
 			{discussion_id: discussionId, slug: commentSlug});
-		var threadSlug = threadParent.slug + '/' + threadedSlugPart;
-		var threadFullSlug = threadParent.full_slug + '/' + threadedFullSlugPart;
+		var threadSlug = threadParent.slug + '-' + threadedSlugPart;
+		var threadFullSlug = threadParent.full_slug + '-' + threadedFullSlugPart;
 
 		var firstThreaded = Comments.insert({
 			discussion_id: discussionId,

@@ -218,9 +218,9 @@ angular.module('app').controller('NewsCtrl', [
 	}
 ]);
 
-
- Template.mdTemplate.helpers({
- 	md: function() {
- 		return Template.currentData().getReactively('composer.post.markdown');
- 	}
- });
+//
+// Template.mdTemplate.helpers({
+// 	md: function() {
+// 		return Template.currentData().getReactively('composer.post.markdown');
+// 	}
+// });

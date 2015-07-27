@@ -57,6 +57,7 @@ var AdminConfig = (function() {
 			.state('admin.settings', {
 				url: '/settings',
 				templateUrl: 'client/admin/settings/settings.controller.ng.html',
+				controllerAs: 'settings',
 				controller: 'SettingsController',
 			})
 			.state('admin.vpn', {

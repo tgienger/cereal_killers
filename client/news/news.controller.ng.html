@@ -8,19 +8,12 @@
 	<div class="createPost">
 		<button ng-click="openCreate()" ng-show="userIsAdmin()" class="btn add-news-button"><span>Create New</span></button>
 	</div>
-<!--	<div class="inputForm" ng-show="createPost">
-		<form novalidate>
-			<input type="text" class="editTitle" placeholder="Title" ng-model="news.title">
-				<input type="checkbox" name="privateCheck1" id="privateCheck1" ng-model="news.private">
-				<label for="privateCheck" style="color: white;">private</label>
-			<textarea class="editBody" name="postNews" id="postNews" placeholder="body ..." ng-model="news.body"></textarea>
-			<input type="submit" class="newsSubmit" ng-click="save(news)">
-		</form>
-	</div>-->
 
 	<li ng-repeat="post in posts | orderBy : 'date' : 'reversed'">
 		<div class="newsPost">
-			<div class="newsHeader">{{::post.subject}}
+			<div class="newsHeader">
+				<img class="comment-image img-circle" src="/images/default-user.png" alt="" />
+				{{::post.subject}}
 				<small class="newsDate">{{::post.date | date:'MM/dd/yyyy @ h:mm a'}}</small>
 				<small class="postCreator">By: {{::post.username}}</small>
 

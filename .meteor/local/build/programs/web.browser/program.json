@@ -1045,9 +1045,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/settings/settings.controller.ng.html.js?3b06c2f9c3a551ddf5a80c7d589a27415ddffcfb",
-      "size": 2593,
-      "hash": "3b06c2f9c3a551ddf5a80c7d589a27415ddffcfb"
+      "url": "/client/admin/settings/settings.controller.ng.html.js?823f893ef9bbe1068eda07783773dc95eee797c6",
+      "size": 2602,
+      "hash": "823f893ef9bbe1068eda07783773dc95eee797c6"
     },
     {
       "path": "app/client/admin/userPage/admin.user.controller.ng.html.js",
@@ -1171,9 +1171,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/header/header.directive.ng.html.js?cc0d28343c0d4a7289614598c6184d6111aa28f3",
-      "size": 2657,
-      "hash": "cc0d28343c0d4a7289614598c6184d6111aa28f3"
+      "url": "/client/header/header.directive.ng.html.js?ce873f08a119054fea56087ee2918ee60a16cfc2",
+      "size": 2666,
+      "hash": "ce873f08a119054fea56087ee2918ee60a16cfc2"
     },
     {
       "path": "app/client/home/home.controller.ng.html.js",
@@ -1216,9 +1216,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.ng.html.js?fb6725b4638d3867f09979557d051c506a0155e7",
-      "size": 2553,
-      "hash": "fb6725b4638d3867f09979557d051c506a0155e7"
+      "url": "/client/news/news.controller.ng.html.js?3bcc6844d0880d6ebe1ceed51276b1081e88df99",
+      "size": 2034,
+      "hash": "3bcc6844d0880d6ebe1ceed51276b1081e88df99"
     },
     {
       "path": "app/client/news/newsfeed.controller.ng.html.js",
@@ -1275,13 +1275,15 @@
       "hash": "bd67d16574d1cf78d39b98ee1f6f96a8cbf15678"
     },
     {
-      "path": "app/client/admin/settings/settings.controller.js",
+      "path": "app/client/admin/settings/settings.controller.es6",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/settings/settings.controller.js?0be86abe4ae7b069abe5a03dfe241e98195a663d",
-      "size": 569,
-      "hash": "0be86abe4ae7b069abe5a03dfe241e98195a663d"
+      "url": "/client/admin/settings/settings.controller.es6?6df38882e7a6e4b2814294001f6acbebba015ff8",
+      "sourceMap": "app/client/admin/settings/settings.controller.es6.map",
+      "sourceMapUrl": "/client/admin/settings/6df38882e7a6e4b2814294001f6acbebba015ff8.map",
+      "size": 1923,
+      "hash": "6df38882e7a6e4b2814294001f6acbebba015ff8"
     },
     {
       "path": "app/client/admin/userPage/admin.user.controller.js",
@@ -1384,9 +1386,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/admin/admin.js?6d503d55f20a15b8e0e94391b3b02e44b27266e5",
-      "size": 2015,
-      "hash": "6d503d55f20a15b8e0e94391b3b02e44b27266e5"
+      "url": "/client/admin/admin.js?b05faebee7257257c6a6865ae7fa5baf33bc3f2d",
+      "size": 2045,
+      "hash": "b05faebee7257257c6a6865ae7fa5baf33bc3f2d"
     },
     {
       "path": "app/client/bbcode/bbcode.filter.js",
@@ -1602,11 +1604,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.es6?2a266ff7cfa3105161443e4bafa381d1a7576188",
+      "url": "/client/news/news.controller.es6?3aba8f71913a6c4a295679a6bbb8659685349ab9",
       "sourceMap": "app/client/news/news.controller.es6.map",
-      "sourceMapUrl": "/client/news/2a266ff7cfa3105161443e4bafa381d1a7576188.map",
-      "size": 5019,
-      "hash": "2a266ff7cfa3105161443e4bafa381d1a7576188"
+      "sourceMapUrl": "/client/news/3aba8f71913a6c4a295679a6bbb8659685349ab9.map",
+      "size": 5034,
+      "hash": "3aba8f71913a6c4a295679a6bbb8659685349ab9"
     },
     {
       "path": "app/client/news/news.directive.js",
@@ -1808,15 +1810,15 @@
       "hash": "cae0ed0b243fb415a497831d0df3dd8dda185637"
     },
     {
-      "path": "4dfc492085cda345c5f0934b1f3715879ebad6ba.css",
+      "path": "fc16fa4fa63b69ab7fffd77d0f8f314f364cea60.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/4dfc492085cda345c5f0934b1f3715879ebad6ba.css",
-      "sourceMap": "4dfc492085cda345c5f0934b1f3715879ebad6ba.css.map",
-      "sourceMapUrl": "/4dfc492085cda345c5f0934b1f3715879ebad6ba.map",
-      "size": 347362,
-      "hash": "4dfc492085cda345c5f0934b1f3715879ebad6ba"
+      "url": "/fc16fa4fa63b69ab7fffd77d0f8f314f364cea60.css",
+      "sourceMap": "fc16fa4fa63b69ab7fffd77d0f8f314f364cea60.css.map",
+      "sourceMapUrl": "/fc16fa4fa63b69ab7fffd77d0f8f314f364cea60.map",
+      "size": 348092,
+      "hash": "fc16fa4fa63b69ab7fffd77d0f8f314f364cea60"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",
