@@ -5,21 +5,32 @@ Schemas.NewsPosts = new SimpleSchema({
 	subject: {
 		type: String,
 		max: 80,
-		min: 5
+		min: 5,
+		autoValue: function () {
+			var field = this.field('subject');
+
+			return sanitizeHtml(field.value);
+		}
 	},
 	markdown: {
 		type: String,
 		min: 5,
-		autoValue: function() {
+		autoValue: function () {
 			var field = this.field('markdown');
-			return  sanitizeHtml(field.value, {
-				allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 'img' ])
+
+			return sanitizeHtml(field.value, {
+				allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img'])
 			});
 		}
 	},
+	/* This shouldn't be here, I'll remove it when I fix the composer. */
+	reply_id: {
+		type: String,
+		optional: true
+	},
 	username: {
 		type: String,
-		autoValue: function() {
+		autoValue: function () {
 			var user = Meteor.user();
 			if (this.isInsert) {
 				return user.username;
@@ -28,9 +39,9 @@ Schemas.NewsPosts = new SimpleSchema({
 	},
 	visible: {
 		type: Boolean,
-		autoValue: function() {
+		autoValue: function () {
 
-			var all = Rules.findOne({name: 'news'}).all;
+			var all = Rules.findOne({ name: 'news' }).all;
 
 			var field = this.field('visible');
 			if (this.isInsert) {
@@ -46,7 +57,7 @@ Schemas.NewsPosts = new SimpleSchema({
 	},
 	private: {
 		type: Boolean,
-		autoValue: function() {
+		autoValue: function () {
 			var field = this.field('private');
 			if (this.isInsert) {
 				var setting = SiteSettings.find({}).fetch();
@@ -58,20 +69,8 @@ Schemas.NewsPosts = new SimpleSchema({
 	},
 	date: {
 		type: Date,
-		autoValue: function() {
+		autoValue: function () {
 			if (this.isInsert) {
-				return new Date;
-			} else {
-				this.unset();
-			}
-		}
-	},
-	latestDate: {
-		type: Date,
-		autoValue: function() {
-			if (this.isInsert) {
-				return new Date;
-			} else if (this.isUpdate) {
 				return new Date;
 			} else {
 				this.unset();
@@ -80,47 +79,14 @@ Schemas.NewsPosts = new SimpleSchema({
 	},
 	owner: {
 		type: String,
-		autoValue: function() {
-	      if (this.isInsert) {
-	        return this.userId;
-	      } else if (this.isUpsert) {
-	        return {$setOnInsert: this.userId};
-	      } else {
-	        this.unset();
-	      }
-		}
-	},
-	editHistory: {
-		type: [Object],
 		optional: true,
-		autoValue: function() {
-			var content = this.field('body');
-			if (content.isSet) {
-				if (this.isInsert) {
-					return [{
-						date: new Date,
-						content: content.value
-					}];
-				} else {
-					return {
-						$push: {
-							date: new Date,
-							content: content.value
-						}
-					};
-				}
+		autoValue: function () {
+			if (this.isInsert) {
+				return this.userId;
 			} else {
 				this.unset();
 			}
 		}
-	},
-	'editHistory.$.date': {
-		type: Date,
-		optional: true
-	},
-	'editHistory.$.content': {
-		type: String,
-		optional: true
 	}
 });
 
@@ -129,9 +95,9 @@ News.attachSchema(Schemas.NewsPosts);
 
 //Chat
 Schemas.chatPosts = new SimpleSchema({
-	 username: {
+	username: {
 		type: String,
-		autoValue: function() {
+		autoValue: function () {
 			var user = Meteor.user();
 			if (this.isInsert) {
 				return user.username;
@@ -140,7 +106,7 @@ Schemas.chatPosts = new SimpleSchema({
 	},
 	userId: {
 		type: String,
-		autoValue: function() {
+		autoValue: function () {
 			if (this.isInsert) {
 				return this.userId;
 			} else {
@@ -150,7 +116,7 @@ Schemas.chatPosts = new SimpleSchema({
 	},
 	date: {
 		type: Date,
-		autoValue: function() {
+		autoValue: function () {
 			if (this.isInsert) {
 				return new Date;
 			}
@@ -162,7 +128,7 @@ Schemas.chatPosts = new SimpleSchema({
 	message: {
 		type: String,
 		max: 150,
-		autoValue: function() {
+		autoValue: function () {
 			var field = this.field('message');
 			return sanitizeHtml(field.value, {
 				allowedTags: ['a', 'img'],
@@ -184,10 +150,10 @@ Schemas.roles = new SimpleSchema({
 		type: String,
 		index: true,
 		unique: true,
-		autoValue: function() {
+		autoValue: function () {
 
 			var all;
-			var roles = Rules.findOne({name: 'roles'});
+			var roles = Rules.findOne({ name: 'roles' });
 			if (roles) {
 				all = roles.all
 			}
@@ -217,10 +183,10 @@ Meteor.roles.attachSchema(Schemas.roles);
 Schemas.mail = new SimpleSchema({
 	recipient: {
 		type: Object,
-		autoValue: function() {
+		autoValue: function () {
 			var recipient = this.field('recipient');
 			if (recipient.isSet()) {
-				var user = Meteor.users.findOne({username: recipient});
+				var user = Meteor.users.findOne({ username: recipient });
 				return {
 					_id: user._id,
 					username: user._id
@@ -236,7 +202,7 @@ Schemas.mail = new SimpleSchema({
 	},
 	sender: {
 		type: [Object],
-		autoValue: function() {
+		autoValue: function () {
 			var user = Meteor.user();
 			return {
 				_id: user._id,
@@ -268,31 +234,31 @@ Schemas.Discussions = new SimpleSchema({
 Schemas.Comments = new SimpleSchema({
 	'discussion_id': {
 		type: String,
-		autoValue: function() {
+		autoValue: function () {
 			// this is the id for the discussion "forum"
 		}
 	},
-	'parent_id' : {
+	'parent_id': {
 		type: String,
-		autoValue: function() {
+		autoValue: function () {
 			// this is the _id of this posts parent post
 		}
 	},
 	'slug': {
 		type: String,
-		autoValue: function() {
+		autoValue: function () {
 
 		}
 	},
 	'full_slug': {
 		type: String,
-		autoValue: function() {
+		autoValue: function () {
 
 		}
 	},
 	'posted': {
 		type: Date,
-		autoValue: function() {
+		autoValue: function () {
 			if (this.isInsert) {
 				return new Date;
 			}
@@ -300,7 +266,7 @@ Schemas.Comments = new SimpleSchema({
 	},
 	'author': {
 		type: [Object],
-		autoValue: function() {
+		autoValue: function () {
 			var user = Meteor.user();
 			return {
 				'id': user._id,

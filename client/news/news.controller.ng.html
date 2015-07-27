@@ -28,10 +28,10 @@
 			</div>
 <!--					private checkbox-->
 			<div class=" privateCheckbox" ng-show="userIsAdmin()">
-				<input class="" type="checkbox" name="privateCheck" id="privateCheck_{{post._id}}" ng-change="privateChange(post)" ng-click="privateClicked(post)" ng-model="post.private">
+				<input class="" type="checkbox" name="privateCheck" id="privateCheck_{{post._id}}" ng-click="privateChange(post)" ng-model="post.private">
 				<label class="checkbox-label" for="privateCheck_{{post._id}}" ng-model="post.private">private</label>
 
-				<input type="checkbox" name="hiddenCheck" id="hiddenCheck_{{post._id}}" ng-model="post.visible">
+				<input type="checkbox" name="hiddenCheck" id="hiddenCheck_{{post._id}}" ng-model="post.visible" ng-click="visibleChange(post)">
 				<label class="checkbox-label" for="hiddenCheck_{{post._id}}">visible</label>
 
 				<a class="pointer tooltipped" data-tooltip="delete post" data-position="top" name="deletePost" id="deletePost_{{post._id}}" ng-click="deletePost(post)">
