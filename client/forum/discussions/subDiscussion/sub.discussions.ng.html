@@ -1,0 +1,40 @@
+<toolbar topic="discussion.topic" user="$root.currentUser" discussion="discussion"></toolbar>
+
+
+<div class="main-discussion-container">
+	<!-- <a href="/home" class="header-image"></a> -->
+
+	<div class="headerScrollPos"></div>
+
+    <div id="discussions-container">
+        <div class="header">
+            <h3 class="main-comment-head">{{::discussion.topic.text}}</h3>
+            <p class="main-comment-subhead">
+                Started by: {{::discussion.topic.author.name}} on {{::discussion.topic.posted | date: 'medium'}}
+            </p>
+        </div>
+
+        <div id="main-comment">
+            <!-- <p class="chat-li-p comment-head">
+				<img class="comment-image img-circle" src="/images/default-user.png" alt="" />
+				<span class="comment-author">{{::discussion.comment.author.name}} - </span>
+				<span class="comment-date">{{::discussion.comment.posted | date: 'medium'}}</span>
+				<span class="reply-to pointer" ng-click="discussion.openComposer(discussion.comment)"><i class="fa fa-reply"></i> reply</span>
+			</p> -->
+			<comment-header discussion="discussion"></comment-header>
+			<div class="comment">
+				<table>
+					<tr>
+						<td>
+							<p class="chat-li-p comment-text"><meteor-md markdown="discussion.comment.text"></meteor-md></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+        </div>
+        <comments loaded="discussion.loaded" loading-more="discussion.loadingMore" inner-comment="false" parent="discussion.comment._id" parent-re="" per-page="discussion.perPage" page="discussion.page" sort="discussion.sort" reply="saveComment(post)"></comments>
+    </div>
+</div>
+<div ng-show="discussion.loadingMore">Loading more threads ...</div>
+<div infinite-scroll="discussion.addMoreComments()"></div>
+<synergy-composer ng-show="discussion.pageReady" id="synergyComposer" composer="$root.composer" save="discussion.saveComment(post)"></synergy-composer>

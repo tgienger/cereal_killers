@@ -1,84 +1,101 @@
-Meteor.publish('discussions', function(options) {
+/// <reference path="../typings/tsd.d.ts" />
+
+
+Meteor.publish('discussions', function (options) {
 	return Discussions.find({}, options);
-});
-
-Meteor.publish('oneDiscussion', function(slug) {
-
-	var cursors = [];
-	var tick = 0;
-
-	var getChildComment = function() {
-		var comment = Comments.find(
-			{ slug: slug },
-			{ limit: 1 }
-		);
-		cursors.push(comment);
-	};
-
-	var getAllChildren = function(parent, options) {
-		console.log(parent._id);
-		var comments =  Comments.find(
-			{ parent_id: parent._id },
-			options
-		);
-		cursors.push(comments);
-		comments.forEach(function(comment) {
-			getAllChildren(comment, {limit: 5, sort: {posted: -1}})
-		});
-	};
-
-	var discussion = Discussions.find({slug: slug}, {limit: 1})
-
-	cursors.push(discussion);
-
-	var mainComment = Comments.find({slug: slug}, {limit: 1});
-
-	cursors.push(mainComment);
-
-	getAllChildren(mainComment, {limit: 25, sort: {posted: -1}});
-
-	// return an array of cursors
-	return cursors;
 });
 
 
 Meteor.publishComposite('discussion', function (discussion_slug, options) {
+
 	return {
-		find: function() {
+		find: function () {
 			return Discussions.find(
 				{ slug: discussion_slug },
-				{ limit: 1 }
-			);
+				{ limit: 1 });
 		},
 		children: [
 			{
-				find: function(discussion) {
+				find: function (discussion) {
 					return Comments.find(
 						{ slug: discussion.slug },
-						{ limit: 1 }
-					);
+						{ limit: 1 });
 				},
 				children: [
 					{
-						find: function(comment) {
+						find: function (comment) {
 							return Meteor.users.find(
 								{ _id: comment.author.id },
 								{ limit: 1, fields: { profile: 1, roles: 1, createdAt: 1, username: 1 } }
-							);
+								);
 						}
 					},
 					{
-						find: function(parent) {
+						find: function (parent) {
 
 							Counts.publish(this, 'numberOfComments', Comments.find(
-								{parent_id: parent._id}
-							), {noReady: true});
+								{ parent_id: parent._id }
+								), { noReady: true });
 
-							return ;
+							return;
 							// return Comments.find({parent_id: parent._id}, {limit: 25, sort: {posted: -1}});
 						}
 					}
 				]
+			},
+			{
+				find: function (discussion) {
+					return Meteor.users.find(
+						{ _id: discussion.author.id },
+						{ limit: 1, fields: { profile: 1, roles: 1, createdAt: 1, username: 1 } }
+						);
+				}
+			}
+		]
+	}
+});
+
+Meteor.publishComposite('subDiscussion', function (discussion_slug, comment_slug, options) {
+
+	return {
+		find: function () {
+			return Discussions.find(
+				{ slug: discussion_slug },
+				{ limit: 1 });
+		},
+		children: [
+			{
+				find: function (discussion) {
+					return Comments.find(
+						{ slug: comment_slug },
+						{ limit: 1 });
+				},
+				children: [
+					{
+						find: function (comment) {
+							return Meteor.users.find(
+								{ _id: comment.author._id },
+								{ limit: 1, fields: { profile: 1, roles: 1, createdAt: 1, username: 1 } });
+						}
+					},
+					{
+						find: function (parent) {
+
+							Counts.publish(this, 'numberOfComments', Comments.find(
+								{ parent_id: parent._id }
+								), { noReady: true });
+
+							return;
+						}
+					}
+				]
+			},
+			{
+				find: function (discussion) {
+					return Meteor.users.find(
+						{ _id: discussion.author.id },
+						{ limit: 1, fields: { profile: 1, roles: 1, createdAt: 1, username: 1 } });
+				}
 			}
 		]
 	}

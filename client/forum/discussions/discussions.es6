@@ -6,6 +6,12 @@ function DiscussionsConfig($stateProvider) {
             templateUrl: 'client/forum/discussions/discussions.ng.html',
             controllerAs: 'discussion',
             controller: 'DiscussionsController'
+        })
+        .state('childTopic', {
+            url: '/topic/:parent/:child',
+            templateUrl: 'client/forum/discussions/discussions.ng.html',
+            controllerAs: 'discussion',
+            controller: 'SubDiscussionsController'
         });
 }
 

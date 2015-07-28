@@ -249,6 +249,8 @@ Meteor.methods({
 		
 		Discussions.remove({_id: discussion._id});
 		
+		Comments.remove({discussion_id: discussion._id});
+		
 	},
 	
 	/**
