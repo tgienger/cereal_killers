@@ -1164,9 +1164,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/forum.controller.ng.html.js?99285116499be1d94a3fae250221bb68bfb034b4",
-      "size": 858,
-      "hash": "99285116499be1d94a3fae250221bb68bfb034b4"
+      "url": "/client/forum/forum.controller.ng.html.js?e3cbc3e4fffab014905e5c271b01d03e712daa8b",
+      "size": 1151,
+      "hash": "e3cbc3e4fffab014905e5c271b01d03e712daa8b"
     },
     {
       "path": "app/client/header/template.adminLink.js",
@@ -1515,22 +1515,22 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/forum.controller.es6?49ec6f42458f181c671185d91589c88047f147e2",
+      "url": "/client/forum/forum.controller.es6?311dad2b2fd5176c73623fe41f5c88b945e04f60",
       "sourceMap": "app/client/forum/forum.controller.es6.map",
-      "sourceMapUrl": "/client/forum/49ec6f42458f181c671185d91589c88047f147e2.map",
-      "size": 2998,
-      "hash": "49ec6f42458f181c671185d91589c88047f147e2"
+      "sourceMapUrl": "/client/forum/311dad2b2fd5176c73623fe41f5c88b945e04f60.map",
+      "size": 3836,
+      "hash": "311dad2b2fd5176c73623fe41f5c88b945e04f60"
     },
     {
       "path": "app/client/forum/forum.es6",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/forum.es6?fe661081e2c6c14a2a6f058edad7088ccec23113",
+      "url": "/client/forum/forum.es6?bb5b64541717c9c4deba368754471a6d2bc20cda",
       "sourceMap": "app/client/forum/forum.es6.map",
-      "sourceMapUrl": "/client/forum/fe661081e2c6c14a2a6f058edad7088ccec23113.map",
-      "size": 443,
-      "hash": "fe661081e2c6c14a2a6f058edad7088ccec23113"
+      "sourceMapUrl": "/client/forum/bb5b64541717c9c4deba368754471a6d2bc20cda.map",
+      "size": 552,
+      "hash": "bb5b64541717c9c4deba368754471a6d2bc20cda"
     },
     {
       "path": "app/client/header/header.directive.js",
@@ -1821,15 +1821,15 @@
       "hash": "cae0ed0b243fb415a497831d0df3dd8dda185637"
     },
     {
-      "path": "1d33f5a38cbced1e2aa44ea1281f0629f2b760f9.css",
+      "path": "6eb57b3110fa7afea6976bf16215e78141cadbbe.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/1d33f5a38cbced1e2aa44ea1281f0629f2b760f9.css",
-      "sourceMap": "1d33f5a38cbced1e2aa44ea1281f0629f2b760f9.css.map",
-      "sourceMapUrl": "/1d33f5a38cbced1e2aa44ea1281f0629f2b760f9.map",
-      "size": 354219,
-      "hash": "1d33f5a38cbced1e2aa44ea1281f0629f2b760f9"
+      "url": "/6eb57b3110fa7afea6976bf16215e78141cadbbe.css",
+      "sourceMap": "6eb57b3110fa7afea6976bf16215e78141cadbbe.css.map",
+      "sourceMapUrl": "/6eb57b3110fa7afea6976bf16215e78141cadbbe.map",
+      "size": 354637,
+      "hash": "6eb57b3110fa7afea6976bf16215e78141cadbbe"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",
