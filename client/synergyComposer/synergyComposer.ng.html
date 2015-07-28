@@ -1,6 +1,12 @@
 
 <div class="composer_container">
+
+
     <div class="composer white">
+
+        <div class="composer-tab">
+            <a ng-click="composer.close()" class="btn btn-link font-black composer-minimize-a">minimize</a>
+        </div>
 
         <!-- top of the composer, able to drag up and down and double click -->
         <div id="dragbar" resizeable max="" min="">
@@ -15,28 +21,32 @@
 
         <!-- Top bar: Subject box and topic select box -->
         <div class="composer_info">
+
             <div class="input-field" ng-if=" composer.post.reply_id === '' ">
                 <input type="text" id="composer_subject" ng-model="composer.post.subject">
                 <label for="composer_subject">Subject</label>
             </div>
 <!--            <input id="composer_subject" type="text" ng-model="synergyController.newPost.subject" placeholder="subject: ">-->
-            <div id="title">
+            <!-- <div id="title pull-right"> -->
+                <!-- <i ng-click="composer.close()" class="fa fa-arrow-down pointer pull"></i> -->
 
-                <div ng-if="composer.topics.length > 0">
-                    Creating in:
+                <!-- <div ng-if="composer.topics.length > 0"> -->
+                    <!-- Creating in: -->
 
                     <!-- <input type="text" ng-model="synergyController.topic"> -->
-                    <select style="width: 80%;float:right"
-                        class="browser-default"
-                        ng-model="composer.topic"
-                        ng-options="topic.name for topic in composer.topics"
-                        id="topicSelect">
-                    </select>
+                    <!-- <select style="width: 80%;float:right" -->
+                        <!-- class="browser-default" -->
+                        <!-- ng-model="composer.topic" -->
+                        <!-- ng-options="topic.name for topic in composer.topics" -->
+                        <!-- id="topicSelect"> -->
+                    <!-- </select> -->
 
-                </div>
+                <!-- </div> -->
 
 
-              <i ng-click="composer.close()" class="mdi-navigation-arrow-drop-down pull-right pointer"></i></div>
+            <!-- </div> -->
+
+
             <div class="syn-xs-visible" id="phone-view-toggle"><span class="pointer" ng-click="composer.previewToggle()"><i class="fa fa-search"></i> toggle preview </span></div>
         </div>
 
@@ -52,7 +62,7 @@
                     &nbsp; &nbsp;
                     <i id="toolbar-italic" class="pointer fa fa-italic"></i>
                     &nbsp; &nbsp;
-                    <span class="pointer" id="toolbar-code"><i id="toolbar-code" class="fa fa-code"></i><i id="toolbar-code" class="mdi-hardware-keyboard-arrow-right"></i></span>
+                    <span class="pointer" id="toolbar-code"><i id="toolbar-code" class="fa fa-code"></i></span>
                     &nbsp; &nbsp;
                     <i id="toolbar-link" class="pointer fa fa-external-link"></i>
                     &nbsp; &nbsp;

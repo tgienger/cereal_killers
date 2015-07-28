@@ -948,6 +948,17 @@
       "hash": "34e6d5793081ce97a53e7fb43e07085452019b4e"
     },
     {
+      "path": "packages/angularjs_angular-touch.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/angularjs_angular-touch.js?e9fd7cd6fdd4721c33323f922b5cdeddf134d592",
+      "sourceMap": "packages/angularjs_angular-touch.js.map",
+      "sourceMapUrl": "/packages/e9fd7cd6fdd4721c33323f922b5cdeddf134d592.map",
+      "size": 69244,
+      "hash": "e9fd7cd6fdd4721c33323f922b5cdeddf134d592"
+    },
+    {
       "path": "packages/webapp.js",
       "where": "client",
       "type": "js",
@@ -1126,18 +1137,18 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/comment.directive/comment-header.ng.html.js?e0c1d64c359f3b31a8f31e030020e87c0ecda35d",
-      "size": 600,
-      "hash": "e0c1d64c359f3b31a8f31e030020e87c0ecda35d"
+      "url": "/client/comment.directive/comment-header.ng.html.js?c1eb4246f394d7cf319da2840157e4ae4b17c2e9",
+      "size": 633,
+      "hash": "c1eb4246f394d7cf319da2840157e4ae4b17c2e9"
     },
     {
       "path": "app/client/comment.directive/comment.directive.ng.html.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/comment.directive/comment.directive.ng.html.js?57b4d5fa56d965eb8a7d8d6519d64173905f6e1c",
-      "size": 1362,
-      "hash": "57b4d5fa56d965eb8a7d8d6519d64173905f6e1c"
+      "url": "/client/comment.directive/comment.directive.ng.html.js?d8d74559fbac03aeb147b83c09255b8101294903",
+      "size": 1527,
+      "hash": "d8d74559fbac03aeb147b83c09255b8101294903"
     },
     {
       "path": "app/client/comment.directive/comment.ng.html.js",
@@ -1216,9 +1227,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/news/news.controller.ng.html.js?3bcc6844d0880d6ebe1ceed51276b1081e88df99",
-      "size": 2034,
-      "hash": "3bcc6844d0880d6ebe1ceed51276b1081e88df99"
+      "url": "/client/news/news.controller.ng.html.js?70432f6fa783f9bd708c0927f506a7f00063ba31",
+      "size": 2121,
+      "hash": "70432f6fa783f9bd708c0927f506a7f00063ba31"
     },
     {
       "path": "app/client/news/newsfeed.controller.ng.html.js",
@@ -1243,9 +1254,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/synergyComposer/synergyComposer.ng.html.js?28d3582e3b679d5c2265140fd7a5574d64b11e4d",
-      "size": 3369,
-      "hash": "28d3582e3b679d5c2265140fd7a5574d64b11e4d"
+      "url": "/client/synergyComposer/synergyComposer.ng.html.js?63c5cb304bd63dc0b9bc5b859d301e2eb9e2e2b6",
+      "size": 3535,
+      "hash": "63c5cb304bd63dc0b9bc5b859d301e2eb9e2e2b6"
     },
     {
       "path": "app/client/template.index.js",
@@ -1261,9 +1272,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/lib/app.js?34be60a0cc793e0d99184bfb3337dbe5f266fd55",
-      "size": 504,
-      "hash": "34be60a0cc793e0d99184bfb3337dbe5f266fd55"
+      "url": "/client/lib/app.js?46ee18c98378960f741d2b784cecdfcb63c390ef",
+      "size": 516,
+      "hash": "46ee18c98378960f741d2b784cecdfcb63c390ef"
     },
     {
       "path": "app/client/admin/roles/roles.controller.js",
@@ -1422,11 +1433,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/chat/chat.controller.es6?36f13f18f683cc0f1ff2f5931d1987679107b405",
+      "url": "/client/chat/chat.controller.es6?be00416d8d21a6d02d9c00089940f17ab998694c",
       "sourceMap": "app/client/chat/chat.controller.es6.map",
-      "sourceMapUrl": "/client/chat/36f13f18f683cc0f1ff2f5931d1987679107b405.map",
-      "size": 3958,
-      "hash": "36f13f18f683cc0f1ff2f5931d1987679107b405"
+      "sourceMapUrl": "/client/chat/be00416d8d21a6d02d9c00089940f17ab998694c.map",
+      "size": 3959,
+      "hash": "be00416d8d21a6d02d9c00089940f17ab998694c"
     },
     {
       "path": "app/client/chat/chat.directive.es6",
@@ -1444,11 +1455,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/comment.directive/comment-header.directive.es6?6c3068456414f3f271d65af57b6ee0039fb4565b",
+      "url": "/client/comment.directive/comment-header.directive.es6?95e41b1ff1509d574239db7d32c67413a812fd66",
       "sourceMap": "app/client/comment.directive/comment-header.directive.es6.map",
-      "sourceMapUrl": "/client/comment.directive/6c3068456414f3f271d65af57b6ee0039fb4565b.map",
-      "size": 374,
-      "hash": "6c3068456414f3f271d65af57b6ee0039fb4565b"
+      "sourceMapUrl": "/client/comment.directive/95e41b1ff1509d574239db7d32c67413a812fd66.map",
+      "size": 388,
+      "hash": "95e41b1ff1509d574239db7d32c67413a812fd66"
     },
     {
       "path": "app/client/comment.directive/comment.directive.es6",
@@ -1810,15 +1821,15 @@
       "hash": "cae0ed0b243fb415a497831d0df3dd8dda185637"
     },
     {
-      "path": "fc16fa4fa63b69ab7fffd77d0f8f314f364cea60.css",
+      "path": "1d33f5a38cbced1e2aa44ea1281f0629f2b760f9.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/fc16fa4fa63b69ab7fffd77d0f8f314f364cea60.css",
-      "sourceMap": "fc16fa4fa63b69ab7fffd77d0f8f314f364cea60.css.map",
-      "sourceMapUrl": "/fc16fa4fa63b69ab7fffd77d0f8f314f364cea60.map",
-      "size": 348092,
-      "hash": "fc16fa4fa63b69ab7fffd77d0f8f314f364cea60"
+      "url": "/1d33f5a38cbced1e2aa44ea1281f0629f2b760f9.css",
+      "sourceMap": "1d33f5a38cbced1e2aa44ea1281f0629f2b760f9.css.map",
+      "sourceMapUrl": "/1d33f5a38cbced1e2aa44ea1281f0629f2b760f9.map",
+      "size": 354219,
+      "hash": "1d33f5a38cbced1e2aa44ea1281f0629f2b760f9"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",

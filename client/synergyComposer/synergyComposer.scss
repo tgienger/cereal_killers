@@ -23,6 +23,20 @@ $post-border-color: #454545;
     transition: bottom .5s linear;
     z-index: 1000;
 }
+.font-white {
+    color: white;
+    :hover {
+        color:black;
+        text-decoration: none;
+    }
+}
+.font-black {
+    color:black;
+    :hover {
+        color:black;
+        text-decoration: none;
+    }
+}
 .composer_header {
     height: 10px;
     position: absolute;
@@ -46,6 +60,31 @@ $post-border-color: #454545;
     /* box-shadow: 0 -2px 15px -3px rgba(0,0,0,0.75); */
     color:black;
     background: #5d5d5d;
+
+    .composer-tab {
+        position: absolute;
+        left:0;
+        top:-25px;
+        height: 25px;
+        width: 100px;
+        line-height: 25px;
+        background: #5d5d5d;
+        text-align: left;
+
+        a:hover {
+            color:black;
+        }
+    }
+
+    .composer-tab :before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-style: solid;
+        border-width: 0px 15px 25px 0px; /* Play around with 1st and 4th value to change slant degree */
+        border-color: transparent black transparent transparent; /* change black to match the background color of the menu UL */
+    }
 }
 .composer_info {
     height: 30px;

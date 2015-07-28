@@ -3,9 +3,8 @@ function CommentHeaderDirective() {
     return {
         restrict: 'AE',
         templateUrl: 'client/comment.directive/comment-header.ng.html',
-        scope: {discussion: '='},
+        scope: {discussion: '=', comment: '='},
         link: function(scope, elem, attrs) {
-
         }
     }
 }

@@ -1,6 +1,8 @@
-<p class="chat-li-p comment-head">
+<div class="chat-li-p comment-head">
     <img class="comment-image img-circle" src="/images/default-user.png" alt="" />
-    <span class="comment-author">{{::discussion.comment.author.name}} - </span>
-    <span class="comment-date">{{::discussion.comment.posted | date: 'medium'}}</span>
     <span class="reply-to pointer" ng-click="discussion.openComposer(discussion.comment)"><i class="fa fa-reply"></i> reply</span>
-</p>
+    <div class="comment-author-info">
+        <p class="comment-author">{{::discussion.comment.author.name}} </p>
+        <p class="comment-date">{{::discussion.comment.posted | date: 'medium'}}</p>
+    </div>
+</div>

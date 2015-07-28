@@ -10,7 +10,7 @@ class ChatController {
 
         this.chatTimer;
         this.waitTime = 3000;
-
+        
         $meteor.autorun($scope, () => {
              $scope.$meteorSubscribe('chat', Session.get('chatTimeStart')).then(() => {
 
@@ -19,6 +19,7 @@ class ChatController {
                  this.messages = $meteor.collection(function() {
                      return query;
                  });
+                 
                 //  initializing = false;
                  $timeout(() => {
                      this.scrollDiv('chat_stream');

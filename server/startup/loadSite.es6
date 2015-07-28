@@ -106,6 +106,17 @@ Meteor.startup(function() {
 
 		});
 	}
+	
+	if (Rules.find({name: 'forums'}).count() === 0) {
+		Rules.insert({
+			name: 'forums',
+			all: ['admin', 'super moderator'],
+			view: ['admin', 'super moderator', 'member', 'registered'],
+			insert: ['admin', 'super moderator', 'member', 'registered'],
+			update: ['admin', 'super moderator', 'member', 'registered'],
+			remove: ['admin', 'super moderator']
+		});
+	}
 
 	if (Discussions.find().count() === 0) {
 

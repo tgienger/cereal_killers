@@ -2,22 +2,26 @@
 	<ul ng-class="innerComment === true ? 'chat-ul-inner' : 'chat-ul-outer'">
 
 		<li class="chat-li comment" ng-repeat="comment in comments">
-            <p class="chat-li-p comment-head">
-				<img class="comment-image img-circle" src="/images/default-user.png" alt="" />
-				<span class="comment-author">{{::comment.author.name}} - </span>
-				<span class="comment-date">{{::comment.posted | date: 'medium'}}</span>
+			<!-- <div class="comment-head">
+
+				<div class="commentImage">
+					<img class="comment-image img-circle" src="/images/default-user.png" alt="" />
+				</div>
+
+				<div class="user-data">
+					<p class="comment-author">{{::comment.author.name}} </p>
+					<p class="comment-date">{{::comment.posted | date: 'medium'}}</p>
+				</div>
+
 				<span class="reply-to pointer" ng-click="openComposer(comment)"><i class="fa fa-reply"></i> reply</span>
-				<!-- <span class="comment-re">re: {{::discussion.topic.text}}</span> -->
-			</p>
+
+			</div> -->
+			<comment-header discussion="{'comment': comment, 'openComposer': openComposer}"></comment-header>
+
 			<div class="comment">
-				<table>
-					<tr>
-						<td>
-							<p class="chat-li-p comment-text"><meteor-md markdown="comment.text"></meteor-md></p>
-						</td>
-					</tr>
-				</table>
+				<p class="chat-li-p comment-text"><meteor-md markdown="comment.text"></meteor-md></p>
 			</div>
+
 			<comments reply="saveComment(post)" inner-comment="true" parent="comment._id" parent-re="comment.text.length > 100 ? comment.text.substring(0, 50) + '...' : comment.text" per-page="5" page="1" sort="1"></comments>
 		</li>
 	</ul>

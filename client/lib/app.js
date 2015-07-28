@@ -13,6 +13,7 @@ angular.module('app', [
 	'RecursionHelper',
 	'MeteorMarkdown',
 	'infinite-scroll',
+	'ngTouch',
 ])
 .run(['$rootScope', function($rootScope) {
 	$rootScope.siteName = 'CK Gaming';

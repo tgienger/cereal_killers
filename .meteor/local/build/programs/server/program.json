@@ -468,6 +468,11 @@
       "path": "packages/lepozepo_streams.js"
     },
     {
+      "sourceMap": "packages/angularjs_angular-touch.js.map",
+      "sourceMapRoot": "packages",
+      "path": "packages/angularjs_angular-touch.js"
+    },
+    {
       "sourceMap": "packages/session.js.map",
       "sourceMapRoot": "packages",
       "path": "packages/session.js"

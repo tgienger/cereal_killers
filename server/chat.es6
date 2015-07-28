@@ -14,6 +14,18 @@ Meteor.publish('chat', function(started) {
 	}
 });
 
+Meteor.publish('previousChat', function() {
+	var view = Rules.findOne({name: 'chat'});
+	
+	if (Roles.userIsInRole(this.userId, view)) {
+		var query = Chat.find({limit: 25, sort: {date: -1}});
+		
+		query.stop();
+		
+		return query;
+	}
+})
+
 // Meteor.publish('newChat', function() {
 //
 // })
