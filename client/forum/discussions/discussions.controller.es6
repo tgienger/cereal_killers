@@ -26,14 +26,14 @@ class DiscussionsController {
         this.pageReady = true;
         this.loaded = false;
 
-        SCOPE.get(this).$meteorSubscribe('discussion', this.parent).then(() => {
+        SCOPE.get(this).$meteorSubscribe('oneDiscussion', this.parent).then(() => {
             this.topic = $meteor.object(Discussions, {slug: this.parent}, false);
             // $scope.topic = this.topic;
             this.comment = $meteor.object(Comments, { slug: this.parent }, false);
 
     		this.commentCount = $meteor.object(Counts, 'numberOfComments', false);
             this.comments = $meteor.collection(Comments);
-            
+
             console.log(this.comments);
         });
     }
