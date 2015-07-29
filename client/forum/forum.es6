@@ -8,7 +8,12 @@ function ForumConfig($stateProvider, $urlMatcherFactoryProvider) {
 			url: '/forum',
 			templateUrl: 'client/forum/forum.controller.ng.html',
 			controllerAs: 'forum',
-			controller: 'ForumController'
+			controller: 'ForumController',
+			resolve: {
+				'currentUser': ['$meteor', function($meteor) {
+					return $meteor.waitForUser();
+				}]
+			}
 		});
 }
 

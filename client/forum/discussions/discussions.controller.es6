@@ -32,6 +32,7 @@ class DiscussionsController {
             this.comment = $meteor.object(Comments, { slug: this.parent }, false);
 
     		this.commentCount = $meteor.object(Counts, 'numberOfComments', false);
+            
             this.comments = $meteor.collection(Comments);
 
             console.log(this.comments);

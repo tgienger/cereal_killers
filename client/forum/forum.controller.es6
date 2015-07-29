@@ -3,6 +3,7 @@
  * Forums Controller
  */
 
+const ROOTSCOPE = new WeakMap();
 const METEOR = new WeakMap();
 const SCOPE = new WeakMap();
 
@@ -10,11 +11,13 @@ class ForumController {
     static $inject = ['$scope', '$meteor', '$rootScope'];
     constructor($scope, $meteor, $rootScope) {
 
+        ROOTSCOPE.set(this, $rootScope);
         METEOR.set(this, $meteor);
         SCOPE.set(this, $scope);
 
         this.title = 'Forum Page';
         this.pageReady = true;
+        
         SCOPE.get(this).page = 1;
         SCOPE.get(this).perPage = 25;
         SCOPE.get(this).sort = -1;
@@ -59,6 +62,25 @@ class ForumController {
         METEOR.get(this).call('saveDiscussion', discussion);
 		// this.discussions.save(discussion);
 		this.composer.close().reset();
+    }
+    
+    removeDiscussion(discussion) {
+        swal({
+				title: 'Delete Discussion:',
+				text: discussion.text,
+				type: 'warning',
+				showCancelButton: true,
+				confirmButtonColor: 'red',
+				confirmButtonText: 'Delete',
+			}, (confirmed) => {
+				if (confirmed) {
+                    METEOR.get(this).call('removeDiscussion', discussion);
+				}
+			});
+    }
+    
+    isAdmin() {
+        return Roles.userIsInRole(ROOTSCOPE.get(this).currentUser, ['admin', 'super moderator']);
     }
 }
 

@@ -1,3 +1,4 @@
+/// <reference path="../typings/tsd.d.ts" />
 
 /**
  * Reformats strings to be URL friendly
@@ -159,6 +160,10 @@ Meteor.methods({
 
 	},
 
+	/**
+	 * Save Discussion Method
+	 * save the discussion into the discussions collection
+	 */
 	saveDiscussion: function(discussion) {
 
 		// get the currently logged in user for later use on insertion.
@@ -225,6 +230,33 @@ Meteor.methods({
 
 
 	},
+	
+	/**
+	 * Remove Discussion
+	 * Removes this discussion from the discussions collection
+	 */
+	removeDiscussion: function(discussion) {
+		
+		var user = Meteor.user();
+		
+		var rules = Rules.findOne({name: 'forums'});
+		
+		var allowRemove = _.union(rules.all, rules.remove);
+		
+		if (!user || !Roles.userIsInRole(user, allowRemove)) {
+			throw new Meteor.Error(401, "Not Authorized");
+		}
+		
+		Discussions.remove({_id: discussion._id});
+		
+		Comments.remove({discussion_id: discussion._id});
+		
+	},
+	
+	/**
+	 * Save Comment
+	 * Saves this comment into the comments collection
+	 */
 	saveComment: function(comment) {
 
         // get the currently logged in user for later use on insertion.

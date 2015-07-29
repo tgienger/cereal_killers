@@ -11,10 +11,16 @@
 		<li class="forum-li" ng-repeat="discussion in forum.discussions">
 			<p class="forum-p">
 				<a ng-href="/topic/{{discussion.slug}}">{{discussion.text}}</a>
+					
+				<a class="pointer tooltipped pull-right forum-remove" ng-show="forum.isAdmin()" data-tooltip="delete post" data-position="top" name="deleteDiscussion" id="deleteDiscussion_{{post._id}}" ng-click="forum.removeDiscussion(discussion)">
+					<i class="fa fa-trash-o red-text"></i>
+				</a>
+					
 			</p>
 			<p class="forum-p-bottom">
 				create by: <a href="#">{{discussion.author.name}}</a> on {{discussion.posted | date : 'short'}}
 			</p>
+			
 		</li>
 	</ul>
 </div>
