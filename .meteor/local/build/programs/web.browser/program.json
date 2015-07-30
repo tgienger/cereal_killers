@@ -1357,11 +1357,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/discussions/discussions.controller.es6?5aeff95f4be81963b6889416d56969076a099743",
+      "url": "/client/forum/discussions/discussions.controller.es6?a3d93a4b874f4299831243ff8c0df01eb6666d81",
       "sourceMap": "app/client/forum/discussions/discussions.controller.es6.map",
-      "sourceMapUrl": "/client/forum/discussions/5aeff95f4be81963b6889416d56969076a099743.map",
-      "size": 5305,
-      "hash": "5aeff95f4be81963b6889416d56969076a099743"
+      "sourceMapUrl": "/client/forum/discussions/a3d93a4b874f4299831243ff8c0df01eb6666d81.map",
+      "size": 4356,
+      "hash": "a3d93a4b874f4299831243ff8c0df01eb6666d81"
     },
     {
       "path": "app/client/forum/discussions/discussions.es6",

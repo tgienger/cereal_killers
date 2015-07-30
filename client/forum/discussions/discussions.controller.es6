@@ -13,12 +13,6 @@ class DiscussionsController {
         METEOR.set(this, $meteor);
         SCOPE.set(this, $scope);
 
-        // $scope.currentLocation = {
-        //     header: $rootScope.siteName,
-        //     link: '/home'
-        // };
-
-        // this.parent = new RegExp('^' + $stateParams.parent);
         this.page = 1;
         this.perPage = 25;
         this.sort = 1;
@@ -57,21 +51,6 @@ class DiscussionsController {
                 });
             });
         });
-        
-//        $meteor.autorun($scope, () => {
-//            $scope.$meteorSubscribe('oneDiscussion', this.parent, {
-//                limit: $scope.getReactively('perPage'),
-//                
-//            }).then(() => {
-//                this.topic = $meteor.object(Discussions, {slug: this.parent}, false);
-//                // $scope.topic = this.topic;
-//                this.comment = $meteor.object(Comments, { slug: this.parent }, false);
-//    
-//        		this.commentCount = $meteor.object(Counts, 'numberOfComments', false);
-//                
-//                this.comments = $meteor.collection(Comments);
-//            });
-//        });
     }
 
     commentAuthor(comment) {
