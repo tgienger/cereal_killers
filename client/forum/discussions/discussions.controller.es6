@@ -19,24 +19,59 @@ class DiscussionsController {
         // };
 
         // this.parent = new RegExp('^' + $stateParams.parent);
-        this.parent = $stateParams.parent;
         this.page = 1;
         this.perPage = 25;
         this.sort = 1;
+        
+        this.parent = $stateParams.parent;
         this.pageReady = true;
         this.loaded = false;
-
-        SCOPE.get(this).$meteorSubscribe('oneDiscussion', this.parent).then(() => {
-            this.topic = $meteor.object(Discussions, {slug: this.parent}, false);
-            // $scope.topic = this.topic;
-            this.comment = $meteor.object(Comments, { slug: this.parent }, false);
-
-    		this.commentCount = $meteor.object(Counts, 'numberOfComments', false);
+        
+        $scope.page = 1;
+        $scope.perPage = 25;
+        $scope.sort = 1;
+        
+        $meteor.autorun($scope, () => {
+            $meteor.autorun($scope, () => {
+                $scope.$meteorSubscribe('oneDiscussion', this.parent, {
+                    limit: $scope.getReactively('perPage'),
+                    skip: parseInt(($scope.getReactively('page') - 1) * $scope.getReactively('perPage')),
+                    sort: { full_slug: $scope.getReactively('sort') } })
+                    .then(() => {
+                        this.topic = $meteor.object(Discussions, {slug: this.parent}, false);
+                        // $scope.topic = this.topic;
+                        this.comment = $meteor.object(Comments, { slug: this.parent }, false);
             
-            this.comments = $meteor.collection(Comments);
-
-            console.log(this.comments);
+                		this.commentCount = $meteor.object(Counts, 'numberOfComments', false);
+                        
+                        this.comments = $meteor.collection(() => {
+                            return Comments.find({}, {sort: {full_slug: $scope.getReactively('sort')}});
+                        });
+                        
+						if (this.loaded !== undefined) {
+							this.loaded = true;
+							if (this.loadingMore !== undefined) {
+								this.loadingMore = false;
+							}
+						}
+                });
+            });
         });
+        
+//        $meteor.autorun($scope, () => {
+//            $scope.$meteorSubscribe('oneDiscussion', this.parent, {
+//                limit: $scope.getReactively('perPage'),
+//                
+//            }).then(() => {
+//                this.topic = $meteor.object(Discussions, {slug: this.parent}, false);
+//                // $scope.topic = this.topic;
+//                this.comment = $meteor.object(Comments, { slug: this.parent }, false);
+//    
+//        		this.commentCount = $meteor.object(Counts, 'numberOfComments', false);
+//                
+//                this.comments = $meteor.collection(Comments);
+//            });
+//        });
     }
 
     commentAuthor(comment) {
@@ -64,10 +99,10 @@ class DiscussionsController {
 
     addMoreComments() {
         if (this.loaded) {
-            if (this.perPage < this.commentCount.count) {
+            if (SCOPE.get(this).perPage < this.commentCount.count) {
                 this.loaded = false;
                 this.loadingMore = true;
-                this.perPage += this.perPage;
+                SCOPE.get(this).perPage += SCOPE.get(this).perPage;
             }
         }
     }

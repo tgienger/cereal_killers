@@ -27,14 +27,14 @@ function CommentDirective(RecursionHelper, $meteor, $stateParams, $rootScope) {
 					 * @return {object}            Object containing the comments
 					 */
 
-		            // scope.$meteorSubscribe('commentsByParent', scope.getReactively('parent'),
-					// {
-					// 	limit: scope.getReactively('perPage'),
-		            //     skip: parseInt((scope.getReactively('page') - 1) * scope.getReactively('perPage')),
-		            //     sort: { full_slug: scope.getReactively('sort') }
-					// }
-					// ).then( handle => {
-					// 	scope.commentCount = $meteor.object(Counts, 'numberOfComments', false);
+//		             scope.$meteorSubscribe('commentsByParent', scope.getReactively('parent'),
+//					 {
+//					 	limit: scope.getReactively('perPage'),
+//		                 skip: parseInt((scope.getReactively('page') - 1) * scope.getReactively('perPage')),
+//		                 sort: { full_slug: scope.getReactively('sort') }
+//					 }
+//					 ).then( handle => {
+					 	scope.commentCount = $meteor.object(Counts, 'numberOfComments', false);
 						// console.log(scope.commentCount.count);
 
 						/**
@@ -53,7 +53,7 @@ function CommentDirective(RecursionHelper, $meteor, $stateParams, $rootScope) {
 							}
 						}
 
-		            // });
+//		             });
 
 		        });
 

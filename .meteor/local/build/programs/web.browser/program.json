@@ -1034,6 +1034,15 @@
       "hash": "65fe5b0397b20f5432b25da8f3e7a854e5761cf0"
     },
     {
+      "path": "app/client/forum/discussions/subDiscussion/sub.discussions.ng.html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/forum/discussions/subDiscussion/sub.discussions.ng.html.js?70300b78c9c3b405863ed8bda7b623b807ade1da",
+      "size": 2025,
+      "hash": "70300b78c9c3b405863ed8bda7b623b807ade1da"
+    },
+    {
       "path": "app/client/account/mail/mail.ng.html.js",
       "where": "client",
       "type": "js",
@@ -1137,9 +1146,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/comment.directive/comment-header.ng.html.js?c1eb4246f394d7cf319da2840157e4ae4b17c2e9",
-      "size": 633,
-      "hash": "c1eb4246f394d7cf319da2840157e4ae4b17c2e9"
+      "url": "/client/comment.directive/comment-header.ng.html.js?f327d64866174f0421431f396d18eceb0c26fca4",
+      "size": 739,
+      "hash": "f327d64866174f0421431f396d18eceb0c26fca4"
     },
     {
       "path": "app/client/comment.directive/comment.directive.ng.html.js",
@@ -1164,9 +1173,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/forum.controller.ng.html.js?99285116499be1d94a3fae250221bb68bfb034b4",
-      "size": 858,
-      "hash": "99285116499be1d94a3fae250221bb68bfb034b4"
+      "url": "/client/forum/forum.controller.ng.html.js?e3cbc3e4fffab014905e5c271b01d03e712daa8b",
+      "size": 1151,
+      "hash": "e3cbc3e4fffab014905e5c271b01d03e712daa8b"
     },
     {
       "path": "app/client/header/template.adminLink.js",
@@ -1182,9 +1191,9 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/header/header.directive.ng.html.js?ce873f08a119054fea56087ee2918ee60a16cfc2",
-      "size": 2666,
-      "hash": "ce873f08a119054fea56087ee2918ee60a16cfc2"
+      "url": "/client/header/header.directive.ng.html.js?755e731002fe2e4432a630618ca23f157101275b",
+      "size": 2657,
+      "hash": "755e731002fe2e4432a630618ca23f157101275b"
     },
     {
       "path": "app/client/home/home.controller.ng.html.js",
@@ -1277,6 +1286,17 @@
       "hash": "46ee18c98378960f741d2b784cecdfcb63c390ef"
     },
     {
+      "path": "app/client/forum/discussions/subDiscussion/sub.discussions.es6",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/client/forum/discussions/subDiscussion/sub.discussions.es6?3abfce76afc9ba845b06ec9bcaef0b668c6070c3",
+      "sourceMap": "app/client/forum/discussions/subDiscussion/sub.discussions.es6.map",
+      "sourceMapUrl": "/client/forum/discussions/subDiscussion/3abfce76afc9ba845b06ec9bcaef0b668c6070c3.map",
+      "size": 2086,
+      "hash": "3abfce76afc9ba845b06ec9bcaef0b668c6070c3"
+    },
+    {
       "path": "app/client/admin/roles/roles.controller.js",
       "where": "client",
       "type": "js",
@@ -1337,22 +1357,22 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/discussions/discussions.controller.es6?3b2333521b5a303d8bf2647d97ce635fa59dc5fc",
+      "url": "/client/forum/discussions/discussions.controller.es6?5aeff95f4be81963b6889416d56969076a099743",
       "sourceMap": "app/client/forum/discussions/discussions.controller.es6.map",
-      "sourceMapUrl": "/client/forum/discussions/3b2333521b5a303d8bf2647d97ce635fa59dc5fc.map",
-      "size": 3659,
-      "hash": "3b2333521b5a303d8bf2647d97ce635fa59dc5fc"
+      "sourceMapUrl": "/client/forum/discussions/5aeff95f4be81963b6889416d56969076a099743.map",
+      "size": 5305,
+      "hash": "5aeff95f4be81963b6889416d56969076a099743"
     },
     {
       "path": "app/client/forum/discussions/discussions.es6",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/discussions/discussions.es6?22bc6c004badd00fedeb67cb4567e670bd84ab56",
+      "url": "/client/forum/discussions/discussions.es6?fbd32aa37622223f63bd1265b683051024f6e324",
       "sourceMap": "app/client/forum/discussions/discussions.es6.map",
-      "sourceMapUrl": "/client/forum/discussions/22bc6c004badd00fedeb67cb4567e670bd84ab56.map",
-      "size": 394,
-      "hash": "22bc6c004badd00fedeb67cb4567e670bd84ab56"
+      "sourceMapUrl": "/client/forum/discussions/fbd32aa37622223f63bd1265b683051024f6e324.map",
+      "size": 613,
+      "hash": "fbd32aa37622223f63bd1265b683051024f6e324"
     },
     {
       "path": "app/client/header/currentLocation/currentLocation.es6",
@@ -1466,11 +1486,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/comment.directive/comment.directive.es6?791476310ef7022dfaeb5420280fd8a2ec0db032",
+      "url": "/client/comment.directive/comment.directive.es6?ff860721ff2f11a4e2f5e49800a0a6a941c082ac",
       "sourceMap": "app/client/comment.directive/comment.directive.es6.map",
-      "sourceMapUrl": "/client/comment.directive/791476310ef7022dfaeb5420280fd8a2ec0db032.map",
-      "size": 3248,
-      "hash": "791476310ef7022dfaeb5420280fd8a2ec0db032"
+      "sourceMapUrl": "/client/comment.directive/ff860721ff2f11a4e2f5e49800a0a6a941c082ac.map",
+      "size": 3316,
+      "hash": "ff860721ff2f11a4e2f5e49800a0a6a941c082ac"
     },
     {
       "path": "app/client/comment.directive/comment.es6",
@@ -1515,22 +1535,22 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/forum.controller.es6?49ec6f42458f181c671185d91589c88047f147e2",
+      "url": "/client/forum/forum.controller.es6?311dad2b2fd5176c73623fe41f5c88b945e04f60",
       "sourceMap": "app/client/forum/forum.controller.es6.map",
-      "sourceMapUrl": "/client/forum/49ec6f42458f181c671185d91589c88047f147e2.map",
-      "size": 2998,
-      "hash": "49ec6f42458f181c671185d91589c88047f147e2"
+      "sourceMapUrl": "/client/forum/311dad2b2fd5176c73623fe41f5c88b945e04f60.map",
+      "size": 3836,
+      "hash": "311dad2b2fd5176c73623fe41f5c88b945e04f60"
     },
     {
       "path": "app/client/forum/forum.es6",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/client/forum/forum.es6?fe661081e2c6c14a2a6f058edad7088ccec23113",
+      "url": "/client/forum/forum.es6?bb5b64541717c9c4deba368754471a6d2bc20cda",
       "sourceMap": "app/client/forum/forum.es6.map",
-      "sourceMapUrl": "/client/forum/fe661081e2c6c14a2a6f058edad7088ccec23113.map",
-      "size": 443,
-      "hash": "fe661081e2c6c14a2a6f058edad7088ccec23113"
+      "sourceMapUrl": "/client/forum/bb5b64541717c9c4deba368754471a6d2bc20cda.map",
+      "size": 552,
+      "hash": "bb5b64541717c9c4deba368754471a6d2bc20cda"
     },
     {
       "path": "app/client/header/header.directive.js",
@@ -1821,15 +1841,15 @@
       "hash": "cae0ed0b243fb415a497831d0df3dd8dda185637"
     },
     {
-      "path": "1d33f5a38cbced1e2aa44ea1281f0629f2b760f9.css",
+      "path": "98b55d93dc27b72889bc72bf023c61117a887e20.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/1d33f5a38cbced1e2aa44ea1281f0629f2b760f9.css",
-      "sourceMap": "1d33f5a38cbced1e2aa44ea1281f0629f2b760f9.css.map",
-      "sourceMapUrl": "/1d33f5a38cbced1e2aa44ea1281f0629f2b760f9.map",
-      "size": 354219,
-      "hash": "1d33f5a38cbced1e2aa44ea1281f0629f2b760f9"
+      "url": "/98b55d93dc27b72889bc72bf023c61117a887e20.css",
+      "sourceMap": "98b55d93dc27b72889bc72bf023c61117a887e20.css.map",
+      "sourceMapUrl": "/98b55d93dc27b72889bc72bf023c61117a887e20.map",
+      "size": 354557,
+      "hash": "98b55d93dc27b72889bc72bf023c61117a887e20"
     },
     {
       "path": "packages/fortawesome_fontawesome/Font-Awesome/fonts/fontawesome-webfont.eot",

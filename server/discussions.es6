@@ -6,77 +6,96 @@ Meteor.publish('discussions', function (options) {
 	return Discussions.find({}, options);
 });
 
-Meteor.publishComposite('oneDiscussion', function (slug) {
 
 
-	function discussionQuery(slug) {
-		return Discussions.find({ slug: slug }, { limit: 1 });
+class Children {
+	constructor(parentId) {
+		this.parent = parentId;
+		this.query = Comments.find(
+			{ parent_id: this.parent },
+			{ limit: 5, sort: { date: -1 } }
+			);
 	}
 
-	function mainComment(discussion) {
-		return Comments.find({ slug: discussion.slug }, { limit: 1 });
+	find() {
+		return this.query;
 	}
+}
 
-	function childComments(parent, limit) {
-		return Comments.find({ parent_id: parent._id }, { limit: limit, sort: { date: -1 } })
-	}
 
-	function usersQuery(parent) {
-		return Meteor.users.find({ _id: parent.author.id }, { limit: 1, fields: { profile: 1, roles: 1, createdAt: 1, username: 1 } });
-	}
+
+Meteor.publishComposite('oneDiscussion', function (slug, options) {
 
 	var query = {};
 	query.find = function () {
-		return discussionQuery(slug);
-	}
+		return Discussions.find({ slug: slug }, { limit: 1 });
+	};
+
+	var mainChildQuery = Comments.find({ slug: slug }, { limit: 1 });
+
 	query.children = [];
 	query.children[0] = {};
 	query.children[0].find = function (discussion) {
-		return Comments.find({ slug: discussion.slug }, { limit: 1 });
-	}
+		return mainChildQuery;
+	};
 	query.children[0].children = [];
 	query.children[0].children[0] = {};
 	query.children[0].children[0].find = function (comment) {
 		return Meteor.users.find({ _id: comment.author.id }, { limit: 1, fields: { profile: 1, roles: 1, createdAt: 1, username: 1 } });
-	}
+	};
 	query.children[0].children[1] = {};
 	query.children[0].children[1].find = function (parent) {
-		return Comments.find({ parent_id: parent._id }, { limit: 25, sort: { date: -1 } });
+		return Comments.find({ parent_id: parent._id }, options);
+	};
+	query.children[0].children[2] = {
+		find: function(parent) {
+			Counts.publish(this, 'numberOfComments', Comments.find(
+				{ parent_id: parent._id }
+				), { noReady: true });
+				
+			return;
+		}
 	}
 
-	var parentQuery = Comments.find({slug: slug});
-	var parent = parentQuery.fetch();
-	var children = Comments.find({parent_id: parent[0]._id}, {limit: 25}).fetch();
+	//	var parentQuery = Comments.find({ slug: slug });
+	var parent = mainChildQuery.fetch();
+	var children = Comments.find({ parent_id: parent[0]._id }, { limit: 25 }).fetch();
 
 	var childrenIds = _.pluck(children, '_id');
 
 
-	function getChildren(children_ids, thisParent) {
-		var self = this;
+	var getChildren = function (children_ids, thisParent) {
+//		var self = this;
+//		self.parent = thisParent;
+		var i = 0;
+		thisParent.children = [];
 
-		// if (children_ids.length > 0) {
-			// thisParent.children = [];
-			// thisParent.children[0] = {};
-			self.query = Comments.find({parent_id: {$in: children_ids}}, {limit: 5, sort: {date: -1}});
-			// thisParent.children[0].find = function() {
-			// 	return self.query;
-			// }
-			var subComments = self.query.fetch();
-			var ids = _.pluck(subComments, '_id');
-			// console.log(ids);
-			// if (ids.length > 0) {
-			// }
-			_.each(ids, function(id) {
-				console.log(id);
+		var recursive = function getEm(children, parent) {
+			_.each(children, function (id) {
+				
+				//				parent.children[i] = new Children(id);
+				var query = Comments.find({ parent_id: id }, { limit: 5, sort: { date: -1 } });
+				parent.children[i] = {
+					find: function () {
+						return Comments.find({ parent_id: id }, { limit: 5, sort: { date: -1 } });
+					}
+				};
+
+
+				var children1 = query.fetch();
+				var newChildrenIds = _.pluck(children1, '_id');
+				i++;
+				if (newChildrenIds.length > 0) {
+					getEm(newChildrenIds, parent);
+				}
 			});
+		}
 
+		recursive(children_ids, thisParent);
 
-			// var children = Comments.find({parent_id: parent._id})
-		// }
-	}
+	};
 
 	getChildren(childrenIds, query.children[0].children[1]);
-
 	return query;
 
 });
